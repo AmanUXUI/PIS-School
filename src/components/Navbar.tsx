@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "motion/react";
 
 const getItemDescription = (name: string): string => {
   const descriptions: Record<string, string> = {
-    "About PIS": "Our vision, mission & heritage",
+    Overview: "Our vision, mission & heritage",
     "Academic Team": "Meet our dedicated educators",
     "Chairman's Message": "Leadership perspective & foresight",
     "Principal's Message": "Welcome from our Head of School",

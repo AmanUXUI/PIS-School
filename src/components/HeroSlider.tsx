@@ -81,14 +81,6 @@ export default function HeroSlider() {
                   <span>Explore Curriculum</span>
                   <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </motion.button>
-                <motion.button 
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={() => window.location.hash = '#campus-life'}
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 bg-transparent border border-white/30 text-white text-[11px] font-bold uppercase tracking-widest hover:bg-white hover:text-[#201A5B] transition-all duration-300 shadow-sm rounded-[4px] whitespace-nowrap cursor-pointer"
-                >
-                  View Campus
-                </motion.button>
               </motion.div>
             </div>
           </div>

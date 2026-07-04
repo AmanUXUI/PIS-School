@@ -110,7 +110,7 @@ export default function AboutOverview() {
             <span className="text-white/30">/</span>
             <span className="text-white/50">About</span>
             <span className="text-white/30">/</span>
-            <span className="text-brand-orange font-bold">About PIS</span>
+            <span className="text-brand-orange font-bold">Overview</span>
           </div>
 
           <motion.div
@@ -120,7 +120,7 @@ export default function AboutOverview() {
             className="max-w-3xl"
           >
             <h1 className="text-4xl md:text-[52px] lg:text-[52px] font-sans font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight text-white mb-4">
-              About Pavna International School (PIS)
+              Overview
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light font-gill max-w-2xl">
               Discover our visual legacy, pedagogical foundations, and
@@ -156,35 +156,33 @@ export default function AboutOverview() {
                 <div className="flex items-center gap-3 mb-3 w-full">
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-[28px] tracking-[1.65px] uppercase font-bold text-brand-orange">
-                    Our Philosophy
+                    About the School
                   </span>
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
 
                 {/* Main Heading */}
                 <h2 className="text-3xl md:text-[42px] font-sans font-bold md:leading-[50px] tracking-tight text-brand-navy mb-6">
-                  Where Growth Meets Tradition
+                  A Premier Cambridge & Apple Distinguished School
                 </h2>
               </div>
 
               <div className="text-[15px] sm:text-[16px] leading-[26px] text-neutral-600 font-normal space-y-6">
                 <p>
-                  At Pavna International School, we believe education should
-                  grow like a tree, reaching beyond the walls of a classroom.
-                  Our students are encouraged to explore, question, and learn
-                  through real experiences rather than just textbooks. This
-                  freedom to explore builds curiosity, confidence, and a genuine
-                  love for learning.
-                </p>
-
-                <p>
-                  In the diverse ecosystem of Pavna, every student, like a
-                  unique leaf on a tree, is given the liberty to chart their own
-                  educational journey. With a curriculum offering a wide
-                  spectrum of subjects, students discover and hone their
-                  passions. At PIS, we believe in nurturing the roots of
-                  curiosity and critical thinking, allowing each student to grow
-                  in their own direction.
+                  Pavna International School is a leading Cambridge Curriculum
+                  school in India, committed to academic excellence, holistic
+                  education, and future-ready learning. Guided by the Pathway
+                  School philosophy and Continuum School approach, we nurture
+                  confident, creative, and globally minded students through
+                  experiential learning and innovation. As an Apple
+                  Distinguished School, we integrate technology into engaging,
+                  student-centred classrooms. Our vehicle-free, eco-friendly
+                  campus features smart classrooms, innovation labs, sports and
+                  performing arts facilities, and premium residential hostels.
+                  With a strong focus on leadership, character development, and
+                  global perspectives, Pavna International School prepares
+                  students to thrive in higher education and succeed in an
+                  ever-evolving world.
                 </p>
               </div>
             </div>

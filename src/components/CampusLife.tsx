@@ -29,7 +29,6 @@ const adminImages = [
   "https://i.postimg.cc/tCgBvpXm/admin-block-2-jpg.jpg",
   "https://i.postimg.cc/BQvm74qV/admin-block-3-jpg.jpg",
   "https://i.postimg.cc/9FfLgCWk/admin-block-4-jpg.jpg",
-  "https://i.postimg.cc/L6sxQ2HN/admin-block-jpg.jpg",
   "https://pavna-int.vercel.app/assets/admin%20block%205-BdOSmCRL.webp"
 ];
 
@@ -57,7 +56,7 @@ const academicImages = [
 const sportsImages = [
   "https://i.postimg.cc/05SZGP1x/SWIMMING-JPG.jpg",
   "https://i.postimg.cc/XvDxLvvW/Whats-App-Image-2026-06-29-at-16-23-22.jpg",
-  "https://i.postimg.cc/pd1kCddx/Whats-App-Image-2026-06-29-at-16-34-41.jpg",
+  "https://imgh.in/host/kql5mm",
   "https://pavna-int.vercel.app/assets/ChatGPT%20Image%20Jun%2029_%202026_%2005_11_29%20PM-C1NFuqbR.webp",
   "https://pavna-int.vercel.app/assets/ChatGPT%20Image%20Jun%2029_%202026_%2004_09_46%20PM-Ccq-_uh_.webp"
 ];
@@ -490,32 +489,89 @@ const CampusLife: FC = () => {
             </p>
           </div>
 
-          {/* Exact activities mentioned in the text listed in a visual grid of badges */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {/* Exact activities mentioned in the text listed in a visual grid of image containers */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Textile", icon: Scissors },
-              { name: "Sculpture", icon: Trophy },
-              { name: "Poetry", icon: BookOpen },
-              { name: "AI & Robotics", icon: Cpu },
-              { name: "Dance (Indian & Western)", icon: Activity },
-              { name: "Music (Indian & Western)", icon: Music },
-              { name: "Performing Arts", icon: Layers },
-              { name: "Visual Arts", icon: Palette }
+              { 
+                name: "Textile", 
+                image: "https://imgh.in/host/i9edig", 
+                icon: Scissors,
+                desc: "Exploring standard weaves, patterns, and creative fiber expressions to design unique fabrics."
+              },
+              { 
+                name: "Poetry", 
+                image: "https://imgh.in/host/w68hoz", 
+                icon: BookOpen,
+                desc: "Nurturing deep literary voices, rhythmic expressions, and creative linguistic craftsmanship."
+              },
+              { 
+                name: "AI & Robotics", 
+                image: "https://imgh.in/host/inkczw", 
+                icon: Cpu,
+                desc: "Engaging with cutting-edge electronics, logic block coding, and mechanical assemblies."
+              },
+              { 
+                name: "Music (Indian & Western)", 
+                image: "https://imgh.in/host/j4cq2l", 
+                icon: Music,
+                desc: "Cultivating vocal and instrumental mastery across classical and contemporary genres."
+              },
+              { 
+                name: "Performing Arts", 
+                image: "https://imgh.in/host/05xe1f", 
+                icon: Layers,
+                desc: "Developing poise, theatrical confidence, stage presence, and expressive dramatic skills."
+              },
+              { 
+                name: "Visual Arts", 
+                image: "https://imgh.in/host/82j4iu", 
+                icon: Palette,
+                desc: "Unleashing fine creative imagination through painting, drawing, sculpting, and digital media."
+              }
             ].map((act, i) => {
               const IconComp = act.icon;
               return (
                 <motion.div
                   key={act.name}
-                  initial={{ opacity: 0, x: -10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.05, duration: 0.4 }}
-                  className="bg-white p-4 rounded-xl border border-neutral-100/80 flex items-center gap-3 hover:border-brand-orange hover:shadow-sm transition-all duration-300"
+                  transition={{ delay: i * 0.1, duration: 0.5 }}
+                  className="group bg-white rounded-2xl overflow-hidden border border-neutral-200/60 shadow-sm hover:shadow-xl hover:border-brand-orange/50 transition-all duration-300 flex flex-col h-full"
                 >
-                  <div className="w-8 h-8 rounded-lg bg-brand-orange/5 text-brand-orange flex items-center justify-center shrink-0">
-                    <IconComp size={16} />
+                  {/* Image Container */}
+                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100 shrink-0">
+                    <img 
+                      src={act.image} 
+                      alt={act.name} 
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    
+                    {/* Floating Icon badge */}
+                    <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/95 backdrop-blur-sm text-brand-orange flex items-center justify-center shadow-md border border-neutral-100 z-10">
+                      <IconComp size={18} />
+                    </div>
                   </div>
-                  <span className="text-[14px] font-bold text-brand-navy leading-tight">{act.name}</span>
+
+                  {/* Card Content */}
+                  <div className="p-6 flex flex-col justify-between flex-grow">
+                    <div>
+                      <h3 className="text-lg font-bold text-brand-navy group-hover:text-brand-orange transition-colors duration-200">
+                        {act.name}
+                      </h3>
+                      <p className="text-neutral-500 text-sm mt-2 leading-relaxed font-medium">
+                        {act.desc}
+                      </p>
+                    </div>
+                    
+                    {/* Tiny action visual indicator */}
+                    <div className="mt-4 flex items-center gap-1 text-[13px] font-bold text-brand-orange">
+                      <span>Explore Program</span>
+                      <span className="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
+                    </div>
+                  </div>
                 </motion.div>
               );
             })}

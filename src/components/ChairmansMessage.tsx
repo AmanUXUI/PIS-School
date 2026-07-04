@@ -126,7 +126,7 @@ const ChairmansMessage: FC = () => {
                 href="#about-overview"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
               >
-                &larr; About PIS
+                &larr; Overview
               </a>
             </div>
 

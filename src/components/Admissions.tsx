@@ -310,7 +310,7 @@ const Admissions: FC = () => {
             <div className="bg-white p-1 rounded-full border border-neutral-200/85 shadow-sm flex items-center">
               <button
                 onClick={() => setActiveFeeTab('day-boarders')}
-                className={`relative px-8 py-3 rounded-full text-[11px] font-bold tracking-wider uppercase transition-all duration-300 select-none cursor-pointer ${
+                className={`relative px-8 py-3 rounded-full text-[11px] font-sans font-bold tracking-wider uppercase transition-all duration-300 select-none cursor-pointer ${
                   activeFeeTab === 'day-boarders' ? 'text-white font-extrabold' : 'text-brand-navy/75 hover:text-brand-orange'
                 }`}
               >
@@ -326,7 +326,7 @@ const Admissions: FC = () => {
 
               <button
                 onClick={() => setActiveFeeTab('boarders')}
-                className={`relative px-8 py-3 rounded-full text-[11px] font-bold tracking-wider uppercase transition-all duration-300 select-none cursor-pointer ${
+                className={`relative px-8 py-3 rounded-full text-[11px] font-sans font-bold tracking-wider uppercase transition-all duration-300 select-none cursor-pointer ${
                   activeFeeTab === 'boarders' ? 'text-white font-extrabold' : 'text-brand-navy/75 hover:text-brand-orange'
                 }`}
               >
@@ -351,15 +351,15 @@ const Admissions: FC = () => {
                     <th className="py-5 px-6 border-b border-white/10">Particulars</th>
                     <th className="py-5 px-6 border-b border-white/10">To be Paid</th>
                     <th className="py-5 px-6 border-b border-white/10 text-center bg-brand-navy/95">
-                      <div className="font-extrabold text-[13px] text-brand-orange">EY 1 - Stage 3</div>
+                      <div className="font-sans font-extrabold text-[13px] text-brand-orange">EY 1 - Stage 3</div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">(Play Group - Class II)</div>
                     </th>
                     <th className="py-5 px-6 border-b border-white/10 text-center">
-                      <div className="font-extrabold text-[13px] text-white">Stage 4 - Stage 9</div>
+                      <div className="font-sans font-extrabold text-[13px] text-white">Stage 4 - Stage 9</div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">(Class III - VIII)</div>
                     </th>
                     <th className="py-5 px-6 border-b border-white/10 text-center">
-                      <div className="font-extrabold text-[13px] text-white">Stage 10 - Stage 13</div>
+                      <div className="font-sans font-extrabold text-[13px] text-white">Stage 10 - Stage 13</div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">(Class IX - XII)</div>
                     </th>
                   </tr>
@@ -401,11 +401,11 @@ const Admissions: FC = () => {
                     <th className="py-5 px-6 border-b border-white/10">Particulars</th>
                     <th className="py-5 px-6 border-b border-white/10">To be Paid</th>
                     <th className="py-5 px-6 border-b border-white/10 text-center bg-brand-navy/95">
-                      <div className="font-extrabold text-[13px] text-brand-orange">Stage 7 - Stage 9</div>
+                      <div className="font-sans font-extrabold text-[13px] text-brand-orange">Stage 7 - Stage 9</div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">(Class VI - VIII)</div>
                     </th>
                     <th className="py-5 px-6 border-b border-white/10 text-center">
-                      <div className="font-extrabold text-[13px] text-white">Stage 10 - Stage 13</div>
+                      <div className="font-sans font-extrabold text-[13px] text-white">Stage 10 - Stage 13</div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">(Class IX - XII)</div>
                     </th>
                   </tr>
