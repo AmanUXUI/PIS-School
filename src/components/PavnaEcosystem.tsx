@@ -86,7 +86,7 @@ const PavnaEcosystem: FC = () => {
       <div className="relative w-full px-3 xl:px-4 flex flex-col z-[1] max-w-[1300px]">
         {/* Heading */}
         <h3 className="text-[#201a5b] text-center text-[33px] md:text-[42px] font-bold py-4">
-          Pavna international school Ecosystem
+          Pavna School Ecosystem
         </h3>
 
         {/* ============================================== */}
