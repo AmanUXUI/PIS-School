@@ -86,7 +86,7 @@ const PavnaEcosystem: FC = () => {
       <div className="relative w-full px-3 xl:px-4 flex flex-col z-[1] max-w-[1300px]">
         {/* Heading */}
         <h3 className="text-[#201a5b] text-center text-[33px] md:text-[42px] font-bold py-4">
-          Pavna School Ecosystem
+          Pavna international school Ecosystem
         </h3>
 
         {/* ============================================== */}
@@ -198,7 +198,7 @@ const PavnaEcosystem: FC = () => {
                 ))}
               </ul>
               <h3 className="text-[18px] font-bold leading-[35px] text-[#202547]">
-                Pavna Schools:
+                Pavna international school:
               </h3>
               <ul className="pl-4 list-none relative text-[#333333] text-base line-height-[1.375]">
                 {ecosystemData[1].content.pavna.map((item, index) => (
@@ -261,7 +261,7 @@ const PavnaEcosystem: FC = () => {
                 ))}
               </ul>
               <h3 className="text-[18px] font-bold leading-[35px] text-[#202547]">
-                Pavna Schools:
+                Pavna international school:
               </h3>
               <ul className="pl-4 list-none relative text-[#333333] text-base line-height-[1.375]">
                 <li className="relative mb-1.5 before:content-[''] before:absolute before:-left-4 before:top-[0.4rem] before:w-1.5 before:h-1.5 before:bg-[#202547] before:rounded-full">
@@ -351,7 +351,7 @@ const PavnaEcosystem: FC = () => {
                   </ul>
 
                   <h3 className="text-[18px] font-bold text-[#202547] mb-2 leading-[35px]">
-                    Pavna Schools:
+                    Pavna international school:
                   </h3>
                   <ul className="pl-4 list-none text-[#333333] text-base line-height-[1.375]">
                     {section.id === "teachers" ? (
