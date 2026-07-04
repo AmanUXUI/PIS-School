@@ -1,19 +1,19 @@
-import { FC, useState, useEffect } from 'react';
-import { motion } from 'motion/react';
-import { 
-  BookOpen, 
-  Award, 
-  Activity, 
-  Compass, 
-  Heart, 
-  ShieldCheck, 
-  Sparkles, 
-  Users, 
-  ArrowRight, 
-  Building, 
-  Palette, 
-  Music, 
-  Trophy, 
+import { FC, useState, useEffect } from "react";
+import { motion } from "motion/react";
+import {
+  BookOpen,
+  Award,
+  Activity,
+  Compass,
+  Heart,
+  ShieldCheck,
+  Sparkles,
+  Users,
+  ArrowRight,
+  Building,
+  Palette,
+  Music,
+  Trophy,
   Layers,
   PhoneCall,
   Calendar,
@@ -21,15 +21,15 @@ import {
   GraduationCap,
   Target,
   Cpu,
-  Scissors
-} from 'lucide-react';
+  Scissors,
+} from "lucide-react";
 
 const adminImages = [
   "https://i.postimg.cc/pXdscR2c/admin-block-1-jpg.jpg",
   "https://i.postimg.cc/tCgBvpXm/admin-block-2-jpg.jpg",
   "https://i.postimg.cc/BQvm74qV/admin-block-3-jpg.jpg",
   "https://i.postimg.cc/9FfLgCWk/admin-block-4-jpg.jpg",
-  "https://pavna-int.vercel.app/assets/admin%20block%205-BdOSmCRL.webp"
+  "https://pavna-int.vercel.app/assets/admin%20block%205-BdOSmCRL.webp",
 ];
 
 const environmentImages = [
@@ -43,14 +43,14 @@ const environmentImages = [
   "https://i.postimg.cc/pLbnhJ1k/enviroment-7-jpg.jpg",
   "https://i.postimg.cc/Gmws8xSq/enviroment-8-jpg.jpg",
   "https://i.postimg.cc/htW7z13C/enviroment-9-jpg.jpg",
-  "https://i.postimg.cc/Njqr9kPn/enviroment-jpg.jpg"
+  "https://i.postimg.cc/Njqr9kPn/enviroment-jpg.jpg",
 ];
 
 const academicImages = [
   "https://i.postimg.cc/Hx2f5z2Q/DSC06155-JPG.jpg",
   "https://i.postimg.cc/W3nQr8nr/DSC06164-JPG.jpg",
   "https://i.postimg.cc/QtbR5mbW/DSC06229-JPG.jpg",
-  "https://i.postimg.cc/1zpxRsVB/DSC08709-JPG.jpg"
+  "https://i.postimg.cc/1zpxRsVB/DSC08709-JPG.jpg",
 ];
 
 const sportsImages = [
@@ -58,7 +58,7 @@ const sportsImages = [
   "https://i.postimg.cc/XvDxLvvW/Whats-App-Image-2026-06-29-at-16-23-22.jpg",
   "https://imgh.in/host/kql5mm",
   "https://pavna-int.vercel.app/assets/ChatGPT%20Image%20Jun%2029_%202026_%2005_11_29%20PM-C1NFuqbR.webp",
-  "https://pavna-int.vercel.app/assets/ChatGPT%20Image%20Jun%2029_%202026_%2004_09_46%20PM-Ccq-_uh_.webp"
+  "https://pavna-int.vercel.app/assets/ChatGPT%20Image%20Jun%2029_%202026_%2004_09_46%20PM-Ccq-_uh_.webp",
 ];
 
 const CampusLife: FC = () => {
@@ -97,25 +97,29 @@ const CampusLife: FC = () => {
 
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">
-      
       {/* 1. Header Hero Panel with Breadcrumbs */}
       <section className="relative bg-brand-navy text-white overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
-          <img 
-            src="https://i.postimg.cc/sDX0mLp4/DSC05807-JPG.jpg" 
-            alt="Campus Life Background" 
+          <img
+            src="https://i.postimg.cc/sDX0mLp4/DSC05807-JPG.jpg"
+            alt="Campus Life Background"
             className="w-full h-full object-cover scale-105 filter blur-[2px]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-navy to-transparent" />
         </div>
-        
+
         {/* Decorative Grid Patterns */}
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span className="hover:text-brand-orange transition-colors cursor-pointer" onClick={() => window.location.hash = ''}>Home</span>
+            <span
+              className="hover:text-brand-orange transition-colors cursor-pointer"
+              onClick={() => (window.location.hash = "")}
+            >
+              Home
+            </span>
             <span className="text-white/30">/</span>
             <span className="text-brand-orange font-bold">Campus Life</span>
           </div>
@@ -140,7 +144,6 @@ const CampusLife: FC = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
             <div className="lg:col-span-6">
               <div className="flex flex-col items-start w-fit max-w-full">
                 <div className="flex items-center gap-3 mb-6 w-full">
@@ -150,31 +153,36 @@ const CampusLife: FC = () => {
                   </span>
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
-                
+
                 <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
                   Campus Environment
                 </h2>
               </div>
-              
+
               <p className="text-[#4B5563] text-[16px] leading-[24px] font-medium font-gill">
-                Spread across a beautifully planned campus, Pavna International School offers a safe, vibrant, and stimulating environment where students love to learn and grow. Surrounded by lush green landscapes, modern architecture, and thoughtfully designed learning spaces, our campus promotes academic excellence, creativity, well-being, and meaningful experiences every day.
+                Spread across a beautifully planned campus, Pavna International
+                School offers a safe, vibrant, and stimulating environment where
+                students love to learn and grow. Surrounded by lush green
+                landscapes, modern architecture, and thoughtfully designed
+                learning spaces, our campus promotes academic excellence,
+                creativity, well-being, and meaningful experiences every day.
               </p>
             </div>
 
             <div className="lg:col-span-6 relative group">
               <div className="relative rounded-lg overflow-hidden shadow-xl bg-white border border-neutral-100 aspect-square w-full">
-                <motion.img 
+                <motion.img
                   key={currentEnvIdx}
                   initial={{ opacity: 0, scale: 1.03 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
-                  src={environmentImages[currentEnvIdx]} 
-                  alt={`Campus Environment - Slide ${currentEnvIdx + 1}`} 
+                  src={environmentImages[currentEnvIdx]}
+                  alt={`Campus Environment - Slide ${currentEnvIdx + 1}`}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent pointer-events-none" />
-                
+
                 {/* Visual Indicators/Pagination Dots for the Environment Slider */}
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 bg-black/45 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 shadow-sm">
                   {environmentImages.map((_, idx) => (
@@ -182,8 +190,8 @@ const CampusLife: FC = () => {
                       key={idx}
                       onClick={() => setCurrentEnvIdx(idx)}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        idx === currentEnvIdx 
-                          ? "bg-brand-orange w-4" 
+                        idx === currentEnvIdx
+                          ? "bg-brand-orange w-4"
                           : "bg-white/50 hover:bg-white"
                       }`}
                       aria-label={`Go to slide ${idx + 1}`}
@@ -192,7 +200,6 @@ const CampusLife: FC = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -201,22 +208,21 @@ const CampusLife: FC = () => {
       <section className="py-16 md:py-24 bg-[#FAF9F6] border-t border-b border-gray-100/85">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            
             {/* Left side: Image */}
             <div className="lg:col-span-6 relative group">
               <div className="relative rounded-lg overflow-hidden shadow-xl bg-white border border-neutral-100 aspect-square w-full">
-                <motion.img 
+                <motion.img
                   key={currentAcademicIdx}
                   initial={{ opacity: 0, scale: 1.03 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
-                  src={academicImages[currentAcademicIdx]} 
-                  alt={`World-Class Academic Infrastructure - Slide ${currentAcademicIdx + 1}`} 
+                  src={academicImages[currentAcademicIdx]}
+                  alt={`World-Class Academic Infrastructure - Slide ${currentAcademicIdx + 1}`}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent pointer-events-none" />
-                
+
                 {/* Visual Indicators/Pagination Dots for the Academic Infrastructure Slider */}
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 bg-black/45 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 shadow-sm">
                   {academicImages.map((_, idx) => (
@@ -224,8 +230,8 @@ const CampusLife: FC = () => {
                       key={idx}
                       onClick={() => setCurrentAcademicIdx(idx)}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        idx === currentAcademicIdx 
-                          ? "bg-brand-orange w-4" 
+                        idx === currentAcademicIdx
+                          ? "bg-brand-orange w-4"
                           : "bg-white/50 hover:bg-white"
                       }`}
                       aria-label={`Go to slide ${idx + 1}`}
@@ -246,14 +252,21 @@ const CampusLife: FC = () => {
                     </span>
                     <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   </div>
-                  
+
                   <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
                     Academic Infrastructure
                   </h2>
                 </div>
-                
+
                 <p className="text-[#4B5563] text-[16px] leading-[24px] font-medium font-gill mb-8">
-                  Step into an inspiring learning environment designed to nurture curiosity, creativity, and academic excellence. At Pavna International School, our modern classrooms, advanced laboratories, collaborative learning spaces, and technology-enabled facilities create the perfect setting for students to thrive. Every corner of our academic infrastructure is thoughtfully designed to support innovation, critical thinking, and future-ready education.
+                  Step into an inspiring learning environment designed to
+                  nurture curiosity, creativity, and academic excellence. At
+                  Pavna International School, our modern classrooms, advanced
+                  laboratories, collaborative learning spaces, and
+                  technology-enabled facilities create the perfect setting for
+                  students to thrive. Every corner of our academic
+                  infrastructure is thoughtfully designed to support innovation,
+                  critical thinking, and future-ready education.
                 </p>
               </div>
 
@@ -263,24 +276,25 @@ const CampusLife: FC = () => {
                   { name: "Modern Classrooms", icon: BookOpen },
                   { name: "Advanced Laboratories", icon: Layers },
                   { name: "Collaborative Learning Spaces", icon: Users },
-                  { name: "Technology-Enabled Facilities", icon: Sparkles }
+                  { name: "Technology-Enabled Facilities", icon: Sparkles },
                 ].map((item, idx) => {
                   const IconComp = item.icon;
                   return (
-                    <div 
-                      key={idx} 
+                    <div
+                      key={idx}
                       className="flex items-center gap-3 py-4 px-5 bg-transparent"
                     >
                       <div className="w-8 h-8 rounded-full bg-brand-orange/5 text-brand-orange flex items-center justify-center shrink-0">
                         <IconComp size={16} />
                       </div>
-                      <span className="text-[14px] font-bold text-brand-navy leading-tight">{item.name}</span>
+                      <span className="text-[14px] font-bold text-brand-navy leading-tight">
+                        {item.name}
+                      </span>
                     </div>
                   );
                 })}
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -289,7 +303,6 @@ const CampusLife: FC = () => {
       <section className="py-16 md:py-24 bg-white border-b border-gray-100/85">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            
             {/* Left side: Content */}
             <div className="lg:col-span-6 flex flex-col justify-between">
               <div>
@@ -301,14 +314,19 @@ const CampusLife: FC = () => {
                     </span>
                     <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   </div>
-                  
+
                   <h3 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
                     Administration Block
                   </h3>
                 </div>
 
                 <p className="text-[#4B5563] text-[16px] leading-[24px] font-medium font-gill mb-8">
-                  Experience the efficient administrative hub that ensures the smooth functioning of Pavna International School. From student support and academic coordination to parent communication and campus management, our dedicated administration team works tirelessly to provide a safe, organized, and enriching educational experience for every learner.
+                  Experience the efficient administrative hub that ensures the
+                  smooth functioning of Pavna International School. From student
+                  support and academic coordination to parent communication and
+                  campus management, our dedicated administration team works
+                  tirelessly to provide a safe, organized, and enriching
+                  educational experience for every learner.
                 </p>
               </div>
 
@@ -318,18 +336,20 @@ const CampusLife: FC = () => {
                   { name: "Student Support", icon: Heart },
                   { name: "Academic Coordination", icon: GraduationCap },
                   { name: "Parent Communication", icon: PhoneCall },
-                  { name: "Campus Management", icon: Building }
+                  { name: "Campus Management", icon: Building },
                 ].map((item, idx) => {
                   const IconComp = item.icon;
                   return (
-                    <div 
-                      key={idx} 
+                    <div
+                      key={idx}
                       className="flex items-center gap-3 py-4 px-5 bg-transparent"
                     >
                       <div className="w-8 h-8 rounded-full bg-brand-orange/5 text-brand-orange flex items-center justify-center shrink-0">
                         <IconComp size={16} />
                       </div>
-                      <span className="text-[14px] font-bold text-brand-navy leading-tight">{item.name}</span>
+                      <span className="text-[14px] font-bold text-brand-navy leading-tight">
+                        {item.name}
+                      </span>
                     </div>
                   );
                 })}
@@ -339,13 +359,13 @@ const CampusLife: FC = () => {
             {/* Right side: Image */}
             <div className="lg:col-span-6 relative group">
               <div className="relative rounded-lg overflow-hidden shadow-xl bg-white border border-neutral-100 aspect-square w-full">
-                <motion.img 
+                <motion.img
                   key={currentImageIndex}
                   initial={{ opacity: 0, scale: 1.03 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
-                  src={adminImages[currentImageIndex]} 
-                  alt={`Administration Block - Slide ${currentImageIndex + 1}`} 
+                  src={adminImages[currentImageIndex]}
+                  alt={`Administration Block - Slide ${currentImageIndex + 1}`}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
@@ -358,8 +378,8 @@ const CampusLife: FC = () => {
                       key={idx}
                       onClick={() => setCurrentImageIndex(idx)}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        idx === currentImageIndex 
-                          ? "bg-brand-orange w-4" 
+                        idx === currentImageIndex
+                          ? "bg-brand-orange w-4"
                           : "bg-white/50 hover:bg-white"
                       }`}
                       aria-label={`Go to slide ${idx + 1}`}
@@ -368,7 +388,6 @@ const CampusLife: FC = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -377,7 +396,6 @@ const CampusLife: FC = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
             {/* Left side: Content & Cards */}
             <div className="order-2 lg:order-1 lg:col-span-6 flex flex-col justify-center">
               <div className="flex flex-col items-start w-fit max-w-full">
@@ -388,14 +406,20 @@ const CampusLife: FC = () => {
                   </span>
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
-                
+
                 <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
                   Sports Facilities
                 </h2>
               </div>
-              
+
               <p className="text-[#4B5563] text-[16px] leading-[24px] font-medium font-gill mb-8">
-                At Pavna International School, sports are an essential part of every student's growth journey. Our world-class sports infrastructure includes over 10 Olympic-standard facilities, encouraging students to develop discipline, teamwork, leadership, and resilience. From horse riding and swimming to basketball, badminton, lawn tennis, football, and more, every child is empowered to discover their athletic potential.
+                At Pavna International School, sports are an essential part of
+                every student's growth journey. Our world-class sports
+                infrastructure includes over 10 Olympic-standard facilities,
+                encouraging students to develop discipline, teamwork,
+                leadership, and resilience. From horse riding and swimming to
+                basketball, badminton, lawn tennis, football, and more, every
+                child is empowered to discover their athletic potential.
               </p>
 
               {/* Exact sports listed in the text, shown as highly-styled interactive list badges with icons */}
@@ -406,7 +430,7 @@ const CampusLife: FC = () => {
                   { name: "Basketball", icon: Sparkles },
                   { name: "Badminton", icon: Target },
                   { name: "Lawn Tennis", icon: Compass },
-                  { name: "Football", icon: Users }
+                  { name: "Football", icon: Users },
                 ].map((sport, i) => {
                   const IconComp = sport.icon;
                   return (
@@ -421,7 +445,9 @@ const CampusLife: FC = () => {
                       <div className="w-10 h-10 rounded-full bg-brand-orange/5 text-brand-orange flex items-center justify-center mb-2.5 transition-all duration-300 group-hover:bg-brand-orange group-hover:text-white">
                         <IconComp size={18} />
                       </div>
-                      <span className="text-[14px] font-bold text-brand-navy">{sport.name}</span>
+                      <span className="text-[14px] font-bold text-brand-navy">
+                        {sport.name}
+                      </span>
                     </motion.div>
                   );
                 })}
@@ -431,18 +457,18 @@ const CampusLife: FC = () => {
             {/* Right side: Image Slider/Carousel */}
             <div className="order-1 lg:order-2 lg:col-span-6 relative group w-full">
               <div className="relative rounded-lg overflow-hidden shadow-xl bg-white border border-neutral-100 aspect-square w-full">
-                <motion.img 
+                <motion.img
                   key={currentSportsIdx}
                   initial={{ opacity: 0, scale: 1.03 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
-                  src={sportsImages[currentSportsIdx]} 
-                  alt={`Sports Facilities - Slide ${currentSportsIdx + 1}`} 
+                  src={sportsImages[currentSportsIdx]}
+                  alt={`Sports Facilities - Slide ${currentSportsIdx + 1}`}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent pointer-events-none" />
-                
+
                 {/* Visual Indicators/Pagination Dots */}
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 bg-black/45 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 shadow-sm">
                   {sportsImages.map((_, idx) => (
@@ -450,8 +476,8 @@ const CampusLife: FC = () => {
                       key={idx}
                       onClick={() => setCurrentSportsIdx(idx)}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        idx === currentSportsIdx 
-                          ? "bg-brand-orange w-4" 
+                        idx === currentSportsIdx
+                          ? "bg-brand-orange w-4"
                           : "bg-white/50 hover:bg-white"
                       }`}
                       aria-label={`Go to slide ${idx + 1}`}
@@ -460,7 +486,6 @@ const CampusLife: FC = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -468,7 +493,6 @@ const CampusLife: FC = () => {
       {/* 5. Co-Curricular Activities (ECA) Section */}
       <section className="py-16 md:py-24 bg-[#FAF9F6] border-t border-b border-gray-100/85">
         <div className="max-w-7xl mx-auto px-6">
-          
           <div className="max-w-3xl mb-12">
             <div className="flex flex-col items-start w-fit max-w-full">
               <div className="flex items-center gap-3 mb-6 w-full">
@@ -478,56 +502,62 @@ const CampusLife: FC = () => {
                 </span>
                 <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
               </div>
-              
+
               <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
                 Co-Curricular Activities (ECA)
               </h2>
             </div>
-            
+
             <p className="text-[#4B5563] text-[16px] leading-[24px] font-medium font-gill">
-              Education at Pavna International School extends far beyond academics. Our diverse co-curricular programmes inspire students to explore their passions, build confidence, and develop essential life skills. Through music, dance, performing arts, visual arts, clubs, leadership programmes, sports, and creative activities, students enjoy a well-rounded educational experience that nurtures every aspect of their personality.
+              Education at Pavna International School extends far beyond
+              academics. Our diverse co-curricular programmes inspire students
+              to explore their passions, build confidence, and develop essential
+              life skills. Through music, dance, performing arts, visual arts,
+              clubs, leadership programmes, sports, and creative activities,
+              students enjoy a well-rounded educational experience that nurtures
+              every aspect of their personality.
             </p>
           </div>
 
           {/* Exact activities mentioned in the text listed in a visual grid of image containers */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { 
-                name: "Textile", 
-                image: "https://imgh.in/host/i9edig", 
+              {
+                name: "Textile",
+                image: "https://imgh.in/host/i9edig",
                 icon: Scissors,
-                desc: "Exploring standard weaves, patterns, and creative fiber expressions to design unique fabrics."
+                desc: "Exploring standard weaves, patterns, and creative fiber expressions to design unique fabrics.",
               },
-              { 
-                name: "Poetry", 
-                image: "https://imgh.in/host/w68hoz", 
+              {
+                name: "Pottery",
+                image: "https://imgh.in/host/w68hoz",
                 icon: BookOpen,
-                desc: "Nurturing deep literary voices, rhythmic expressions, and creative linguistic craftsmanship."
+                desc: "Nurturing deep literary voices, rhythmic expressions, and creative linguistic craftsmanship.",
               },
-              { 
-                name: "AI & Robotics", 
-                image: "https://imgh.in/host/inkczw", 
+              {
+                name: "AI & Robotics",
+                image: "https://imgh.in/host/inkczw",
                 icon: Cpu,
-                desc: "Engaging with cutting-edge electronics, logic block coding, and mechanical assemblies."
+                desc: "Engaging with cutting-edge electronics, logic block coding, and mechanical assemblies.",
               },
-              { 
-                name: "Music (Indian & Western)", 
-                image: "https://imgh.in/host/j4cq2l", 
+              {
+                name: "Music (Indian & Western)",
+                image: "https://imgh.in/host/j4cq2l",
                 icon: Music,
-                desc: "Cultivating vocal and instrumental mastery across classical and contemporary genres."
+                desc: "Cultivating vocal and instrumental mastery across classical and contemporary genres.",
               },
-              { 
-                name: "Performing Arts", 
-                image: "https://imgh.in/host/05xe1f", 
+              {
+                name: "Performing Arts",
+                image: "https://imgh.in/host/05xe1f",
                 icon: Layers,
-                desc: "Developing poise, theatrical confidence, stage presence, and expressive dramatic skills."
+                desc: "Developing poise, theatrical confidence, stage presence, and expressive dramatic skills.",
               },
-              { 
-                name: "Visual Arts", 
-                image: "https://imgh.in/host/82j4iu", 
+              {
+                name: "Visual Arts",
+                image: "https://imgh.in/host/82j4iu",
                 icon: Palette,
-                desc: "Unleashing fine creative imagination through painting, drawing, sculpting, and digital media."
-              }
+                desc: "Unleashing fine creative imagination through painting, drawing, sculpting, and digital media.",
+              },
             ].map((act, i) => {
               const IconComp = act.icon;
               return (
@@ -541,14 +571,14 @@ const CampusLife: FC = () => {
                 >
                   {/* Image Container */}
                   <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100 shrink-0">
-                    <img 
-                      src={act.image} 
-                      alt={act.name} 
+                    <img
+                      src={act.image}
+                      alt={act.name}
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    
+
                     {/* Floating Icon badge */}
                     <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/95 backdrop-blur-sm text-brand-orange flex items-center justify-center shadow-md border border-neutral-100 z-10">
                       <IconComp size={18} />
@@ -565,12 +595,14 @@ const CampusLife: FC = () => {
                         {act.desc}
                       </p>
                     </div>
-                    
+
                     {/* Tiny action visual indicator */}
-                    <div className="mt-4 flex items-center gap-1 text-[13px] font-bold text-brand-orange">
+                    {/* <div className="mt-4 flex items-center gap-1 text-[13px] font-bold text-brand-orange">
                       <span>Explore Program</span>
-                      <span className="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
-                    </div>
+                      <span className="group-hover:translate-x-1 transition-transform duration-300">
+                        &rarr;
+                      </span>
+                    </div> */}
                   </div>
                 </motion.div>
               );
@@ -580,10 +612,9 @@ const CampusLife: FC = () => {
           {/* Navigation Controls conforming with other academic/program pages */}
           <div className="mt-20 border-t border-neutral-200/60 pt-12">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-              
               {/* Previous button - Advance */}
               <div className="w-full sm:w-auto text-left order-2 sm:order-1">
-                <a 
+                <a
                   href="#advance-as-a-level"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
                 >
@@ -592,8 +623,8 @@ const CampusLife: FC = () => {
               </div>
 
               {/* Center Home button */}
-              <button 
-                onClick={() => window.location.hash = ''} 
+              <button
+                onClick={() => (window.location.hash = "")}
                 className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
               >
                 Return to Homepage
@@ -602,20 +633,17 @@ const CampusLife: FC = () => {
 
               {/* Next button */}
               <div className="w-full sm:w-auto text-right order-3">
-                <a 
+                <a
                   href="#boarding"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
                 >
                   Boarding &rarr;
                 </a>
               </div>
-
             </div>
           </div>
-
         </div>
       </section>
-
     </div>
   );
 };

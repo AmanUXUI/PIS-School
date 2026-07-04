@@ -20,7 +20,7 @@ export const CONTENT = {
           items: [
             { name: "Chairman's Message", href: "#chairmans-message" },
             { name: "Principal's Message", href: "#principals-message" },
-            { name: "Minds Behind PIS", href: "#minds-behind-pis" },
+            // { name: "Minds Behind PIS", href: "#minds-behind-pis" },
           ],
         },
       ],
