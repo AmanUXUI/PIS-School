@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'motion/react';
 
 const getItemDescription = (name: string): string => {
   const descriptions: Record<string, string> = {
-    "About PIS": "Our vision, mission & heritage",
+    "Overview": "Our vision, mission & heritage",
     "Academic Team": "Meet our dedicated educators",
     "Chairman's Message": "Leadership perspective & foresight",
     "Principal's Message": "Welcome from our Head of School",
@@ -168,7 +168,10 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 10, scale: 0.98 }}
                     transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                    className="absolute top-full left-0 bg-white border border-neutral-100/90 shadow-[0_20px_50px_rgba(32,26,91,0.12)] hidden lg:flex rounded-2xl overflow-hidden mt-1 p-2"
+                    className={cn(
+                      "absolute top-full bg-white border border-neutral-100/90 shadow-[0_20px_50px_rgba(32,26,91,0.12)] hidden lg:flex rounded-2xl overflow-hidden mt-1 p-2",
+                      link.name === "Contact Us" ? "right-0" : "left-0"
+                    )}
                     style={{ 
                       width: 'max-content',
                     }}

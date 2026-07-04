@@ -383,97 +383,104 @@ const BoardingPage: FC = () => {
             </div>
           </div>
 
-          {/* Horizontal Navigation Tabs Row */}
-          <div className="w-full mb-10 flex justify-center">
-            <div className="flex flex-wrap items-center justify-center gap-1.5 bg-neutral-100/80 p-1.5 rounded-2xl md:rounded-full border border-neutral-200/50 max-w-full">
+          {/* Split Layout: Vertical Sidebar + Content Card */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            {/* Left Sidebar: Vertical Navigation Tabs */}
+            <div className="lg:col-span-5 flex flex-col gap-3.5 w-full order-2 lg:order-1">
               {FACILITIES.map((facility) => {
                 const isActive = facility.id === activeTab;
+                const IconComp = facility.icon;
                 return (
                   <button
                     key={facility.id}
                     type="button"
                     onClick={() => setActiveTab(facility.id)}
-                    className={`relative px-4 py-2.5 rounded-xl md:rounded-full text-[11px] font-bold tracking-wider uppercase transition-all duration-300 group cursor-pointer focus:outline-none select-none ${
+                    className={`w-full flex items-center justify-between p-4 rounded-2xl border transition-all duration-300 group cursor-pointer text-left select-none focus:outline-none ${
                       isActive
-                        ? "text-white"
-                        : "text-brand-navy/75 hover:text-[#F48120]"
+                        ? "bg-[#FFF9F5] border-brand-orange/40 shadow-sm"
+                        : "bg-white border-neutral-200/50 hover:border-neutral-300/80 shadow-sm hover:shadow"
                     }`}
                   >
-                    {isActive && (
-                      <motion.div 
-                        layoutId="activeTabPill"
-                        className="absolute inset-0 bg-[#F48120] rounded-xl md:rounded-full z-0 shadow-sm"
-                        transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                      />
-                    )}
-                    <span className="relative z-10">
-                      {facility.tabTitle}
-                    </span>
+                    <div className="flex items-center gap-4">
+                      {/* Icon Container with Circular/Rounded Style */}
+                      <div className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${
+                        isActive 
+                          ? "bg-[#F48120] text-white shadow-sm" 
+                          : "bg-brand-orange/5 text-[#F48120]"
+                      }`}>
+                        <IconComp size={20} />
+                      </div>
+                      <span className={`text-[12px] md:text-[13px] font-bold tracking-wider uppercase font-sans leading-tight transition-colors ${
+                        isActive ? "text-brand-navy" : "text-brand-navy/85 group-hover:text-brand-orange"
+                      }`}>
+                        {facility.tabTitle}
+                      </span>
+                    </div>
+                    <ChevronRight 
+                      size={16} 
+                      className={`transition-all duration-300 shrink-0 ${
+                        isActive ? "text-[#F48120] translate-x-1" : "text-neutral-400 group-hover:text-neutral-600"
+                      }`} 
+                    />
                   </button>
                 );
               })}
             </div>
-          </div>
 
-          {/* Dynamic Content Panel - Expanded Full Width with high-end presentation */}
-          <div className="w-full">
-            <div className="bg-white rounded-[32px] border border-neutral-200/50 shadow-[0_24px_60px_rgba(32,26,91,0.04)] overflow-hidden relative min-h-[460px] md:min-h-[420px] lg:min-h-[400px]">
-              {/* Vertical side colored accent bar */}
-              <div className="absolute top-0 left-0 w-[6px] h-full bg-brand-orange pointer-events-none" />
-              
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeTab}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.4, ease: "easeOut" }}
-                  className="grid grid-cols-1 lg:grid-cols-12 w-full items-stretch min-h-[460px] md:min-h-[420px] lg:min-h-[400px]"
-                >
-                  {/* Info Column */}
-                  <div className="lg:col-span-7 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
-                    <div className="flex items-center gap-2 mb-4">
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase bg-[#F48120]/10 text-brand-orange">
-                        Premium Facility
-                      </span>
-                    </div>
-                    
-                    <h3 className="text-2xl sm:text-3xl font-serif font-bold text-brand-navy leading-tight mb-5 tracking-tight">
-                      {currentItem.heading}
-                    </h3>
-                    
-                    <p className="text-[#5B6271] text-base md:text-[17px] leading-relaxed font-medium">
-                      {currentItem.description}
-                    </p>
+            {/* Right Side: Dynamic Content Card */}
+            <div className="lg:col-span-7 w-full order-1 lg:order-2 lg:sticky lg:top-28">
+              <div className="bg-white rounded-[32px] border border-neutral-200/50 shadow-[0_24px_60px_rgba(32,26,91,0.04)] overflow-hidden relative min-h-[460px] md:min-h-[420px] lg:min-h-[440px] flex items-stretch">
+                {/* Thick vertical left-side orange line */}
+                <div className="absolute top-0 bottom-0 left-0 w-1.5 bg-[#F48120] pointer-events-none" />
+                
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={activeTab}
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -15 }}
+                    transition={{ duration: 0.35, ease: "easeOut" }}
+                    className="grid grid-cols-1 md:grid-cols-12 w-full items-center p-8 md:p-12 lg:p-12 gap-8"
+                  >
+                    {/* Text Column */}
+                    <div className="md:col-span-6 flex flex-col justify-center text-left">
+                      <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#1E1B4B] leading-tight mb-5 tracking-tight">
+                        {currentItem.heading}
+                      </h3>
+                      
+                      <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-medium font-sans">
+                        {currentItem.description}
+                      </p>
 
-                    {/* Quick highlights block to add outstanding craftsmanship */}
-                    <div className="mt-8 pt-6 border-t border-neutral-100 flex items-center gap-4 text-brand-navy/70 text-xs font-bold tracking-wider uppercase">
-                      <span className="flex items-center gap-1.5 text-brand-orange">
-                        <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
-                        Modern Amenities
-                      </span>
-                      <span className="text-neutral-300">|</span>
-                      <span className="flex items-center gap-1.5 text-brand-orange">
-                        <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
-                        World-Class Standards
-                      </span>
+                      {/* Micro indicators to add premium touch */}
+                      <div className="mt-8 pt-6 border-t border-neutral-100 flex items-center gap-4 text-brand-navy/70 text-[11px] font-bold tracking-wider uppercase font-sans">
+                        <span className="flex items-center gap-1.5 text-brand-orange">
+                          <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
+                          Modern Amenities
+                        </span>
+                        <span className="text-neutral-300">|</span>
+                        <span className="flex items-center gap-1.5 text-brand-orange">
+                          <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
+                          World-Class Standards
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Image Column */}
-                  <div className="lg:col-span-5 p-6 md:p-8 flex items-center justify-center bg-neutral-50/50">
-                    <div className="w-full h-full min-h-[280px] md:min-h-[340px] relative overflow-hidden rounded-[2rem] shadow-lg bg-neutral-100">
-                      <img 
-                        src={currentItem.image} 
-                        alt={currentItem.heading}
-                        className="absolute inset-0 w-full h-full object-cover scale-100 hover:scale-105 transition-transform duration-700"
-                        referrerPolicy="no-referrer"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
+                    {/* Image Column */}
+                    <div className="md:col-span-6 flex items-center justify-center">
+                      <div className="w-full aspect-[4/3] relative overflow-hidden rounded-[2rem] shadow-md bg-neutral-50 border border-neutral-100">
+                        <img 
+                          src={currentItem.image} 
+                          alt={currentItem.heading}
+                          className="absolute inset-0 w-full h-full object-cover scale-100 hover:scale-105 transition-transform duration-700"
+                          referrerPolicy="no-referrer"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
+                  </motion.div>
+                </AnimatePresence>
+              </div>
             </div>
           </div>
 

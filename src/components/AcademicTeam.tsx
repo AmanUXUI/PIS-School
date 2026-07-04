@@ -10,84 +10,121 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Dr. Shyama Chona",
-    designation: "(Educationist) President",
-    category: "Leadership",
-    image: "https://i.postimg.cc/02gKr06L/Guest-Image.png"
-  },
-  {
-    name: "Mr. Swapnil Jain",
-    designation: "(Industrialist) Chairman",
-    category: "Leadership",
-    image: "https://i.postimg.cc/fWpCQYHk/Guest-Image-2.png"
-  },
-  {
-    name: "Prof. KVSM Krishna",
-    designation: "Director Emeritus",
-    category: "Leadership",
-    image: "https://i.postimg.cc/dDctJ7yS/Guest-Image-3.png"
-  },
-  {
-    name: "Ms. Aarti Nigam",
+    name: "Aarti Nigam",
     designation: "Principal",
     category: "Leadership",
-    image: "https://i.postimg.cc/gcns7gHN/Guest-Image-4.png"
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/1.-AARTI-NIGAM-PRINCIPAL-KANPUR.png"
   },
   {
-    name: "Ms. Jeanie Aibara",
-    designation: "(Educationist) Head Academic Board",
-    category: "Academic Board",
-    image: "https://i.postimg.cc/HWVzN696/Guest-Image-5.png"
+    name: "Mansi Gurditta",
+    designation: "Teaching Assistant",
+    category: "Academic Support",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/16.-MANSI-GURDITTA-TEACHING-ASSISTANT-ALIGARH.png"
   },
   {
-    name: "CA Rakesh Bajaj",
-    designation: "(Educationist) Head Operations",
-    category: "Administration",
-    image: "https://i.postimg.cc/BZXpzmBp/Guest-Image-6.png"
+    name: "Rajyasree Ghosh",
+    designation: "Teacher Primary – Dance",
+    category: "Performing Arts",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/25.-RAJYASREE-GHOSH-PRIMARY-TEACHER-DANCE-KOLKATA.png"
   },
   {
-    name: "Mr. JC Pant",
-    designation: "(Educationist) Member",
-    category: "Academic Board",
-    image: "https://i.postimg.cc/sfqmC5Tw/Guest-Image-7.png"
+    name: "Bipul K Mehta",
+    designation: "Primary Teacher – P.E.",
+    category: "Physical Education",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/6.-BIPUL-K-MEHTA-PRIMARY-TEACHER-PHYSICAL-EDUCATION-JHARKHAND.png"
   },
   {
-    name: "Mr. Agam Jain",
-    designation: "(IPS) Member",
-    category: "Advisory Council",
-    image: "https://i.postimg.cc/2jMGNnHm/Guest-Image-8.png"
+    name: "Pavneet Kaur",
+    designation: "Head of Design & Technology",
+    category: "Design & Technology",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/18.-PAVNEET-KAUR-HEAD-OF-DESIGN-TECHNOLOGY-GURUGRAM.png"
   },
   {
-    name: "Mr. Gaurav Dayal",
-    designation: "(IAS) Member",
-    category: "Advisory Council",
-    image: "https://i.postimg.cc/WpC8c09N/Guest-Image-9.png"
+    name: "Dr. Runa Shelina Bano",
+    designation: "Teacher Secondary – Art & Design",
+    category: "Art & Design",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/27.-DR.-RUNA-SHELINA-BANO-PRIMARY-TEACHER-ART-DESIGN-MALDA-WEST-BENGAL.png"
   },
   {
-    name: "Mr. Piyush Mordia",
-    designation: "(IPS) Member",
-    category: "Advisory Council",
-    image: "https://i.postimg.cc/jqmcYy8t/Guest-Image-10.png"
+    name: "Charu Varshney",
+    designation: "Teacher – Music",
+    category: "Performing Arts",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/8.-CHARU-VARSHNEY-TEACHER-MUSIC-ALIGARH.png"
   },
   {
-    name: "Mr. Paras Parekh",
-    designation: "(Business) Member",
-    category: "Advisory Council",
-    image: "https://i.postimg.cc/Pf9yn165/Guest-Image-11.png"
+    name: "Poonam Chaturvedi",
+    designation: "Teacher – HRT – Stage 3",
+    category: "Primary Education",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/19.-POONAM-CHATURVEDI-TEACHER-HOME-ROOM-STAGE-3-ALIGARH.png"
   },
   {
-    name: "Mr. Pramod Kumar",
-    designation: "(Legal) Member",
-    category: "Advisory Council",
-    image: "https://i.postimg.cc/VspgPX7v/Guest-Image-12.png"
-  }
+    name: "Gagan Madan",
+    designation: "Teacher Secondary – P.E. Education",
+    category: "Physical Education",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/11.-GAGAN-MADAN-SECONDARY-TEACHER-PHYSICAL-EDUCATION-AGRA.png"
+  },
+  {
+    name: "Poonam Gaur",
+    designation: "Teacher Primary – ICT",
+    category: "ICT & Computing",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/20.-POONAM-GAUR-TEACHER-ICT-ALIGARH.png"
+  },
+  {
+    name: "Shabana Haleem",
+    designation: "Teacher Secondary – Global Perspectives",
+    category: "Global Perspectives",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/30.-SHABANA-HALEEM-SECONDARY-TEACHER-GLOBAL-PERSPECTIVE-ALIGARH.png"
+  },
+  {
+    name: "Poornima S Raghav",
+    designation: "Teaching Assistant",
+    category: "Academic Support",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/21.-POORNIMA-S-RAGHAV-TEACHING-ASSITANT-ALIGARH.png"
+  },
+  {
+    name: "Shilpi Chauhan",
+    designation: "Teacher Secondary – Hindi",
+    category: "Languages",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/31.-SHILPI-CHAUHAN-PRIMARY-HINDI-TEACHER-ALIGARH.png"
+  },
+  {
+    name: "Manisha Sharma",
+    designation: "Teacher – HRT – Stage 5",
+    category: "Primary Education",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/15.-MANISHA-SHARMA-TEACHER-HOME-ROOM-STAGE-5-ALIGARH.png"
+  },
+  {
+    name: "Prachi Maheshwari",
+    designation: "Teacher – Accountancy & BST",
+    category: "Commerce",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/22.-PRACHI-MAHESHWARI-TEACHER-ACCOUNTANCY-BUSINESS-STUDIES-ALIGARH.png"
+  },
+  {
+    name: "Soumyadip Banerjee",
+    designation: "Teacher Secondary – Dance",
+    category: "Performing Arts",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/33.-SOUMYADIP-BANERJEE-SECONDARY-TEACHER-DANCE-KOLKATA.png"
+  },
+  {
+    name: "Manoj Kumar",
+    designation: "Coordinator – Examination",
+    category: "Academic Support",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/16.-MANOJ-KUMAR-COORDINATOR-EXAMINATION-HYDERABAD.png"
+  },
+  {
+    name: "Prateek Mehta",
+    designation: "Teacher Secondary – Economics",
+    category: "Social Sciences",
+    image: "https://pavnaintlschool.com/wp-content/uploads/2024/03/23.-PRATEEK-MEHTA-SECONDARY-TEACHER-ECONOMICS-ALIGARH.png"
+  },
+
 ];
 
 const AcademicTeam: FC = () => {
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">
       
-      {/* 1. Header Hero Panel with Breadcrumbs (consistent with Early Years) */}
+      {/* 1. Header Hero Panel with Breadcrumbs */}
       <section className="relative bg-brand-navy text-white overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
           <img 
@@ -133,13 +170,13 @@ const AcademicTeam: FC = () => {
           
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-[11px] leading-none tracking-[2.5px] uppercase font-bold text-brand-orange bg-brand-orange/5 px-3 py-1.5 rounded-full border border-brand-orange/10 mb-3 inline-block">
-              Advisors & Leaders
+              Educators & Leaders
             </span>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-4">
-              Meet Our Academic Board & Council
+              Meet Our Faculty & Academic Team
             </h2>
             <p className="text-[#4B5563] text-[16px] leading-[24px] font-medium font-gill">
-              Our esteemed leadership, board members, and educationists working in unison to steer Pavna toward excellence.
+              Our esteemed faculty, leadership, and educators committed to nurturing excellence and preparing students to thrive in an ever-evolving world.
             </p>
           </div>
 
@@ -152,7 +189,7 @@ const AcademicTeam: FC = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: (i % 3) * 0.1, duration: 0.6 }}
+                  transition={{ delay: (i % 3) * 0.05, duration: 0.5 }}
                   className="bg-white rounded-2xl border border-neutral-100/90 shadow-sm overflow-hidden flex flex-col h-[400px] hover:border-brand-orange hover:shadow-[0_12px_24px_-10px_rgba(244,129,32,0.18)] transition-all duration-500 group"
                 >
                   {/* Image section occupying 70-75% of card height (290px out of 400px = 72.5%) */}
@@ -162,9 +199,6 @@ const AcademicTeam: FC = () => {
                       alt={member.name} 
                       className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-4 right-4 bg-brand-navy/90 backdrop-blur-sm text-[10px] uppercase font-bold tracking-widest text-brand-yellow px-3 py-1 rounded-full border border-white/10">
-                      {member.category}
-                    </div>
                   </div>
 
                   {/* Info section occupying remaining ~27.5% of card height (110px out of 400px) */}

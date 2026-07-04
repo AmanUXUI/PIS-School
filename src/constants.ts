@@ -11,7 +11,7 @@ export const CONTENT = {
         {
           title: "About",
           items: [
-            { name: "About PIS", href: "#about-overview" },
+            { name: "Overview", href: "#about-overview" },
             { name: "Academic Team", href: "#academic-team" }
           ]
         },
