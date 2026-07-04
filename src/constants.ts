@@ -71,6 +71,7 @@ export const CONTENT = {
     //     }
     //   ]
     // },
+
     {
       name: "Apply Online",
       href: "https://pavnaintlschool.campuscare.cloud/",
