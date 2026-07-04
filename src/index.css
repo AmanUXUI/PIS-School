@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  --font-serif: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+
+  --color-brand-orange: #F48120;
+  --color-brand-dark-orange: #e06e10;
+  --color-brand-darkOrange: #e06e10;
+  --color-brand-gray: #B5B3B3;
+  --color-brand-yellow: #FFCA05;
+  --color-brand-sky: #00B7DD;
+  --color-brand-navy: #201A5B;
+  --color-brand-primary: #201A5B;
+  --color-brand-black: #231F20;
+  --color-editorial-bg: #FDFCFB;
+}
+
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate3d(0, 10px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+a, button, summary {
+  touch-action: manipulation;
+}
+
+/* Smooth details open/close */
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+
+.ImpactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #201A5B;
+}
+
+.ImpactHead {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+@media (max-width:768px) {
+  .ImpactHead {
+    font-size: 22px;
+  }
+}
+
+.font-gill {
+  font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+.scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Enhanced Glass effect */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text-shadow {
+  text-shadow: 0 4px 20px rgba(32,26,91,0.8);
+}
+
+.banner-pattern {
+  background-image: radial-gradient(#201A5B 2px, transparent 2px);
+  background-size: 24px 24px;
+  opacity: 0.05;
+}
+.banner-pattern-white {
+  background-image: radial-gradient(#ffffff 2px, transparent 2px);
+  background-size: 24px 24px;
+  opacity: 0.05;
+}
+
+.geo-pattern {
+  background-image: 
+      radial-gradient(circle at 20px 20px, #DAD9D8 2px, transparent 0),
+      linear-gradient(to right, #f3f4f6 1px, transparent 1px),
+      linear-gradient(to bottom, #f3f4f6 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+}
+.animate-marquee-slow {
+  animation: marquee 110s linear infinite;
+  will-change: transform;
+}
+.marquee-hover:hover .animate-marquee {
+  animation-play-state: paused;
+}
+.marquee-hover:hover .animate-marquee-slow {
+  animation-play-state: paused;
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 10px rgba(244, 129, 32, 0.5);
+}
+
+
+@layer base {
+  body {
+    @apply font-sans text-[#1A202C] bg-editorial-bg;
+  }
+}
+
