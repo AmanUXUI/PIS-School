@@ -137,18 +137,9 @@ const BoardingPage: FC = () => {
       heading: "AC Rooms with Attached Bathrooms",
       description:
         "Our triple-sharing air-conditioned rooms are designed for comfort, cleanliness, and camaraderie. Each room has an attached bathroom and is maintained to the highest hygiene standards year-round.",
-      image:
-        "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-17.webp",
+      image: "https://imgh.in/host/tzjqe8",
       icon: Snowflake,
     },
-    // {
-    //   id: "apple-school",
-    //   tabTitle: "Apple Distinguished School",
-    //   heading: "Apple-Enabled Technology in Classrooms",
-    //   description: "As an Apple Distinguished School, we fuel a premier learning environment through continuous innovation. By integrating Apple technology, we create transformative, interactive experiences that empower every student to lead and succeed in tomorrow’s world.",
-    //   image: "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-21.webp",
-    //   icon: Apple
-    // },
     {
       id: "sports-facilities",
       tabTitle: "State-of-the-Art Sports",
@@ -185,8 +176,7 @@ const BoardingPage: FC = () => {
       heading: "Pure Vegetarian Dining",
       description:
         "Our in-house kitchen serves freshly prepared, pure vegetarian meals three times a day — nutritionally balanced menus curated to support growing minds and bodies with wholesome, hygienic food.",
-      image:
-        "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-22.webp",
+      image: "https://imgh.in/host/7h0ubp",
       icon: Utensils,
     },
     {
@@ -378,7 +368,7 @@ const BoardingPage: FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: "World - Class Cambridge  Curriculum",
+                title: "World-class Curriculum: CBSE & Cambridge",
                 desc: "A balanced global academic pathway designed to foster deep intellectual curiosity, critical thinking, and structured lifelong learning.",
                 symbol: "school",
               },
@@ -465,10 +455,10 @@ const BoardingPage: FC = () => {
             </div>
           </div>
 
-          {/* Split Layout: Vertical Sidebar + Content Card */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          {/* Desktop View: Split Layout (Vertical Sidebar + Content Card) */}
+          <div className="hidden lg:grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* Left Sidebar: Vertical Navigation Tabs */}
-            <div className="lg:col-span-5 flex flex-col gap-3.5 w-full order-2 lg:order-1">
+            <div className="lg:col-span-4 flex flex-col gap-3.5 w-full order-2 lg:order-1">
               {FACILITIES.map((facility) => {
                 const isActive = facility.id === activeTab;
                 const IconComp = facility.icon;
@@ -518,10 +508,10 @@ const BoardingPage: FC = () => {
             </div>
 
             {/* Right Side: Dynamic Content Card */}
-            <div className="lg:col-span-7 w-full order-1 lg:order-2 lg:sticky lg:top-28">
-              <div className="bg-white rounded-[32px] border border-neutral-200/50 shadow-[0_24px_60px_rgba(32,26,91,0.04)] overflow-hidden relative min-h-[460px] md:min-h-[420px] lg:min-h-[440px] flex items-stretch">
+            <div className="lg:col-span-8 w-full order-1 lg:order-2 lg:sticky lg:top-28">
+              <div className="bg-white rounded-[32px] border border-neutral-200/50 shadow-[0_24px_60px_rgba(32,26,91,0.04)] overflow-hidden relative min-h-[480px] md:min-h-[420px] lg:min-h-[440px] flex items-stretch">
                 {/* Thick vertical left-side orange line */}
-                <div className="absolute top-0 bottom-0 left-0 w-1.5 bg-[#F48120] pointer-events-none" />
+                <div className="absolute top-0 bottom-0 left-0 w-1.5 bg-[#F48120] pointer-events-none z-20" />
 
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -530,20 +520,20 @@ const BoardingPage: FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -15 }}
                     transition={{ duration: 0.35, ease: "easeOut" }}
-                    className="grid grid-cols-1 md:grid-cols-12 w-full items-center p-8 md:p-12 lg:p-12 gap-8"
+                    className="grid grid-cols-1 md:grid-cols-12 w-full items-stretch"
                   >
                     {/* Text Column */}
-                    <div className="md:col-span-6 flex flex-col justify-center text-left">
-                      <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#1E1B4B] leading-tight mb-5 tracking-tight">
+                    <div className="md:col-span-6 flex flex-col justify-center text-left p-6 sm:p-8 md:p-10 lg:p-12 order-2 md:order-1">
+                      <h3 className="text-xl sm:text-2xl lg:text-[28px] font-serif font-bold text-brand-navy leading-snug mb-4 tracking-tight">
                         {currentItem.heading}
                       </h3>
 
-                      <p className="text-neutral-600 text-sm sm:text-base leading-relaxed font-medium font-sans">
+                      <p className="text-neutral-600 text-sm sm:text-[15px] lg:text-base leading-relaxed font-medium font-sans">
                         {currentItem.description}
                       </p>
 
                       {/* Micro indicators to add premium touch */}
-                      <div className="mt-8 pt-6 border-t border-neutral-100 flex items-center gap-4 text-brand-navy/70 text-[11px] font-bold tracking-wider uppercase font-sans">
+                      <div className="mt-6 pt-5 border-t border-neutral-100 flex flex-wrap items-center gap-x-4 gap-y-2 text-brand-navy/70 text-[10px] lg:text-[11px] font-bold tracking-wider uppercase font-sans">
                         <span className="flex items-center gap-1.5 text-brand-orange">
                           <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
                           Modern Amenities
@@ -557,21 +547,113 @@ const BoardingPage: FC = () => {
                     </div>
 
                     {/* Image Column */}
-                    <div className="md:col-span-6 flex items-center justify-center">
-                      <div className="w-full aspect-[4/3] relative overflow-hidden rounded-[2rem] shadow-md bg-neutral-50 border border-neutral-100">
-                        <img
-                          src={currentItem.image}
-                          alt={currentItem.heading}
-                          className="absolute inset-0 w-full h-full object-cover scale-100 hover:scale-105 transition-transform duration-700"
-                          referrerPolicy="no-referrer"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
-                      </div>
+                    <div className="md:col-span-6 relative min-h-[240px] md:min-h-full overflow-hidden bg-neutral-100 order-1 md:order-2">
+                      <img
+                        src={currentItem.image}
+                        alt={currentItem.heading}
+                        className="absolute inset-0 w-full h-full object-cover scale-100 hover:scale-105 transition-transform duration-700"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-black/20 via-transparent to-transparent pointer-events-none" />
                     </div>
                   </motion.div>
                 </AnimatePresence>
               </div>
             </div>
+          </div>
+
+          {/* Mobile/Tablet View: Inline Accordions / Dropdowns */}
+          <div className="lg:hidden flex flex-col gap-4 w-full">
+            {FACILITIES.map((facility) => {
+              const isOpen = activeTab === facility.id;
+              const IconComp = facility.icon;
+              return (
+                <div
+                  key={facility.id}
+                  className="bg-white rounded-2xl border border-neutral-200/50 shadow-sm overflow-hidden"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab(isOpen ? "" : facility.id)}
+                    className={`w-full flex items-center justify-between p-4 text-left transition-all duration-300 cursor-pointer select-none focus:outline-none ${
+                      isOpen
+                        ? "bg-[#FFF9F5] border-b border-neutral-100"
+                        : "bg-white"
+                    }`}
+                  >
+                    <div className="flex items-center gap-3.5">
+                      <div
+                        className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-colors ${
+                          isOpen
+                            ? "bg-[#F48120] text-white shadow-sm"
+                            : "bg-brand-orange/5 text-[#F48120]"
+                        }`}
+                      >
+                        <IconComp size={18} />
+                      </div>
+                      <span
+                        className={`text-[12px] sm:text-[13px] font-bold tracking-wider uppercase font-sans transition-colors ${
+                          isOpen ? "text-brand-navy" : "text-brand-navy/85"
+                        }`}
+                      >
+                        {facility.tabTitle}
+                      </span>
+                    </div>
+                    <ChevronDown
+                      size={18}
+                      className={`text-neutral-400 transition-transform duration-300 shrink-0 ${
+                        isOpen ? "rotate-180 text-brand-orange" : ""
+                      }`}
+                    />
+                  </button>
+
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="overflow-hidden"
+                      >
+                        <div className="p-5 flex flex-col gap-5 bg-white text-left">
+                          {/* Image inside expanded item */}
+                          <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-200/50">
+                            <img
+                              src={facility.image}
+                              alt={facility.heading}
+                              className="absolute inset-0 w-full h-full object-cover"
+                              referrerPolicy="no-referrer"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
+                          </div>
+
+                          <div className="flex flex-col">
+                            <h4 className="text-lg font-serif font-bold text-brand-navy mb-2 leading-tight">
+                              {facility.heading}
+                            </h4>
+                            <p className="text-neutral-600 text-sm leading-relaxed font-sans font-medium">
+                              {facility.description}
+                            </p>
+
+                            <div className="mt-4 pt-4 border-t border-neutral-100 flex flex-wrap gap-x-4 gap-y-2 text-[10px] font-bold tracking-wider uppercase font-sans text-brand-navy/70">
+                              <span className="flex items-center gap-1.5 text-brand-orange">
+                                <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
+                                Modern Amenities
+                              </span>
+                              <span className="flex items-center gap-1.5 text-brand-orange">
+                                <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
+                                World-Class Standards
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

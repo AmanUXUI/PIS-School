@@ -102,7 +102,7 @@ const Admissions: FC = () => {
             <span className="text-white/30">/</span>
             <span className="text-white/50">Join Us</span>
             <span className="text-white/30">/</span>
-            <span className="text-brand-orange font-bold">Admission</span>
+            <span className="text-brand-orange font-bold">Overview</span>
           </div>
 
           <motion.div
@@ -111,8 +111,8 @@ const Admissions: FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <h1 className="text-4xl md:text-[52px] lg:text-[52px] font-sans font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight text-white mb-4">
-              Admissions
+            <h1 className="text-4xl md:text-[52px] lg:text-[52px] font-gill font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight text-white mb-4">
+              Overview
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light font-gill max-w-2xl">
               A premium, simple, and transparent gateway to a world of endless
@@ -143,7 +143,7 @@ const Admissions: FC = () => {
                   href="https://pavnaintlschool.campuscare.cloud/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-[4px] bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer font-sans"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-[4px] bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer font-gill"
                 >
                   Apply Now
                   <ArrowRight size={15} />
@@ -219,9 +219,6 @@ const Admissions: FC = () => {
                     <div className="w-12 h-12 rounded-full bg-brand-orange/5 flex items-center justify-center text-brand-orange shrink-0 transition-all duration-500 group-hover:bg-brand-orange group-hover:text-white">
                       <IconComp size={22} className="stroke-[1.75]" />
                     </div>
-                    <span className="text-3xl font-sans font-extrabold text-neutral-100 group-hover:text-brand-orange/15 transition-colors duration-500">
-                      {el.num}
-                    </span>
                   </div>
 
                   <h3 className="text-[17px] font-serif font-bold text-brand-navy mb-2 group-hover:text-brand-orange transition-colors duration-300">
@@ -264,7 +261,7 @@ const Admissions: FC = () => {
                 href="https://pavnaintlschool.campuscare.cloud/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-[4px] bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer font-sans"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-[4px] bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer font-gill"
               >
                 Apply Now
                 <ArrowRight size={15} />
@@ -334,9 +331,9 @@ const Admissions: FC = () => {
             <div className="bg-white p-1 rounded-full border border-neutral-200/85 shadow-sm flex items-center">
               <button
                 onClick={() => setActiveFeeTab("day-boarders")}
-                className={`relative px-8 py-3 rounded-full text-[11px] font-sans font-bold tracking-wider uppercase transition-all duration-300 select-none cursor-pointer ${
+                className={`relative px-8 py-3 rounded-full text-[11px] font-gill font-bold tracking-wider uppercase transition-all duration-300 select-none cursor-pointer ${
                   activeFeeTab === "day-boarders"
-                    ? "text-white font-extrabold"
+                    ? "text-white"
                     : "text-brand-navy/75 hover:text-brand-orange"
                 }`}
               >
@@ -352,9 +349,9 @@ const Admissions: FC = () => {
 
               <button
                 onClick={() => setActiveFeeTab("boarders")}
-                className={`relative px-8 py-3 rounded-full text-[11px] font-sans font-bold tracking-wider uppercase transition-all duration-300 select-none cursor-pointer ${
+                className={`relative px-8 py-3 rounded-full text-[11px] font-gill font-bold tracking-wider uppercase transition-all duration-300 select-none cursor-pointer ${
                   activeFeeTab === "boarders"
-                    ? "text-white font-extrabold"
+                    ? "text-white"
                     : "text-brand-navy/75 hover:text-brand-orange"
                 }`}
               >
@@ -375,7 +372,7 @@ const Admissions: FC = () => {
             {activeFeeTab === "day-boarders" ? (
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="bg-brand-navy text-white text-[11px] font-sans font-bold uppercase tracking-wider">
+                  <tr className="bg-brand-navy text-white text-[11px] font-gill font-bold uppercase tracking-wider">
                     <th className="py-5 px-6 border-b border-white/10">
                       Particulars
                     </th>
@@ -383,7 +380,7 @@ const Admissions: FC = () => {
                       To be Paid
                     </th>
                     <th className="py-5 px-6 border-b border-white/10 text-center bg-brand-navy/95">
-                      <div className="font-sans font-extrabold text-[13px] text-brand-orange">
+                      <div className="font-gill font-bold text-[13px] text-brand-orange">
                         EY 1 - Stage 3
                       </div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">
@@ -391,7 +388,7 @@ const Admissions: FC = () => {
                       </div>
                     </th>
                     <th className="py-5 px-6 border-b border-white/10 text-center">
-                      <div className="font-sans font-extrabold text-[13px] text-white">
+                      <div className="font-gill font-bold text-[13px] text-white">
                         Stage 4 - Stage 9
                       </div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">
@@ -399,7 +396,7 @@ const Admissions: FC = () => {
                       </div>
                     </th>
                     <th className="py-5 px-6 border-b border-white/10 text-center">
-                      <div className="font-sans font-extrabold text-[13px] text-white">
+                      <div className="font-gill font-bold text-[13px] text-white">
                         Stage 10 - Stage 13
                       </div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">
@@ -482,7 +479,7 @@ const Admissions: FC = () => {
             ) : (
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="bg-brand-navy text-white text-[11px] font-sans font-bold uppercase tracking-wider">
+                  <tr className="bg-brand-navy text-white text-[11px] font-gill font-bold uppercase tracking-wider">
                     <th className="py-5 px-6 border-b border-white/10">
                       Particulars
                     </th>
@@ -490,7 +487,7 @@ const Admissions: FC = () => {
                       To be Paid
                     </th>
                     <th className="py-5 px-6 border-b border-white/10 text-center bg-brand-navy/95">
-                      <div className="font-sans font-extrabold text-[13px] text-brand-orange">
+                      <div className="font-gill font-bold text-[13px] text-brand-orange">
                         Stage 7 - Stage 9
                       </div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">
@@ -498,7 +495,7 @@ const Admissions: FC = () => {
                       </div>
                     </th>
                     <th className="py-5 px-6 border-b border-white/10 text-center">
-                      <div className="font-sans font-extrabold text-[13px] text-white">
+                      <div className="font-gill font-bold text-[13px] text-white">
                         Stage 10 - Stage 13
                       </div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">
@@ -882,11 +879,11 @@ const Admissions: FC = () => {
                   key={idx}
                   className="bg-white p-6 rounded-2xl border border-neutral-200/60 shadow-sm flex flex-col justify-between relative group hover:border-brand-orange/40 transition-all duration-500"
                 >
-                  <div className="absolute top-4 right-4 text-xs font-sans font-bold text-neutral-100 group-hover:text-brand-orange/20 transition-colors duration-500">
+                  <div className="absolute top-4 right-4 text-xs font-gill font-bold text-neutral-100 group-hover:text-brand-orange/20 transition-colors duration-500">
                     0{idx + 1}
                   </div>
                   <div>
-                    <h4 className="text-[11px] font-sans font-bold text-neutral-400 uppercase tracking-widest mb-2">
+                    <h4 className="text-[11px] font-gill font-bold text-neutral-400 uppercase tracking-widest mb-2">
                       {item.term}
                     </h4>
                     <p className="text-brand-navy font-serif font-bold text-[18px] group-hover:text-brand-orange transition-colors duration-300">
@@ -898,152 +895,51 @@ const Admissions: FC = () => {
             </div>
           </div>
 
-          {/* Bank Details & Guidelines Row */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16">
-            {/* Bank Details */}
-            <div className="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-neutral-200/60 shadow-sm flex flex-col justify-between">
-              <div>
-                <div className="flex items-center justify-between mb-6">
-                  <h4 className="text-[18px] font-serif font-bold text-brand-navy flex items-center gap-2">
-                    <Building2
-                      size={20}
-                      className="text-brand-orange stroke-[1.75]"
-                    />
-                    Bank Details
-                  </h4>
-                  <span className="text-[9px] font-sans font-bold tracking-wider uppercase bg-brand-orange/10 text-brand-orange px-2.5 py-1 rounded">
-                    HDFC BANK
+          {/* Note & Guidelines Block */}
+          <div className="bg-[#111A2E] text-white p-6 sm:p-8 rounded-2xl shadow-md border border-white/5 flex flex-col justify-between mb-16">
+            <div>
+              <h4 className="text-lg font-serif font-bold text-[#F48120] mb-6 flex items-center gap-2">
+                <Info size={18} className="stroke-[2]" />
+                Important Note
+              </h4>
+
+              <ul className="space-y-5 text-sm text-white/85 font-gill leading-relaxed">
+                <li className="flex gap-3 items-start">
+                  <span className="text-[#F48120] font-bold mt-1 text-base leading-none">
+                    •
                   </span>
-                </div>
-
-                <div className="space-y-4 text-sm font-gill text-neutral-600">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b border-neutral-100 gap-1">
-                    <span className="text-neutral-500 font-medium">
-                      Beneficiary Name
-                    </span>
-                    <span className="font-bold text-brand-navy text-left text-[15px]">
-                      Pavna International School Unit of PISPL
-                    </span>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b border-neutral-100 gap-1">
-                    <span className="text-neutral-500 font-medium">
-                      Bank Name
-                    </span>
-                    <span className="font-bold text-brand-navy text-left text-[15px]">
-                      HDFC Bank
-                    </span>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b border-neutral-100 gap-2">
-                    <span className="text-neutral-500 font-medium">
-                      Bank A/C Number
-                    </span>
-                    <div className="flex items-center gap-2">
-                      <span className="font-bold text-brand-navy font-mono text-[15px] select-all">
-                        50200063499317
-                      </span>
-                      <button
-                        onClick={() => handleCopy("50200063499317", "acc")}
-                        className="p-1 rounded hover:bg-neutral-100 text-neutral-400 hover:text-brand-orange transition-all cursor-pointer"
-                        title="Copy Account Number"
-                      >
-                        {copiedField === "acc" ? (
-                          <Check size={14} className="text-green-600" />
-                        ) : (
-                          <Copy size={14} />
-                        )}
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b border-neutral-100 gap-2">
-                    <span className="text-neutral-500 font-medium">
-                      IFSC Code
-                    </span>
-                    <div className="flex items-center gap-2">
-                      <span className="font-bold text-brand-navy font-mono text-[15px] select-all">
-                        HDFC0000380
-                      </span>
-                      <button
-                        onClick={() => handleCopy("HDFC0000380", "ifsc")}
-                        className="p-1 rounded hover:bg-neutral-100 text-neutral-400 hover:text-brand-orange transition-all cursor-pointer"
-                        title="Copy IFSC Code"
-                      >
-                        {copiedField === "ifsc" ? (
-                          <Check size={14} className="text-green-600" />
-                        ) : (
-                          <Copy size={14} />
-                        )}
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row sm:items-start justify-between py-2 border-b border-neutral-100 gap-1">
-                    <span className="text-neutral-500 font-medium shrink-0">
-                      Branch
-                    </span>
-                    <span className="font-bold text-brand-navy text-left sm:text-right text-[15px]">
-                      3-316, Ramghat Road, Aligarh 202001, Uttar Pradesh
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-neutral-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-neutral-400 font-gill">
-                <span>*Please mention student details in payment remarks.</span>
-                <span className="font-bold text-brand-orange">
-                  Online, DD/Cheque in favor of "Pavna International School"
-                </span>
-              </div>
+                  <span>
+                    The examination fees per subject for the Cambridge
+                    International examinations i.e. Checkpoint(s), IGCSE, AS and
+                    A Levels, will be charged extra on an actual basis.
+                  </span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-[#F48120] font-bold mt-1 text-base leading-none">
+                    •
+                  </span>
+                  <span>
+                    The registration fee and admission fee are one time and
+                    non-refundable.
+                  </span>
+                </li>
+              </ul>
             </div>
 
-            {/* Note & Guidelines Block */}
-            <div className="lg:col-span-5 bg-[#111A2E] text-white p-6 sm:p-8 rounded-2xl shadow-md border border-white/5 flex flex-col justify-between">
-              <div>
-                <h4 className="text-lg font-serif font-bold text-[#F48120] mb-6 flex items-center gap-2">
-                  <Info size={18} className="stroke-[2]" />
-                  Important Note
-                </h4>
-
-                <ul className="space-y-5 text-sm text-white/85 font-gill leading-relaxed">
-                  <li className="flex gap-3 items-start">
-                    <span className="text-[#F48120] font-bold mt-1 text-base leading-none">
-                      •
-                    </span>
-                    <span>
-                      The examination fees per subject for the Cambridge
-                      International examinations i.e. Checkpoint(s), IGCSE, AS
-                      and A Levels, will be charged extra on an actual basis.
-                    </span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-[#F48120] font-bold mt-1 text-base leading-none">
-                      •
-                    </span>
-                    <span>
-                      The registration fee and admission fee are one time and
-                      non-refundable.
-                    </span>
-                  </li>
-                </ul>
+            <div className="mt-8 pt-6 border-t border-white/10">
+              <div className="text-[10px] uppercase tracking-widest text-white/40 font-bold font-gill mb-1.5">
+                For queries & verification
               </div>
-
-              <div className="mt-8 pt-6 border-t border-white/10">
-                <div className="text-[10px] uppercase tracking-widest text-white/40 font-bold font-sans mb-1.5">
-                  For queries & verification
-                </div>
-                <a
-                  href="mailto:accounts@pavnaintlschool.com"
-                  className="text-white hover:text-brand-orange font-bold text-[15px] flex items-center gap-2.5 transition-colors group"
-                >
-                  <Mail
-                    size={16}
-                    className="text-brand-orange group-hover:scale-110 transition-transform"
-                  />
-                  accounts@pavnaintlschool.com
-                </a>
-              </div>
+              <a
+                href="mailto:accounts@pavnaintlschool.com"
+                className="text-white hover:text-brand-orange font-bold text-[15px] flex items-center gap-2.5 transition-colors group"
+              >
+                <Mail
+                  size={16}
+                  className="text-brand-orange group-hover:scale-110 transition-transform"
+                />
+                accounts@pavnaintlschool.com
+              </a>
             </div>
           </div>
 
@@ -1054,7 +950,7 @@ const Admissions: FC = () => {
               <div className="w-full sm:w-auto text-left order-2 sm:order-1">
                 <a
                   href="#boarding"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-gill"
                 >
                   &larr; Boarding
                 </a>
@@ -1073,7 +969,7 @@ const Admissions: FC = () => {
               {/* <div className="w-full sm:w-auto text-right order-3">
                 <a 
                   href="#blog"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-gill"
                 >
                   News & Media &rarr;
                 </a>
