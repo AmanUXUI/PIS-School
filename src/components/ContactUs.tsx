@@ -176,7 +176,7 @@ export const ContactUs: FC = () => {
                 <h1 className="text-3xl sm:text-4xl font-sans font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight  text-brand-navy mb-4">
                   Enquire Now
                 </h1>
-                <p className="text-[16px] md:text-[20px] leading-relaxed font-light font-gill max-w-2xl text-[#4B5563]">
+                <p className="text-[16px] md:text-[18px] leading-[24px] font-medium font-gill text-[#4B5563] transition-colors">
                   Take the first step towards a vibrant academic journey for
                   your child.
                 </p>
