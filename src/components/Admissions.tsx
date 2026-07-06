@@ -100,8 +100,6 @@ const Admissions: FC = () => {
               Home
             </span>
             <span className="text-white/30">/</span>
-            <span className="text-white/50">Join Us</span>
-            <span className="text-white/30">/</span>
             <span className="text-brand-orange font-bold">Admission</span>
           </div>
 
