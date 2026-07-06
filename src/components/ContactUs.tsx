@@ -173,10 +173,10 @@ export const ContactUs: FC = () => {
                 transition={{ duration: 0.8 }}
                 className="max-w-3xl"
               >
-                <h1 className="text-4xl md:text-[52px] lg:text-[52px] font-sans font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight  text-brand-navy mb-4">
+                <h1 className="text-3xl sm:text-4xl font-sans font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight  text-brand-navy mb-4">
                   Enquire Now
                 </h1>
-                <p className="text-lg md:text-xl leading-relaxed font-light font-gill max-w-2xl text-[#4B5563]">
+                <p className="text-[16px] md:text-[20px] leading-relaxed font-light font-gill max-w-2xl text-[#4B5563]">
                   Take the first step towards a vibrant academic journey for
                   your child.
                 </p>
