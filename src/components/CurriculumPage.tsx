@@ -259,6 +259,7 @@ const CurriculumPage: FC = () => {
               <span className="text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                 Age 3 to 19 Stages
               </span>
+              <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
             </div>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight">
               A clear path for educational success
