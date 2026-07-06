@@ -25,6 +25,7 @@ const getItemDescription = (name: string): string => {
     "Let's Talk": "Connect directly with our advisors",
     Careers: "Grow your teaching career with us",
     "Enquire Now": "Start your admissions journey today",
+    "Get in Touch": "Get in touch with our Sasni campus",
   };
   return descriptions[name] || "Learn more about our programs";
 };
