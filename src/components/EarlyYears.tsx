@@ -67,7 +67,7 @@ const EarlyYears: FC = () => {
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
-          <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 text-xs md:text-sm text-brand-gray mb-6 text-center md:text-left w-full">
+          <div className="flex flex-wrap items-center justify-start gap-2 text-xs md:text-sm text-brand-gray mb-6 text-center md:text-left w-full">
             <span className="hover:text-brand-orange transition-colors cursor-pointer" onClick={() => window.location.hash = ''}>Home</span>
             <span className="text-white/30">/</span>
             <span className="text-white/50">Academics</span>
@@ -79,7 +79,7 @@ const EarlyYears: FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-3xl text-center md:text-left mx-auto md:mx-0"
+            className="max-w-3xl text-left mx-auto md:mx-0"
           >
             <h1 className="text-4xl md:text-[52px] lg:text-[52px] font-sans font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight text-white mb-2">
               Early Years

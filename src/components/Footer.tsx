@@ -51,7 +51,7 @@ const Footer: FC = () => {
                   </span>
                 </div>
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center relative z-10 group-hover/btn:bg-white group-hover/btn:text-brand-orange transition-colors duration-300 shadow-sm">
-                  <i className="fas fa-arrow-right transform -rotate-45 group-hover/btn:rotate-0 group-hover/btn:-translate-y-1 transition-transform duration-300"></i>
+                  <i className="fas fa-arrow-right transform -rotate-45 group-hover/btn:rotate-0 transition-transform duration-300"></i>
                 </div>
               </a>
             </div>
@@ -187,7 +187,7 @@ const Footer: FC = () => {
                   <a href="#minds-behind-pis" className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Minds Behind PIS
-                  </a>
+                  </a> 
                 </li> */}
               </ul>
             </div>

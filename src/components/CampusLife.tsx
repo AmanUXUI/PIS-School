@@ -570,15 +570,14 @@ const CampusLife: FC = () => {
                   className="group bg-white rounded-2xl overflow-hidden border border-neutral-200/60 shadow-sm hover:shadow-xl hover:border-brand-orange/50 transition-all duration-300 flex flex-col h-full"
                 >
                   {/* Image Container */}
-                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100 shrink-0">
+                  <div className="relative aspect-[4/5] w-full overflow-hidden bg-neutral-50 shrink-0">
                     <img
                       src={act.image}
                       alt={act.name}
-                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />{" "}
                     {/* Floating Icon badge */}
                     <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/95 backdrop-blur-sm text-brand-orange flex items-center justify-center shadow-md border border-neutral-100 z-10">
                       <IconComp size={18} />

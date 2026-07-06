@@ -31,10 +31,35 @@ import ContactUs from "./components/ContactUs";
 import Careers from "./components/Careers";
 import EnquireNow from "./components/EnquireNow";
 import CurriculumPage from "./components/CurriculumPage";
+import NotFound from "./components/NotFound";
 
 export default function App() {
   const [currentHash, setCurrentHash] = useState(window.location.hash);
+  const validHashes = [
+    "",
+    "#",
+    "#about-overview",
+    "#academic-team",
+    "#chairmans-message",
+    "#principals-message",
+    "#minds-behind-pis",
+    "#curriculum",
+    "#early-years",
+    "#primary",
+    "#lower-secondary",
+    "#upper-secondary",
+    "#advance-as-a-level",
+    "#campus-life",
+    "#admissions",
+    "#boarding",
+    "#careers",
+    "#enquire-now",
+    "#contact-us",
+    "#lets-talk",
+  ];
 
+  // 2. Check karein ki current hash valid list me hai ya nahi
+  const is404 = !validHashes.includes(currentHash);
   useEffect(() => {
     const handleHashChange = () => {
       setCurrentHash(window.location.hash);
@@ -73,7 +98,9 @@ export default function App() {
     <div className="relative min-h-screen">
       <Navbar />
       <main>
-        {isAboutOverview ? (
+        {is404 ? (
+          <NotFound />
+        ) : isAboutOverview ? (
           <AboutOverview />
         ) : isAcademicTeam ? (
           <AcademicTeam />
