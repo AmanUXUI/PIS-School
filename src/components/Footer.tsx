@@ -108,7 +108,7 @@ const Footer: FC = () => {
                     204213 (U.P.), India
                     <div className="mt-1 text-brand-sky font-bold flex items-center">
                       <i className="fas fa-phone-alt mr-2 text-[10px]"></i> +91
-                      8006409329
+                      7500812182
                     </div>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ const Footer: FC = () => {
                     Uttar Pradesh, India
                     <div className="mt-1 text-brand-sky font-bold flex items-center">
                       <i className="fas fa-phone-alt mr-2 text-[10px]"></i> +91
-                      8006409329
+                      8006409344
                     </div>
                   </div>
                 </div>
