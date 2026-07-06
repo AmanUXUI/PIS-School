@@ -155,7 +155,7 @@ export const ContactUs: FC = () => {
             {/* Left Column: Contact Details & Social */}
             <div className="lg:col-span-5 flex flex-col space-y-10">
               {/* Header Title */}
-              <div className="flex flex-col items-start w-fit max-w-full">
+              {/* <div className="flex flex-col items-start w-fit max-w-full">
                 <div className="flex items-center gap-3 mb-6 w-full">
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
@@ -166,7 +166,21 @@ export const ContactUs: FC = () => {
                 <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight">
                   Contact Us
                 </h2>
-              </div>
+              </div> */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="max-w-3xl"
+              >
+                <h1 className="text-4xl md:text-[52px] lg:text-[52px] font-sans font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight  text-brand-navy mb-4">
+                  Enquire Now
+                </h1>
+                <p className="text-lg md:text-xl leading-relaxed font-light font-gill max-w-2xl text-[#4B5563]">
+                  Take the first step towards a vibrant academic journey for
+                  your child.
+                </p>
+              </motion.div>
 
               {/* Core Details with beautiful layout and icons */}
               <div className="space-y-8 text-brand-navy">
