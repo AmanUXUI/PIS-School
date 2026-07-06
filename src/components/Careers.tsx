@@ -20,7 +20,7 @@ import {
   CheckCircle2,
   X,
 } from "lucide-react";
-const PRIMARY_EMAIL = "HEADMARKETING@pavnagroup.com";
+const PRIMARY_EMAIL = "mathursakshi749@gmail.com";
 
 const Careers: FC = () => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
@@ -124,21 +124,17 @@ const Careers: FC = () => {
       "_subject",
       `New Job Application: ${data.jobTitle} - ${data.name}`,
     );
-    dataToSend.append("_captcha", "false"); // Disables FormSubmit's native interactive captcha since you have a custom one
-    dataToSend.append("_template", "table"); // Formats email beautifully as a clean table
+    dataToSend.append("_captcha", "false");
+    dataToSend.append("_template", "table");
 
-    // Application Fields (Cleaned up keys)
     dataToSend.append("Full Name", data.name.trim());
     dataToSend.append("Email Address", data.email.trim());
     dataToSend.append("Phone Number", data.phone.trim());
     dataToSend.append("Job Title", data.jobTitle.trim());
     dataToSend.append("Address", data.address.trim());
     dataToSend.append("Message", data.message.trim());
-
-    // File Attachment Configuration Fix
     if (file) {
-      // Changing key name to 'attachment' ensures FormSubmit processes it cleanly as an email download link/attachment
-      dataToSend.append("attachment", file, file.name);
+      dataToSend.append("attachment", file);
       console.log("File successfully appended:", file.name);
     } else {
       console.warn("No file object provided to submission payload");
@@ -147,27 +143,18 @@ const Careers: FC = () => {
     dataToSend.append("Submitted From Page Url", window.location.href);
     dataToSend.append("Submission Date", new Date().toLocaleString());
 
-    // Explicitly set headers to Accept JSON for AJAX Requests
     const response = await fetch(
-      `https://formsubmit.co/ajax/${encodeURIComponent(email)}`,
+      `https://formsubmit.co/${encodeURIComponent(email)}`,
       {
         method: "POST",
-        headers: {
-          Accept: "application/json",
-        },
         body: dataToSend,
       },
     );
-
     if (!response.ok) {
-      const errorText = await response.text();
-      console.error("FormSubmit Error Context:", errorText);
       throw new Error("Failed to deliver payload to FormSubmit relay");
     }
 
-    const result = await response.json();
-    console.log("FormSubmit Success Response:", result);
-    return result;
+    return { success: true };
   }
 
   return (
@@ -287,6 +274,7 @@ const Careers: FC = () => {
 
             <form
               onSubmit={handleSubmit}
+              encType="multipart/form-data"
               className="space-y-6 max-w-3xl mx-auto"
             >
               {/* Name */}
