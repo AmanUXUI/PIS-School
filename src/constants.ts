@@ -37,14 +37,13 @@ export const CONTENT = {
     },
     {
       name: "Curriculum",
-      href: "#curriculum",
       hasDropdown: true,
       image: "https://i.postimg.cc/W4cb9J5M/DSC06249-JPG.jpg",
       groups: [
         {
           title: "Academic",
           items: [
-            { name: "Curriculum Overview", href: "#" },
+            { name: "Curriculum Overview", href: "#curriculum" },
             { name: "Early Years (Age 3 To 5 Years)", href: "#early-years" },
             { name: "Primary (Age 5 To 11 Years)", href: "#primary" },
             {
