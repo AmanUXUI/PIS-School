@@ -102,7 +102,7 @@ const Admissions: FC = () => {
             <span className="text-white/30">/</span>
             <span className="text-white/50">Join Us</span>
             <span className="text-white/30">/</span>
-            <span className="text-brand-orange font-bold">Overview</span>
+            <span className="text-brand-orange font-bold">Admission</span>
           </div>
 
           <motion.div
@@ -112,7 +112,7 @@ const Admissions: FC = () => {
             className="max-w-3xl"
           >
             <h1 className="text-4xl md:text-[52px] lg:text-[52px] font-gill font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight text-white mb-4">
-              Overview
+              Admission
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light font-gill max-w-2xl">
               A premium, simple, and transparent gateway to a world of endless
