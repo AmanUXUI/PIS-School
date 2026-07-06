@@ -248,29 +248,9 @@ export const ContactUs: FC = () => {
                     url: "https://www.instagram.com/pisaligarh/",
                   },
                   {
-                    name: "Google",
-                    icon: "fab fa-google",
-                    url: "https://www.google.com/maps/place/Pavna+International+School/@27.7628999,78.0117693,13z/data=!4m6!3m5!1s0x3974986b184d8723:0xaad7d1ee64a38a56!8m2!3d27.7628999!4d78.087987!16s%2Fg%2F11bzspvwn7?entry=ttu&g_ep=EgoyMDI2MDYyMy4wIKXMDSoASAFQAw%3D%3D",
-                  },
-                  {
                     name: "Linkedin",
                     icon: "fab fa-linkedin-in",
                     url: "https://www.linkedin.com/company/pavna-international-school/",
-                  },
-                  {
-                    name: "Twitter",
-                    icon: "fab fa-twitter",
-                    url: "https://x.com/pisaligarh",
-                  },
-                  {
-                    name: "Tumblr",
-                    icon: "fab fa-tumblr",
-                    url: "https://www.tumblr.com/pisaligarh",
-                  },
-                  {
-                    name: "Pinterest",
-                    icon: "fab fa-pinterest-p",
-                    url: "https://in.pinterest.com/pisaligarh/",
                   },
                   {
                     name: "Youtube",

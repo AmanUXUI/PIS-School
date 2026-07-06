@@ -59,23 +59,6 @@ const itemMediaMap: Record<
     title: "Advance Years",
     subtitle: "Pre-university international standard",
   },
-
-  // Contact Us
-  // "Let's Talk": {
-  //   image: "https://i.postimg.cc/13RChW47/DSC08428-JPG.jpg",
-  //   title: "Let's Talk",
-  //   subtitle: "Connect directly with advisors"
-  // },
-  // "Careers": {
-  //   image: "https://i.postimg.cc/MpZP2sXP/DSC08748-JPG.jpg",
-  //   title: "Careers",
-  //   subtitle: "Grow your teaching career with us"
-  // },
-  // "Enquire Now": {
-  //   image: "https://i.postimg.cc/qMqw1NY4/DSC08559-JPG.jpg",
-  //   title: "Enquire Now",
-  //   subtitle: "Start your admissions journey"
-  // }
 };
 
 export default function Navbar() {
@@ -101,8 +84,9 @@ export default function Navbar() {
   }, []);
 
   const isLinkActive = (link: (typeof CONTENT.navLinks)[0]) => {
-    if (link.href === currentHash && link.href !== "#") return true;
-    if (link.groups) {
+    if (link.href && link.href === currentHash && link.href !== "#")
+      return true;
+    if ("groups" in link && link.groups) {
       return link.groups.some((group) =>
         group.items.some((item) => item.href === currentHash),
       );
@@ -150,10 +134,14 @@ export default function Navbar() {
               }}
             >
               <a
-                href={link.href}
-                target={link?.href?.startsWith("http") ? "_blank" : undefined}
+                href={"href" in link ? link.href : "#"}
+                target={
+                  "href" in link && link.href?.startsWith("http")
+                    ? "_blank"
+                    : undefined
+                }
                 rel={
-                  link?.href?.startsWith("http")
+                  "href" in link && link.href?.startsWith("http")
                     ? "noopener noreferrer"
                     : undefined
                 }
@@ -185,143 +173,153 @@ export default function Navbar() {
 
               {/* Desktop Dropdown Content */}
               <AnimatePresence>
-                {activeDropdown === link.name && link.hasDropdown && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 15, scale: 0.98 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 10, scale: 0.98 }}
-                    transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                    className="absolute top-full left-0 bg-white border border-neutral-100/90 shadow-[0_20px_50px_rgba(32,26,91,0.12)] hidden lg:flex rounded-2xl overflow-hidden mt-1 p-2"
-                    style={{
-                      width: "max-content",
-                    }}
-                  >
-                    <div className="flex items-stretch gap-2">
-                      {/* Left Side: Navigation Links & Subheadings */}
-                      <div
-                        className="p-5 flex-1"
-                        style={{
-                          minWidth:
-                            link.groups && link.groups.length > 1
-                              ? "480px"
-                              : "280px",
-                        }}
-                      >
+                {activeDropdown === link.name &&
+                  link.hasDropdown &&
+                  "groups" in link &&
+                  link.groups && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 15, scale: 0.98 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 10, scale: 0.98 }}
+                      transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+                      className="absolute top-full left-0 bg-white border border-neutral-100/90 shadow-[0_20px_50px_rgba(32,26,91,0.12)] hidden lg:flex rounded-2xl overflow-hidden mt-1 p-2"
+                      style={{
+                        width: "max-content",
+                      }}
+                    >
+                      <div className="flex items-stretch gap-2">
+                        {/* Left Side: Navigation Links & Subheadings */}
                         <div
-                          className="grid gap-6"
+                          className="p-5 flex-1"
                           style={{
-                            gridTemplateColumns:
+                            minWidth:
                               link.groups && link.groups.length > 1
-                                ? "1fr 1fr"
-                                : "1fr",
+                                ? "480px"
+                                : "280px",
                           }}
                         >
-                          {link.groups?.map((group) => (
-                            <div
-                              key={group.title}
-                              className="flex flex-col gap-3"
-                            >
-                              <h5 className="text-[10px] font-sans font-bold tracking-[2px] uppercase text-brand-orange/90 px-3">
-                                {group.title}
-                              </h5>
-                              <div className="flex flex-col gap-1">
-                                {group.items.map((item) => (
-                                  <a
-                                    key={item.name}
-                                    href={item.href}
-                                    onMouseEnter={() =>
-                                      setHoveredItem(item.name)
-                                    }
-                                    target={item.newTab ? "_blank" : undefined}
-                                    rel={
-                                      item.newTab
-                                        ? "noopener noreferrer"
-                                        : undefined
-                                    }
-                                    className={cn(
-                                      "text-[13px] font-bold transition-all duration-300 py-2.5 px-3.5 rounded-xl hover:bg-[#FAF9F5]/70 flex items-center justify-between group/link",
-                                      item.href === currentHash
-                                        ? "text-brand-orange bg-[#FAF9F5]/70"
-                                        : "text-brand-navy",
-                                    )}
-                                  >
-                                    <div className="flex flex-col text-left">
-                                      <span className="leading-tight transition-colors duration-300">
-                                        {item.name}
-                                      </span>
-                                      <span className="text-[10.5px] font-medium text-neutral-400 mt-0.5 group-hover/link:text-brand-orange/60 transition-colors">
-                                        {getItemDescription(item.name)}
-                                      </span>
-                                    </div>
-                                    <div className="w-5 h-5 rounded-full bg-brand-orange/0 group-hover/link:bg-brand-orange/10 flex items-center justify-center transition-all">
-                                      <ArrowRight
-                                        size={11}
-                                        className="text-brand-orange opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all duration-300"
-                                      />
-                                    </div>
-                                  </a>
-                                ))}
+                          <div
+                            className="grid gap-6"
+                            style={{
+                              gridTemplateColumns:
+                                link.groups && link.groups.length > 1
+                                  ? "1fr 1fr"
+                                  : "1fr",
+                            }}
+                          >
+                            {link.groups?.map((group) => (
+                              <div
+                                key={group.title}
+                                className="flex flex-col gap-3"
+                              >
+                                <h5 className="text-[10px] font-sans font-bold tracking-[2px] uppercase text-brand-orange/90 px-3">
+                                  {group.title}
+                                </h5>
+                                <div className="flex flex-col gap-1">
+                                  {group.items.map((item) => (
+                                    <a
+                                      key={item.name}
+                                      href={item.href}
+                                      onMouseEnter={() =>
+                                        setHoveredItem(item.name)
+                                      }
+                                      target={
+                                        "newTab" in item && item.newTab
+                                          ? "_blank"
+                                          : undefined
+                                      }
+                                      rel={
+                                        "newTab" in item && item.newTab
+                                          ? "noopener noreferrer"
+                                          : undefined
+                                      }
+                                      className={cn(
+                                        "text-[13px] font-bold transition-all duration-300 py-2.5 px-3.5 rounded-xl hover:bg-[#FAF9F5]/70 flex items-center justify-between group/link",
+                                        item.href === currentHash
+                                          ? "text-brand-orange bg-[#FAF9F5]/70"
+                                          : "text-brand-navy",
+                                      )}
+                                    >
+                                      <div className="flex flex-col text-left">
+                                        <span className="leading-tight transition-colors duration-300">
+                                          {item.name}
+                                        </span>
+                                        <span className="text-[10.5px] font-medium text-neutral-400 mt-0.5 group-hover/link:text-brand-orange/60 transition-colors">
+                                          {getItemDescription(item.name)}
+                                        </span>
+                                      </div>
+                                      <div className="w-5 h-5 rounded-full bg-brand-orange/0 group-hover/link:bg-brand-orange/10 flex items-center justify-center transition-all">
+                                        <ArrowRight
+                                          size={11}
+                                          className="text-brand-orange opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all duration-300"
+                                        />
+                                      </div>
+                                    </a>
+                                  ))}
+                                </div>
                               </div>
-                            </div>
-                          ))}
+                            ))}
+                          </div>
                         </div>
-                      </div>
 
-                      {/* Right Side: Featured Rich Media Block */}
-                      {link.image &&
-                        (() => {
-                          const hoveredData = hoveredItem
-                            ? itemMediaMap[hoveredItem]
-                            : null;
-                          const currentImage = hoveredData?.image || link.image;
-                          const currentTitle =
-                            hoveredData?.title ||
-                            (link.name === "Curriculum"
-                              ? "Shaping Greatness"
-                              : link.name === "About"
-                                ? "BeYourself Motto"
-                                : "Empowering Minds");
-                          const currentSubtitle =
-                            hoveredData?.subtitle || "Pavna International";
+                        {/* Right Side: Featured Rich Media Block */}
+                        {"image" in link &&
+                          link.image &&
+                          (() => {
+                            const hoveredData = hoveredItem
+                              ? itemMediaMap[hoveredItem]
+                              : null;
+                            const currentImage =
+                              hoveredData?.image || (link as any).image;
+                            const currentTitle =
+                              hoveredData?.title ||
+                              (link.name === "Curriculum"
+                                ? "Shaping Greatness"
+                                : link.name === "About"
+                                  ? "BeYourself Motto"
+                                  : "Empowering Minds");
+                            const currentSubtitle =
+                              hoveredData?.subtitle || "Pavna International";
 
-                          return (
-                            <div className="w-[210px] shrink-0 rounded-xl overflow-hidden relative m-1 self-stretch min-h-[220px] flex flex-col justify-end p-5 group/image bg-brand-navy">
-                              <motion.img
-                                key={currentImage}
-                                initial={{ opacity: 0, scale: 1.08 }}
-                                animate={{ opacity: 0.75, scale: 1.05 }}
-                                transition={{ duration: 0.35, ease: "easeOut" }}
-                                src={currentImage}
-                                alt={currentTitle}
-                                className="absolute inset-0 w-full h-full object-cover"
-                                referrerPolicy="no-referrer"
-                              />
-                              <div className="absolute inset-0 bg-gradient-to-t from-[#201A5B] via-[#201A5B]/50 to-transparent z-10" />
-                              <div className="absolute inset-0 bg-brand-orange/5 mix-blend-color z-10" />
+                            return (
+                              <div className="w-[210px] shrink-0 rounded-xl overflow-hidden relative m-1 self-stretch min-h-[220px] flex flex-col justify-end p-5 group/image bg-brand-navy">
+                                <motion.img
+                                  key={currentImage}
+                                  initial={{ opacity: 0, scale: 1.08 }}
+                                  animate={{ opacity: 0.75, scale: 1.05 }}
+                                  transition={{
+                                    duration: 0.35,
+                                    ease: "easeOut",
+                                  }}
+                                  src={currentImage}
+                                  alt={currentTitle}
+                                  className="absolute inset-0 w-full h-full object-cover"
+                                  referrerPolicy="no-referrer"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#201A5B] via-[#201A5B]/50 to-transparent z-10" />
+                                <div className="absolute inset-0 bg-brand-orange/5 mix-blend-color z-10" />
 
-                              <div className="relative z-20 flex flex-col items-start text-left">
-                                <span className="bg-white/10 backdrop-blur-md text-white text-[9px] uppercase tracking-[2px] font-extrabold px-2.5 py-1 rounded-full border border-white/20 mb-2 transition-all">
-                                  {hoveredData ? "Program" : link.name}
-                                </span>
-                                <h4 className="text-white text-[13.5px] font-sans font-bold leading-tight tracking-tight mb-0.5">
-                                  {currentTitle}
-                                </h4>
-                                <p className="text-white/60 text-[9.5px] font-medium transition-all">
-                                  {currentSubtitle}
-                                </p>
+                                <div className="relative z-20 flex flex-col items-start text-left">
+                                  <span className="bg-white/10 backdrop-blur-md text-white text-[9px] uppercase tracking-[2px] font-extrabold px-2.5 py-1 rounded-full border border-white/20 mb-2 transition-all">
+                                    {hoveredData ? "Program" : link.name}
+                                  </span>
+                                  <h4 className="text-white text-[13.5px] font-sans font-bold leading-tight tracking-tight mb-0.5">
+                                    {currentTitle}
+                                  </h4>
+                                  <p className="text-white/60 text-[9.5px] font-medium transition-all">
+                                    {currentSubtitle}
+                                  </p>
+                                </div>
                               </div>
-                            </div>
-                          );
-                        })()}
-                    </div>
-                  </motion.div>
-                )}
+                            );
+                          })()}
+                      </div>
+                    </motion.div>
+                  )}
               </AnimatePresence>
             </div>
           ))}
         </div>
-
-        {/* Action Button removed */}
 
         {/* Mobile Menu Button */}
         <button
@@ -341,7 +339,7 @@ export default function Navbar() {
               return (
                 <a
                   key={link.name}
-                  href={link.href}
+                  href={"href" in link ? link.href : "#"}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
@@ -355,7 +353,7 @@ export default function Navbar() {
               return (
                 <a
                   key={link.name}
-                  href={link.href}
+                  href={"href" in link ? link.href : "#"}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
@@ -380,7 +378,7 @@ export default function Navbar() {
                       setActiveDropdown(
                         activeDropdown === link.name ? null : link.name,
                       );
-                    } else {
+                    } else if ("href" in link && link.href) {
                       window.location.hash = link.href.replace("#", "");
                       setMobileMenuOpen(false);
                     }
@@ -398,40 +396,52 @@ export default function Navbar() {
                   )}
                 </button>
 
-                {link.hasDropdown && activeDropdown === link.name && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    className="pl-4 flex flex-col gap-3 border-l-2 border-brand-orange/20 mb-2 mt-1"
-                  >
-                    {link.groups?.map((group) => (
-                      <div key={group.title} className="flex flex-col gap-1.5">
-                        <p className="text-[10px] font-bold uppercase tracking-wider text-brand-orange/70">
-                          {group.title}
-                        </p>
-                        {group.items.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            target={item.newTab ? "_blank" : undefined}
-                            rel={
-                              item.newTab ? "noopener noreferrer" : undefined
-                            }
-                            onClick={() => setMobileMenuOpen(false)}
-                            className={cn(
-                              "py-1 text-sm block transition-colors",
-                              item.href === currentHash
-                                ? "text-brand-orange font-bold"
-                                : "text-brand-navy/80 hover:text-brand-orange",
-                            )}
-                          >
-                            {item.name}
-                          </a>
-                        ))}
-                      </div>
-                    ))}
-                  </motion.div>
-                )}
+                {link.hasDropdown &&
+                  activeDropdown === link.name &&
+                  "groups" in link &&
+                  link.groups && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      className="pl-4 flex flex-col gap-3 border-l-2 border-brand-orange/20 mb-2 mt-1"
+                    >
+                      {link.groups?.map((group) => (
+                        <div
+                          key={group.title}
+                          className="flex flex-col gap-1.5"
+                        >
+                          <p className="text-[10px] font-bold uppercase tracking-wider text-brand-orange/70">
+                            {group.title}
+                          </p>
+                          {group.items.map((item) => (
+                            <a
+                              key={item.name}
+                              href={item.href}
+                              target={
+                                "newTab" in item && item.newTab
+                                  ? "_blank"
+                                  : undefined
+                              }
+                              rel={
+                                "newTab" in item && item.newTab
+                                  ? "noopener noreferrer"
+                                  : undefined
+                              }
+                              onClick={() => setMobileMenuOpen(false)}
+                              className={cn(
+                                "py-1 text-sm block transition-colors",
+                                item.href === currentHash
+                                  ? "text-brand-orange font-bold"
+                                  : "text-brand-navy/80 hover:text-brand-orange",
+                              )}
+                            >
+                              {item.name}
+                            </a>
+                          ))}
+                        </div>
+                      ))}
+                    </motion.div>
+                  )}
               </div>
             );
           })}

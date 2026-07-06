@@ -17,22 +17,41 @@
 }
 
 @keyframes marquee {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translate3d(0, 10px, 0); }
-  to { opacity: 1; transform: translate3d(0, 0, 0); }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-a, button, summary {
+a,
+button,
+summary {
   touch-action: manipulation;
 }
 
 /* Smooth details open/close */
-details > summary { list-style: none; }
-details > summary::-webkit-details-marker { display: none; }
+details>summary {
+  list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
+}
 
 .ImpactContainer {
   display: flex;
@@ -70,6 +89,7 @@ details > summary::-webkit-details-marker { display: none; }
 .scroll-hide::-webkit-scrollbar {
   display: none;
 }
+
 .scroll-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -85,7 +105,7 @@ details > summary::-webkit-details-marker { display: none; }
 }
 
 .hero-text-shadow {
-  text-shadow: 0 4px 20px rgba(32,26,91,0.8);
+  text-shadow: 0 4px 20px rgba(32, 26, 91, 0.8);
 }
 
 .banner-pattern {
@@ -93,6 +113,7 @@ details > summary::-webkit-details-marker { display: none; }
   background-size: 24px 24px;
   opacity: 0.05;
 }
+
 .banner-pattern-white {
   background-image: radial-gradient(#ffffff 2px, transparent 2px);
   background-size: 24px 24px;
@@ -100,10 +121,10 @@ details > summary::-webkit-details-marker { display: none; }
 }
 
 .geo-pattern {
-  background-image: 
-      radial-gradient(circle at 20px 20px, #DAD9D8 2px, transparent 0),
-      linear-gradient(to right, #f3f4f6 1px, transparent 1px),
-      linear-gradient(to bottom, #f3f4f6 1px, transparent 1px);
+  background-image:
+    radial-gradient(circle at 20px 20px, #DAD9D8 2px, transparent 0),
+    linear-gradient(to right, #f3f4f6 1px, transparent 1px),
+    linear-gradient(to bottom, #f3f4f6 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -111,13 +132,16 @@ details > summary::-webkit-details-marker { display: none; }
   animation: marquee 25s linear infinite;
   will-change: transform;
 }
+
 .animate-marquee-slow {
   animation: marquee 110s linear infinite;
   will-change: transform;
 }
+
 .marquee-hover:hover .animate-marquee {
   animation-play-state: paused;
 }
+
 .marquee-hover:hover .animate-marquee-slow {
   animation-play-state: paused;
 }
@@ -136,4 +160,3 @@ details > summary::-webkit-details-marker { display: none; }
     @apply font-sans text-[#1A202C] bg-editorial-bg;
   }
 }
-
