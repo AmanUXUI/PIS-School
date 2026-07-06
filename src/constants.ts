@@ -44,6 +44,7 @@ export const CONTENT = {
         {
           title: "Academic",
           items: [
+            { name: "Curriculum Overview", href: "#" },
             { name: "Early Years (Age 3 To 5 Years)", href: "#early-years" },
             { name: "Primary (Age 5 To 11 Years)", href: "#primary" },
             {
