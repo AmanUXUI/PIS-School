@@ -20,7 +20,7 @@ import {
   CheckCircle2,
   X,
 } from "lucide-react";
-const PRIMARY_EMAIL = "Aman@mediagarh.com";
+const PRIMARY_EMAIL = "ajay.dpsaligarh@gmail.com";
 
 const Careers: FC = () => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
