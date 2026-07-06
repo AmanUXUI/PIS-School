@@ -10,6 +10,8 @@ const getItemDescription = (name: string): string => {
     "Academic Team": "Meet our dedicated educators",
     "Chairman's Message": "Leadership perspective & foresight",
     "Principal's Message": "Welcome from our Head of School",
+    "Core Team": "Meet the Core Team",
+    "Board Members": "Meet the Board Members",
     "Minds Behind PIS": "Advisors steering excellence",
     "Early Years (Age 3 To 5 Years)": "Play-based inquiry & foundation",
     "Primary (Age 5 To 11 Years)": "Core skills & creative learning",
