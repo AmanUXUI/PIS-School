@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import { FC, useState, useEffect, FormEvent, ChangeEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
@@ -20,8 +21,7 @@ import {
   CheckCircle2,
   X,
 } from "lucide-react";
-const PRIMARY_EMAIL = "HEADMARKETING@pavnagroup.com";
-
+const PRIMARY_EMAIL = import.meta.env.VITE_FORM_EMAIL;
 const Careers: FC = () => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -134,7 +134,7 @@ const Careers: FC = () => {
     dataToSend.append("Address", data.address.trim());
     dataToSend.append("Message", data.message.trim());
     if (file) {
-      dataToSend.append("attachment", file);
+      dataToSend.append("Resume", file);
       console.log("File successfully appended:", file.name);
     } else {
       console.warn("No file object provided to submission payload");
