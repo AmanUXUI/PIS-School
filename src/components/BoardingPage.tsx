@@ -378,7 +378,7 @@ const BoardingPage: FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: "World-class Curriculum: CBSE & Cambridge",
+                title: "World - Class Cambridge  Curriculum",
                 desc: "A balanced global academic pathway designed to foster deep intellectual curiosity, critical thinking, and structured lifelong learning.",
                 symbol: "school",
               },

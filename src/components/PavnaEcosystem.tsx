@@ -161,7 +161,7 @@ const PavnaEcosystem: FC = () => {
                 ))}
               </ul>
               <h3 className="text-[18px] font-bold leading-[35px] text-[#202547]">
-                Pavna Schools:
+                Pavna international school:
               </h3>
               <ul className="pl-4 list-none relative text-[#333333] text-base line-height-[1.375]">
                 {ecosystemData[0].content.pavna.map((item, index) => (
