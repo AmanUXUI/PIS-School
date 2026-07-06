@@ -1,4 +1,3 @@
-/// <reference types="vite/client" />
 import { FC, useState, useEffect, FormEvent, ChangeEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
@@ -21,7 +20,8 @@ import {
   CheckCircle2,
   X,
 } from "lucide-react";
-const PRIMARY_EMAIL = import.meta.env.VITE_FORM_EMAIL;
+const PRIMARY_EMAIL = "HEADMARKETING@pavnagroup.com";
+
 const Careers: FC = () => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
