@@ -1,23 +1,23 @@
-import { FC, useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Award, 
-  Brain, 
-  BookOpen, 
-  Globe, 
-  HelpCircle, 
-  ChevronDown, 
+import { FC, useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import {
+  Award,
+  Brain,
+  BookOpen,
+  Globe,
+  HelpCircle,
+  ChevronDown,
   ChevronRight,
-  ArrowRight, 
-  Bookmark, 
-  ShieldCheck, 
-  Smile, 
-  Lightbulb, 
-  Users, 
-  Activity, 
-  Sparkles, 
-  Heart 
-} from 'lucide-react';
+  ArrowRight,
+  Bookmark,
+  ShieldCheck,
+  Smile,
+  Lightbulb,
+  Users,
+  Activity,
+  Sparkles,
+  Heart,
+} from "lucide-react";
 
 interface FAQItem {
   question: string;
@@ -27,24 +27,29 @@ interface FAQItem {
 const FAQ_DATA: FAQItem[] = [
   {
     question: "1. What curriculum does Pavna International School offer?",
-    answer: "We offer the globally recognised Cambridge International curriculum."
+    answer:
+      "We offer the globally recognised Cambridge International curriculum.",
   },
   {
     question: "2. What is the benefit of Cambridge education?",
-    answer: "It develops academic excellence, critical thinking, creativity, and global perspectives."
+    answer:
+      "It develops academic excellence, critical thinking, creativity, and global perspectives.",
   },
   {
     question: "3. Are Cambridge qualifications internationally recognised?",
-    answer: "Yes. They are accepted by leading universities and employers worldwide."
+    answer:
+      "Yes. They are accepted by leading universities and employers worldwide.",
   },
   {
     question: "4. Does Cambridge focus only on academics?",
-    answer: "No. It promotes holistic development, practical learning, communication, and leadership skills."
+    answer:
+      "No. It promotes holistic development, practical learning, communication, and leadership skills.",
   },
   {
     question: "5. How does Pavna support Cambridge learners?",
-    answer: "Through experienced faculty, modern facilities, personalised attention, and continuous academic guidance."
-  }
+    answer:
+      "Through experienced faculty, modern facilities, personalised attention, and continuous academic guidance.",
+  },
 ];
 
 const CurriculumPage: FC = () => {
@@ -64,12 +69,14 @@ const CurriculumPage: FC = () => {
         "A holistic curriculum",
         "Engaging resources",
         "Support to measure progress",
-        "6 curriculum areas including Personal, social and emotional development"
+        "6 curriculum areas including Personal, social and emotional development",
       ],
-      description: "Our Early Years programme encourages curiosity, communication, creativity, and social development through engaging, play-based learning experiences. Children develop strong foundations that prepare them for future academic success.",
+      description:
+        "Our Early Years programme encourages curiosity, communication, creativity, and social development through engaging, play-based learning experiences. Children develop strong foundations that prepare them for future academic success.",
       image: "https://i.postimg.cc/G27wmxSp/Early-Years.jpg",
       link: "#early-years",
-      color: "border-purple-200 hover:border-purple-400 text-purple-600 bg-purple-50/30"
+      color:
+        "border-purple-200 hover:border-purple-400 text-purple-600 bg-purple-50/30",
     },
     {
       title: "Cambridge Primary",
@@ -79,12 +86,14 @@ const CurriculumPage: FC = () => {
         "Flexible assessment options",
         "Support and resources",
         "Insight to understand potential",
-        "10+ subjects including English, Mathematics and Science"
+        "10+ subjects including English, Mathematics and Science",
       ],
-      description: "The Primary programme strengthens literacy, numeracy, science, and global awareness. Students explore concepts through interactive learning, building confidence, collaboration, and problem-solving skills from an early age.",
+      description:
+        "The Primary programme strengthens literacy, numeracy, science, and global awareness. Students explore concepts through interactive learning, building confidence, collaboration, and problem-solving skills from an early age.",
       image: "https://i.postimg.cc/j5g0S4k5/Primary.jpg",
       link: "#primary",
-      color: "border-blue-200 hover:border-blue-400 text-blue-600 bg-blue-50/30"
+      color:
+        "border-blue-200 hover:border-blue-400 text-blue-600 bg-blue-50/30",
     },
     {
       title: "Cambridge Lower Secondary",
@@ -94,12 +103,14 @@ const CurriculumPage: FC = () => {
         "Flexible assessment options",
         "Support and resources",
         "Insight to predict performance",
-        "10+ subjects including English, Mathematics and Science"
+        "10+ subjects including English, Mathematics and Science",
       ],
-      description: "Lower Secondary expands students' understanding across core subjects while encouraging analytical thinking, communication, teamwork, and independent learning. Regular assessments help monitor progress and guide personalised learning.",
+      description:
+        "Lower Secondary expands students' understanding across core subjects while encouraging analytical thinking, communication, teamwork, and independent learning. Regular assessments help monitor progress and guide personalised learning.",
       image: "https://i.postimg.cc/XJHSYkDq/Low-Secondary.jpg",
       link: "#lower-secondary",
-      color: "border-green-200 hover:border-green-400 text-green-600 bg-green-50/30"
+      color:
+        "border-green-200 hover:border-green-400 text-green-600 bg-green-50/30",
     },
     {
       title: "Cambridge Upper Secondary (IGCSE)",
@@ -109,12 +120,14 @@ const CurriculumPage: FC = () => {
         "Fair, valid, reliable assessment",
         "Support and resources",
         "Insight to optimise achievement",
-        "Cambridge IGCSE™: 70+ subjects, Cambridge O Level: 40+ subjects, Cambridge ICE"
+        "Cambridge IGCSE™: 70+ subjects, Cambridge O Level: 40+ subjects, Cambridge ICE",
       ],
-      description: "The Cambridge IGCSE curriculum provides students with internationally recognised qualifications across a wide choice of subjects. It develops subject expertise, critical thinking, research abilities, and practical application of knowledge, preparing learners for higher education.",
+      description:
+        "The Cambridge IGCSE curriculum provides students with internationally recognised qualifications across a wide choice of subjects. It develops subject expertise, critical thinking, research abilities, and practical application of knowledge, preparing learners for higher education.",
       image: "https://i.postimg.cc/mDXfgy6L/Upper-Secondary.jpg",
       link: "#upper-secondary",
-      color: "border-orange-200 hover:border-orange-400 text-brand-orange bg-orange-50/30"
+      color:
+        "border-orange-200 hover:border-orange-400 text-brand-orange bg-orange-50/30",
     },
     {
       title: "Cambridge Advanced (AS & A Level)",
@@ -124,40 +137,47 @@ const CurriculumPage: FC = () => {
         "Fair, valid, reliable assessment",
         "Support and resources",
         "Insight to predict performance",
-        "Cambridge International AS & A Level: 50+ subjects, Cambridge AICE, Cambridge IPQ"
+        "Cambridge International AS & A Level: 50+ subjects, Cambridge AICE, Cambridge IPQ",
       ],
-      description: "Cambridge Advanced programmes offer in-depth subject knowledge and academic rigour. Students develop advanced analytical, research, and communication skills that are valued by leading universities and employers worldwide.",
+      description:
+        "Cambridge Advanced programmes offer in-depth subject knowledge and academic rigour. Students develop advanced analytical, research, and communication skills that are valued by leading universities and employers worldwide.",
       image: "https://i.postimg.cc/QtxZDymR/Advance.jpg",
       link: "#advance-as-a-level",
-      color: "border-red-200 hover:border-red-400 text-red-600 bg-red-50/30"
-    }
+      color: "border-red-200 hover:border-red-400 text-red-600 bg-red-50/30",
+    },
   ];
 
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">
-      
       {/* 1. Header Hero Panel with Breadcrumbs */}
       <section className="relative bg-brand-navy text-white overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
-          <img 
-            src="https://i.postimg.cc/W4cb9J5M/DSC06249-JPG.jpg" 
-            alt="School Campus Curriculum Background" 
+          <img
+            src="https://i.postimg.cc/W4cb9J5M/DSC06249-JPG.jpg"
+            alt="School Campus Curriculum Background"
             className="w-full h-full object-cover scale-105 filter blur-[2px]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-navy to-transparent" />
         </div>
-        
+
         {/* Decorative Grid Patterns */}
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span className="hover:text-brand-orange transition-colors cursor-pointer" onClick={() => window.location.hash = ''}>Home</span>
+            <span
+              className="hover:text-brand-orange transition-colors cursor-pointer"
+              onClick={() => (window.location.hash = "")}
+            >
+              Home
+            </span>
             <span className="text-white/30">/</span>
             <span className="text-white/50">Academics</span>
             <span className="text-white/30">/</span>
-            <span className="text-brand-orange font-bold">Curriculum Overview</span>
+            <span className="text-brand-orange font-bold">
+              Curriculum Overview
+            </span>
           </div>
 
           <motion.div
@@ -170,7 +190,9 @@ const CurriculumPage: FC = () => {
               Cambridge International Programmes & Qualifications
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light font-gill max-w-2xl">
-              Explore our world-class educational pathways, designed to foster intellectual curiosity, critical thinking, and a global perspective at every stage of learning.
+              Explore our world-class educational pathways, designed to foster
+              intellectual curiosity, critical thinking, and a global
+              perspective at every stage of learning.
             </p>
           </motion.div>
         </div>
@@ -194,7 +216,12 @@ const CurriculumPage: FC = () => {
                 </h2>
               </div>
               <p className="text-[#4B5563] text-[16px] leading-[26px] font-medium font-gill mb-6">
-                Cambridge International Education offers a globally respected learning framework that develops academic excellence, critical thinking, creativity, and confidence. At Pavna International School, students benefit from an internationally recognised curriculum that prepares them for higher education and future careers.
+                Cambridge International Education offers a globally respected
+                learning framework that develops academic excellence, critical
+                thinking, creativity, and confidence. At Pavna International
+                School, students benefit from an internationally recognised
+                curriculum that prepares them for higher education and future
+                careers.
               </p>
             </div>
 
@@ -212,7 +239,10 @@ const CurriculumPage: FC = () => {
                 </h2>
               </div>
               <p className="text-[#4B5563] text-[16px] leading-[26px] font-medium font-gill">
-                The Cambridge Pathway supports learners from the early years through advanced studies. Each stage builds essential knowledge, practical skills, and independent learning abilities while allowing students to progress confidently at their own pace.
+                The Cambridge Pathway supports learners from the early years
+                through advanced studies. Each stage builds essential knowledge,
+                practical skills, and independent learning abilities while
+                allowing students to progress confidently at their own pace.
               </p>
             </div>
           </div>
@@ -222,7 +252,6 @@ const CurriculumPage: FC = () => {
       {/* 3. The Cambridge Pathway Interactive / Stages Section */}
       <section className="py-16 md:py-24 bg-[#FAF9F6] border-t border-b border-gray-100/85">
         <div className="max-w-7xl mx-auto px-6">
-          
           {/* Left-aligned Title */}
           <div className="max-w-3xl mb-10 text-left">
             <div className="flex items-center gap-3 mb-4">
@@ -237,17 +266,17 @@ const CurriculumPage: FC = () => {
           </div>
 
           {/* Interactive Course Tabs - Styled as separate premium, left-aligned pills */}
-          <div className="mb-10 flex overflow-x-auto pb-3 scrollbar-none snap-x gap-2.5 items-center">
+          <div className=" md:w-auto grid grid-cols-2 md:flex  md:flex-nowrap mb-10 flex overflow-x-auto pb-3 scrollbar-none snap-x gap-2.5 items-center bg-white/90 backdrop-blur-md p-1.5 rounded-[8px] shadow-md gap-1.5">
             {stages.map((stage, idx) => {
               const isActive = activeStageIdx === idx;
               return (
                 <button
                   key={stage.title}
                   onClick={() => setActiveStageIdx(idx)}
-                  className={`px-4.5 py-2.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-wider transition-all duration-300 whitespace-nowrap cursor-pointer snap-start border shrink-0 ${
+                  className={`flex items-center justify-start gap-2 px-3 sm:px-2.5 py-2.5 sm:py-3 rounded-[8px] text-[10px] sm:text-xs md:text-[12px] font-bold uppercase tracking-wider transition-all duration-300 md:whitespace-nowrap cursor-pointer focus:outline-none relative ${
                     isActive
-                      ? "bg-brand-navy border-brand-navy text-white shadow-sm"
-                      : "bg-white border-neutral-200/60 text-brand-navy/70 hover:border-brand-orange hover:text-brand-orange hover:bg-neutral-50/50 shadow-[0_2px_8px_rgba(0,0,0,0.01)]"
+                      ? "text-white bg-brand-orange shadow-md shadow-brand-orange/30"
+                      : "text-brand-navy/70 hover:text-brand-navy hover:bg-gray-100/60"
                   }`}
                 >
                   {stage.title}
@@ -295,11 +324,11 @@ const CurriculumPage: FC = () => {
                         </span>
                         <div className="w-1.5 h-1.5 rounded-full bg-brand-orange" />
                       </div>
-                      
+
                       <h3 className="text-2xl sm:text-3xl font-serif font-bold text-brand-navy leading-tight mb-4">
                         {stage.title}
                       </h3>
-                      
+
                       <p className="text-[#4B5563] text-[15px] sm:text-[16px] leading-relaxed mb-6 font-medium font-gill">
                         {stage.description}
                       </p>
@@ -309,11 +338,16 @@ const CurriculumPage: FC = () => {
                       <h4 className="text-xs font-bold text-brand-navy uppercase tracking-widest mb-4">
                         Key Curriculum Highlights
                       </h4>
-                      
+
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3.5 mb-8">
                         {stage.bullets.map((bullet, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-[#4B5563] leading-normal font-medium font-gill">
-                            <span className="text-brand-orange font-bold shrink-0 mt-0.5">•</span>
+                          <li
+                            key={idx}
+                            className="flex items-start gap-2 text-sm text-[#4B5563] leading-normal font-medium font-gill"
+                          >
+                            <span className="text-brand-orange font-bold shrink-0 mt-0.5">
+                              •
+                            </span>
                             <span>{bullet}</span>
                           </li>
                         ))}
@@ -352,7 +386,9 @@ const CurriculumPage: FC = () => {
                 Cambridge Professional Development
               </h3>
               <p className="text-sm text-brand-gray max-w-2xl font-light font-gill">
-                Supporting teachers and school leaders with globally certified training, frameworks, and assessment tools to ensure continuous academic delivery of the highest standards.
+                Supporting teachers and school leaders with globally certified
+                training, frameworks, and assessment tools to ensure continuous
+                academic delivery of the highest standards.
               </p>
             </div>
             <div className="shrink-0 relative z-10 w-full md:w-auto text-left">
@@ -374,20 +410,20 @@ const CurriculumPage: FC = () => {
                 title: "Why Choose Cambridge at Pavna",
                 text: "Choosing Cambridge at Pavna International School means learning in an environment that combines global standards with personalised guidance. Our experienced educators, modern classrooms, and holistic approach help students become confident, responsible, and future-ready individuals.",
                 icon: Smile,
-                tag: "LEARNER CENTRED"
+                tag: "LEARNER CENTRED",
               },
               {
                 title: "Global Recognition",
                 text: "Cambridge qualifications are widely accepted by universities and employers across the world. They provide students with opportunities to pursue higher education and career pathways both in India and internationally.",
                 icon: Globe,
-                tag: "ACCEDENTIAL ADVANTAGE"
+                tag: "ACCEDENTIAL ADVANTAGE",
               },
               {
                 title: "Assessment & Learning Approach",
                 text: "Assessment focuses on understanding, application, and continuous improvement rather than rote memorisation. Students are encouraged to think independently, solve real-world problems, and communicate effectively.",
                 icon: Brain,
-                tag: "PRACTICAL SKILLS"
-              }
+                tag: "PRACTICAL SKILLS",
+              },
             ].map((item, i) => {
               const IconComp = item.icon;
               return (
@@ -427,7 +463,6 @@ const CurriculumPage: FC = () => {
       <section className="py-16 md:py-24 bg-[#FAF9F6] border-t border-b border-gray-100/85">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
             <div className="lg:col-span-5">
               <div className="flex flex-col items-start w-fit max-w-full">
                 <div className="flex items-center gap-3 mb-6 w-full">
@@ -443,16 +478,19 @@ const CurriculumPage: FC = () => {
               </div>
               <div className="space-y-4 text-[#4B5563] text-[15px] font-medium font-gill leading-relaxed">
                 <p>
-                  Parents trust Pavna International School for its learner-centred approach, international curriculum, dedicated faculty, safe campus, modern infrastructure, and commitment to academic excellence and holistic development.
+                  Parents trust Pavna International School for its
+                  learner-centred approach, international curriculum, dedicated
+                  faculty, safe campus, modern infrastructure, and commitment to
+                  academic excellence and holistic development.
                 </p>
               </div>
             </div>
 
             <div className="lg:col-span-7 bg-white p-6 sm:p-8 md:p-10 rounded-3xl border border-neutral-200/60 shadow-md flex flex-col md:flex-row items-center gap-8">
               <div className="relative aspect-[4/3] w-full md:w-[45%] rounded-2xl overflow-hidden bg-neutral-100 shrink-0">
-                <img 
-                  src="https://i.postimg.cc/TPzWWQgg/Trusted-Legacy-of-Educational-Excellence.jpg" 
-                  alt="Pavna Learning Environment" 
+                <img
+                  src="https://i.postimg.cc/TPzWWQgg/Trusted-Legacy-of-Educational-Excellence.jpg"
+                  alt="Pavna Learning Environment"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -460,14 +498,17 @@ const CurriculumPage: FC = () => {
               <div className="flex-1 text-left">
                 <div className="flex items-center gap-3 mb-4">
                   <Bookmark size={20} className="text-brand-orange shrink-0" />
-                  <h4 className="font-serif font-bold text-brand-navy text-[17px]">A Seamless Academic Foundation</h4>
+                  <h4 className="font-serif font-bold text-brand-navy text-[17px]">
+                    A Seamless Academic Foundation
+                  </h4>
                 </div>
                 <p className="text-[#4B5563] text-sm leading-relaxed font-medium font-gill">
-                  Our dedication to international pedagogy, combined with deep-rooted values, guarantees your child is prepared to excel in universities and workplaces around the world.
+                  Our dedication to international pedagogy, combined with
+                  deep-rooted values, guarantees your child is prepared to excel
+                  in universities and workplaces around the world.
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -494,8 +535,8 @@ const CurriculumPage: FC = () => {
             {FAQ_DATA.map((item, index) => {
               const isOpen = activeFaqIndex === index;
               return (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="bg-[#FAF9F5] rounded-xl border border-gray-100 overflow-hidden transition-all duration-300 shadow-[0_4px_15px_rgb(0,0,0,0.01)] hover:shadow-[0_8px_25px_rgba(32,26,91,0.03)]"
                 >
                   <button
@@ -510,7 +551,7 @@ const CurriculumPage: FC = () => {
                         {item.question.replace(/^\d+\.\s*/, "")}
                       </span>
                     </div>
-                    <span 
+                    <span
                       className={`w-8 h-8 rounded-full bg-white border border-gray-100 flex items-center justify-center shrink-0 text-brand-navy transition-transform duration-300 ${isOpen ? "rotate-180 bg-brand-orange/10 border-brand-orange/20 text-brand-orange" : ""}`}
                     >
                       <ChevronDown className="w-4 h-4" />
@@ -539,10 +580,9 @@ const CurriculumPage: FC = () => {
           {/* Pagination/Transition footer */}
           <div className="mt-20 border-t border-neutral-100 pt-12">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-              
               {/* Previous button - Minds Behind PIS */}
               <div className="w-full sm:w-auto text-left order-2 sm:order-1">
-                <a 
+                <a
                   href="#minds-behind-pis"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
                 >
@@ -551,8 +591,8 @@ const CurriculumPage: FC = () => {
               </div>
 
               {/* Center Home button */}
-              <button 
-                onClick={() => window.location.hash = ''} 
+              <button
+                onClick={() => (window.location.hash = "")}
                 className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
               >
                 Return to Homepage
@@ -561,19 +601,17 @@ const CurriculumPage: FC = () => {
 
               {/* Next button */}
               <div className="w-full sm:w-auto text-right order-3">
-                <a 
+                <a
                   href="#early-years"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
                 >
                   Early Years &rarr;
                 </a>
               </div>
-
             </div>
           </div>
         </div>
       </section>
-
     </div>
   );
 };
