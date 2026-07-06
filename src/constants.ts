@@ -76,7 +76,7 @@ export const CONTENT = {
           items: [
             { name: "Let's Talk", href: "#lets-talk" },
             { name: "Careers", href: "#careers" },
-            // { name: "Enquire Now", href: "#enquire-now" },
+            { name: "Get in Touch", href: "#get-in-touch" },
           ],
         },
       ],

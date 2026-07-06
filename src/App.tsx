@@ -32,6 +32,7 @@ import Careers from "./components/Careers";
 import EnquireNow from "./components/EnquireNow";
 import CurriculumPage from "./components/CurriculumPage";
 import NotFound from "./components/NotFound";
+import GetInTouch from "./components/GetinTounch";
 
 export default function App() {
   const [currentHash, setCurrentHash] = useState(window.location.hash);
@@ -56,6 +57,7 @@ export default function App() {
     "#enquire-now",
     "#contact-us",
     "#lets-talk",
+    "#get-in-touch",
   ];
 
   // 2. Check karein ki current hash valid list me hai ya nahi
@@ -90,7 +92,8 @@ export default function App() {
   const isAdmissions = currentHash === "#admissions";
   const isBoarding = currentHash === "#boarding";
   const isCareers = currentHash === "#careers";
-  const isEnquireNow = currentHash === "#enquire-now";
+  // const isEnquireNow = currentHash === "#enquire-now";
+  const getinTounch = currentHash === "#get-in-touch";
   const isContactUs =
     currentHash === "#contact-us" || currentHash === "#lets-talk";
 
@@ -130,8 +133,8 @@ export default function App() {
           <BoardingPage />
         ) : isCareers ? (
           <Careers />
-        ) : isEnquireNow ? (
-          <EnquireNow />
+        ) : getinTounch ? (
+          <GetInTouch />
         ) : isContactUs ? (
           <ContactUs />
         ) : (
