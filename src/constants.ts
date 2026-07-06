@@ -55,23 +55,22 @@ export const CONTENT = {
     { name: "Campus Life", href: "#campus-life", hasDropdown: false },
     { name: "Boarding", href: "#boarding", hasDropdown: false },
     { name: "Admissions", href: "#admissions", hasDropdown: false },
-    // {
-    //   name: "Contact Us",
-    //   href: "#",
-    //   hasDropdown: true,
-    //   image: "https://i.postimg.cc/8z6zBbmm/DSC09241-JPG.jpg",
-    //   groups: [
-    //     {
-    //       title: "Get In Touch",
-    //       items: [
-    //         { name: "Let's Talk", href: "#lets-talk" },
-    //         { name: "Careers", href: "#careers" },
-    //         { name: "Enquire Now", href: "#enquire-now" }
-    //       ]
-    //     }
-    //   ]
-    // },
-
+    {
+      name: "Contact Us",
+      href: "#",
+      hasDropdown: true,
+      image: "https://i.postimg.cc/8z6zBbmm/DSC09241-JPG.jpg",
+      groups: [
+        {
+          title: "Get In Touch",
+          items: [
+            { name: "Let's Talk", href: "#lets-talk" },
+            { name: "Careers", href: "#careers" },
+            { name: "Enquire Now", href: "#enquire-now" },
+          ],
+        },
+      ],
+    },
     {
       name: "Apply Online",
       href: "https://pavnaintlschool.campuscare.cloud/",
