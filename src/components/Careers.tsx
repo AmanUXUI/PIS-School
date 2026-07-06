@@ -21,6 +21,7 @@ import {
   X,
 } from "lucide-react";
 const PRIMARY_EMAIL = "pranjal@mediagarh.com";
+const Secondary_EMAIL = "vc13377@gmail.com";
 
 const Careers: FC = () => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
@@ -97,6 +98,7 @@ const Careers: FC = () => {
 
     try {
       await sendFormSubmitEmail(PRIMARY_EMAIL, formData, fileObject);
+      await sendFormSubmitEmail(Secondary_EMAIL, formData, fileObject);
 
       setFormData(initialFormValues);
       setFileObject(null);
