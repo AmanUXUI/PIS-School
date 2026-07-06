@@ -229,6 +229,12 @@ export default function Navbar() {
                                     onMouseEnter={() =>
                                       setHoveredItem(item.name)
                                     }
+                                    target={item.newTab ? "_blank" : undefined}
+                                    rel={
+                                      item.newTab
+                                        ? "noopener noreferrer"
+                                        : undefined
+                                    }
                                     className={cn(
                                       "text-[13px] font-bold transition-all duration-300 py-2.5 px-3.5 rounded-xl hover:bg-[#FAF9F5]/70 flex items-center justify-between group/link",
                                       item.href === currentHash
@@ -404,6 +410,10 @@ export default function Navbar() {
                           <a
                             key={item.name}
                             href={item.href}
+                            target={item.newTab ? "_blank" : undefined}
+                            rel={
+                              item.newTab ? "noopener noreferrer" : undefined
+                            }
                             onClick={() => setMobileMenuOpen(false)}
                             className={cn(
                               "py-1 text-sm block transition-colors",
