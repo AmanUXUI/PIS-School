@@ -13,11 +13,6 @@ export const CONTENT = {
           items: [
             { name: "Overview", href: "#about-overview" },
             { name: "Academic Team", href: "#academic-team" },
-            {
-              name: "Core Team",
-              href: "https://pavnaschool.com/core-team/",
-              newTab: true,
-            },
           ],
         },
         {
@@ -28,6 +23,11 @@ export const CONTENT = {
             {
               name: "Board Members",
               href: "https://pavnaschool.com/board-members/",
+              newTab: true,
+            },
+            {
+              name: "Core Team",
+              href: "https://pavnaschool.com/core-team/",
               newTab: true,
             },
             // { name: "Minds Behind PIS", href: "#minds-behind-pis" },
