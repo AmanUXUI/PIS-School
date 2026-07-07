@@ -26,7 +26,7 @@ interface FacilityTab {
   tabTitle: string;
   heading: string;
   description: string;
-  image: string;
+  image: any;
   icon: any;
 }
 
@@ -108,92 +108,110 @@ const PinkBedIcon: FC = () => (
     <rect x="49" y="42" width="18" height="11" rx="3" fill="#E11D48" />
   </svg>
 );
-
+const FACILITIES: FacilityTab[] = [
+  {
+    id: "nestled-nature",
+    tabTitle: "Nestled IN Nature",
+    heading: "Premium Boarding Facilities Nestled in Nature",
+    description:
+      "Set in a serene, green campus away from city noise, our boarding facilities provide children with the calm and space they need to focus, reflect, and recharge a true home away from home.",
+    image: [
+      "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-16.webp",
+      "https://imgh.in/host/0k5zrh",
+    ],
+    icon: Leaf,
+  },
+  {
+    id: "ac-rooms",
+    tabTitle: "Ac room with attached Bath",
+    heading: "AC Rooms with Attached Bathrooms",
+    description:
+      "Our triple-sharing air-conditioned rooms are designed for comfort, cleanliness, and camaraderie. Each room has an attached bathroom and is maintained to the highest hygiene standards year-round.",
+    image: ["https://imgh.in/host/tzjqe8", "https://imgh.in/host/4jm1sw"],
+    icon: Snowflake,
+  },
+  {
+    id: "sports-facilities",
+    tabTitle: "State-of-the-Art Sports",
+    heading: "State-of-the-Art Sports Facilities",
+    description:
+      "From horse riding, lawn tennis, and handball to a wide array of indoor and outdoor sports, our world-class infrastructure is designed to help every child discover and nurture their true athletic potential.",
+    image: [
+      "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-18.webp",
+      "https://imgh.in/host/apkfd4",
+    ],
+    icon: Activity,
+  },
+  {
+    id: "co-curricular",
+    tabTitle: "Holistic Co-Curricular",
+    heading: "Holistic Co-Curricular Exposure",
+    description:
+      "Pottery, sculpture, textile design, and industrial design are just the beginning. Our diverse range of co-curricular activities empowers students to explore their passions, staying creatively vibrant and emotionally grounded.",
+    image: [
+      "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-19.webp",
+      "https://imgh.in/host/7y9bsn",
+    ],
+    icon: Palette,
+  },
+  {
+    id: "entertainment-zone",
+    tabTitle: "Entertainment Zone",
+    heading: "Entertainment Zone for Recreation",
+    description:
+      "A dedicated recreation and entertainment zone gives students healthy downtime — table tennis, board games, lounge areas, and more. Balance between study and play is fundamental to wellbeing.",
+    image: [
+      "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-20.webp",
+      "https://imgh.in/host/b98hz9",
+    ],
+    icon: Smile,
+  },
+  {
+    id: "veg-dining",
+    tabTitle: "Pure Vegetarian Dining",
+    heading: "Pure Vegetarian Dining",
+    description:
+      "Our in-house kitchen serves freshly prepared, pure vegetarian meals three times a day — nutritionally balanced menus curated to support growing minds and bodies with wholesome, hygienic food.",
+    image: ["https://imgh.in/host/7h0ubp", "https://imgh.in/host/apkfd4"],
+    icon: Utensils,
+  },
+  {
+    id: "medical-facilities",
+    tabTitle: "Medical Facilities",
+    heading: "Medical Facilities",
+    description:
+      "We ensure every student's well-being with 24/7 medical care, routine health check-ups, and immediate first-aid support.",
+    image: [
+      "https://i.postimg.cc/YqCBQ7rH/Nursing-jpg.jpg",
+      "https://imgh.in/host/502lit",
+    ],
+    icon: Heart,
+  },
+];
 const BoardingPage: FC = () => {
   const [activeTab, setActiveTab] = useState<string>("nestled-nature");
   const [slideIndex, setSlideIndex] = useState<number>(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSlideIndex((prev) => (prev + 1) % 3);
-    }, 3500);
-    return () => clearInterval(interval);
-  }, []);
-
-  const FACILITIES: FacilityTab[] = [
-    {
-      id: "nestled-nature",
-      tabTitle: "Nestled IN Nature",
-      heading: "Premium Boarding Facilities Nestled in Nature",
-      description:
-        "Set in a serene, green campus away from city noise, our boarding facilities provide children with the calm and space they need to focus, reflect, and recharge a true home away from home.",
-      image:
-        "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-16.webp",
-      icon: Leaf,
-    },
-    {
-      id: "ac-rooms",
-      tabTitle: "Ac room with attached Bath",
-      heading: "AC Rooms with Attached Bathrooms",
-      description:
-        "Our triple-sharing air-conditioned rooms are designed for comfort, cleanliness, and camaraderie. Each room has an attached bathroom and is maintained to the highest hygiene standards year-round.",
-      image: "https://imgh.in/host/tzjqe8",
-      icon: Snowflake,
-    },
-    {
-      id: "sports-facilities",
-      tabTitle: "State-of-the-Art Sports",
-      heading: "State-of-the-Art Sports Facilities",
-      description:
-        "From horse riding, lawn tennis, and handball to a wide array of indoor and outdoor sports, our world-class infrastructure is designed to help every child discover and nurture their true athletic potential.",
-      image:
-        "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-18.webp",
-      icon: Activity,
-    },
-    {
-      id: "co-curricular",
-      tabTitle: "Holistic Co-Curricular",
-      heading: "Holistic Co-Curricular Exposure",
-      description:
-        "Pottery, sculpture, textile design, and industrial design are just the beginning. Our diverse range of co-curricular activities empowers students to explore their passions, staying creatively vibrant and emotionally grounded.",
-      image:
-        "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-19.webp",
-      icon: Palette,
-    },
-    {
-      id: "entertainment-zone",
-      tabTitle: "Entertainment Zone",
-      heading: "Entertainment Zone for Recreation",
-      description:
-        "A dedicated recreation and entertainment zone gives students healthy downtime — table tennis, board games, lounge areas, and more. Balance between study and play is fundamental to wellbeing.",
-      image:
-        "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-20.webp",
-      icon: Smile,
-    },
-    {
-      id: "veg-dining",
-      tabTitle: "Pure Vegetarian Dining",
-      heading: "Pure Vegetarian Dining",
-      description:
-        "Our in-house kitchen serves freshly prepared, pure vegetarian meals three times a day — nutritionally balanced menus curated to support growing minds and bodies with wholesome, hygienic food.",
-      image: "https://imgh.in/host/7h0ubp",
-      icon: Utensils,
-    },
-    {
-      id: "medical-facilities",
-      tabTitle: "Medical Facilities",
-      heading: "Medical Facilities",
-      description:
-        "We ensure every student's well-being with 24/7 medical care, routine health check-ups, and immediate first-aid support.",
-      image: "https://i.postimg.cc/YqCBQ7rH/Nursing-jpg.jpg",
-      icon: Heart,
-    },
-  ];
+  const [currentImgIdx, setCurrentImgIdx] = useState(0);
 
   const currentItem =
     FACILITIES.find((item) => item.id === activeTab) || FACILITIES[0];
-  const activeIndex = FACILITIES.findIndex((item) => item.id === activeTab);
 
+  const getImagesArray = (imgData: string | string[]): string[] => {
+    if (!imgData) return [];
+    return Array.isArray(imgData) ? imgData : [imgData];
+  };
+  useEffect(() => {
+    setCurrentImgIdx(0);
+  }, [activeTab]);
+  useEffect(() => {
+    const images = getImagesArray(currentItem.image);
+    if (images.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentImgIdx((prevIdx) => (prevIdx + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [activeTab, currentItem.image]);
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">
       {/* 1. Header Hero Panel with Breadcrumbs */}
@@ -474,7 +492,6 @@ const BoardingPage: FC = () => {
                     }`}
                   >
                     <div className="flex items-center gap-4">
-                      {/* Icon Container with Circular/Rounded Style */}
                       <div
                         className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${
                           isActive
@@ -532,7 +549,6 @@ const BoardingPage: FC = () => {
                         {currentItem.description}
                       </p>
 
-                      {/* Micro indicators to add premium touch */}
                       <div className="mt-6 pt-5 border-t border-neutral-100 flex flex-wrap items-center gap-x-4 gap-y-2 text-brand-navy/70 text-[10px] lg:text-[11px] font-bold tracking-wider uppercase font-sans">
                         <span className="flex items-center gap-1.5 text-brand-orange">
                           <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
@@ -546,15 +562,41 @@ const BoardingPage: FC = () => {
                       </div>
                     </div>
 
-                    {/* Image Column */}
+                    {/* Image Container with Custom Black/45 Blur Pagination */}
                     <div className="md:col-span-6 relative min-h-[240px] md:min-h-full overflow-hidden bg-neutral-100 order-1 md:order-2">
-                      <img
-                        src={currentItem.image}
-                        alt={currentItem.heading}
-                        className="absolute inset-0 w-full h-full object-cover scale-100 hover:scale-105 transition-transform duration-700"
-                        referrerPolicy="no-referrer"
-                      />
+                      <AnimatePresence mode="wait">
+                        <motion.img
+                          key={currentImgIdx}
+                          src={getImagesArray(currentItem.image)[currentImgIdx]}
+                          alt={`${currentItem.heading} - View ${currentImgIdx + 1}`}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="absolute inset-0 w-full h-full object-cover scale-100 hover:scale-105 transition-transform duration-700"
+                          referrerPolicy="no-referrer"
+                        />
+                      </AnimatePresence>
+
                       <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-black/20 via-transparent to-transparent pointer-events-none" />
+
+                      {/* Integrated Pagination (सिर्फ तभी रेंडर होगा जब 1 से ज़्यादा इमेजेस हों) */}
+                      {getImagesArray(currentItem.image).length > 1 && (
+                        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 bg-black/45 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 shadow-sm">
+                          {getImagesArray(currentItem.image).map((_, idx) => (
+                            <button
+                              key={idx}
+                              onClick={() => setCurrentImgIdx(idx)}
+                              className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                                idx === currentImgIdx
+                                  ? "bg-brand-orange w-4"
+                                  : "bg-white/50 hover:bg-white"
+                              }`}
+                              aria-label={`Go to slide ${idx + 1}`}
+                            />
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </motion.div>
                 </AnimatePresence>
@@ -567,6 +609,8 @@ const BoardingPage: FC = () => {
             {FACILITIES.map((facility) => {
               const isOpen = activeTab === facility.id;
               const IconComp = facility.icon;
+              const currentMobImages = getImagesArray(facility.image);
+
               return (
                 <div
                   key={facility.id}
@@ -617,15 +661,41 @@ const BoardingPage: FC = () => {
                         className="overflow-hidden"
                       >
                         <div className="p-5 flex flex-col gap-5 bg-white text-left">
-                          {/* Image inside expanded item */}
+                          {/* Mobile Image Container with Pagination */}
                           <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-200/50">
-                            <img
-                              src={facility.image}
-                              alt={facility.heading}
-                              className="absolute inset-0 w-full h-full object-cover"
-                              referrerPolicy="no-referrer"
-                            />
+                            <AnimatePresence mode="wait">
+                              <motion.img
+                                key={currentImgIdx}
+                                src={
+                                  currentMobImages[currentImgIdx] ||
+                                  currentMobImages[0]
+                                }
+                                alt={facility.heading}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                className="absolute inset-0 w-full h-full object-cover"
+                                referrerPolicy="no-referrer"
+                              />
+                            </AnimatePresence>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
+
+                            {currentMobImages.length > 1 && (
+                              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10 shadow-sm">
+                                {currentMobImages.map((_, idx) => (
+                                  <button
+                                    key={idx}
+                                    onClick={() => setCurrentImgIdx(idx)}
+                                    className={`w-1.5 h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
+                                      idx === currentImgIdx
+                                        ? "bg-brand-orange w-3"
+                                        : "bg-white/50"
+                                    }`}
+                                    aria-label={`Go to slide ${idx + 1}`}
+                                  />
+                                ))}
+                              </div>
+                            )}
                           </div>
 
                           <div className="flex flex-col">
