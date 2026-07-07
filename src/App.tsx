@@ -33,9 +33,12 @@ import EnquireNow from "./components/EnquireNow";
 import CurriculumPage from "./components/CurriculumPage";
 import NotFound from "./components/NotFound";
 import GetInTouch from "./components/GetinTounch";
+import Blog from "./components/Blog";
+import ArticlePage from "./components/ArticlePage";
 
 export default function App() {
   const [currentHash, setCurrentHash] = useState(window.location.hash);
+
   const validHashes = [
     "",
     "#",
@@ -58,20 +61,17 @@ export default function App() {
     "#contact-us",
     "#lets-talk",
     "#get-in-touch",
+    "#blog",
+    "#newsletter",
   ];
 
-  // 2. Check karein ki current hash valid list me hai ya nahi
-  const is404 = !validHashes.includes(currentHash);
   useEffect(() => {
     const handleHashChange = () => {
       setCurrentHash(window.location.hash);
-      // Immediately scroll to top when changing routes
       window.scrollTo(0, 0);
     };
 
     window.addEventListener("hashchange", handleHashChange);
-
-    // Check initial hash state
     handleHashChange();
 
     return () => window.removeEventListener("hashchange", handleHashChange);
@@ -92,18 +92,23 @@ export default function App() {
   const isAdmissions = currentHash === "#admissions";
   const isBoarding = currentHash === "#boarding";
   const isCareers = currentHash === "#careers";
-  // const isEnquireNow = currentHash === "#enquire-now";
+  const isBlog = currentHash === "#blog";
   const getinTounch = currentHash === "#get-in-touch";
+  const Newsletter = currentHash === "#newsletter";
   const isContactUs =
     currentHash === "#contact-us" || currentHash === "#lets-talk";
 
+  const isArticle =
+    currentHash !== "" &&
+    currentHash !== "#" &&
+    !validHashes.includes(currentHash);
+
+  const is404 = false;
   return (
     <div className="relative min-h-screen">
       <Navbar />
       <main>
-        {is404 ? (
-          <NotFound />
-        ) : isAboutOverview ? (
+        {isAboutOverview ? (
           <AboutOverview />
         ) : isAcademicTeam ? (
           <AcademicTeam />
@@ -133,10 +138,16 @@ export default function App() {
           <BoardingPage />
         ) : isCareers ? (
           <Careers />
+        ) : isBlog ? (
+          <Blog />
         ) : getinTounch ? (
           <GetInTouch />
         ) : isContactUs ? (
           <ContactUs />
+        ) : isArticle ? (
+          <ArticlePage />
+        ) : is404 ? (
+          <NotFound />
         ) : (
           <>
             <HeroSlider />

@@ -201,7 +201,7 @@ const Careers: FC = () => {
               Home
             </span>
             <span className="text-white/30">/</span>
-            <span className="text-white/50">Join Us</span>
+            <span className="text-white/50">Contact</span>
             <span className="text-white/30">/</span>
             <span className="text-brand-orange font-bold">Careers</span>
           </div>

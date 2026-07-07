@@ -66,6 +66,21 @@ export const CONTENT = {
     { name: "Boarding", href: "#boarding", hasDropdown: false },
     { name: "Admissions", href: "#admissions", hasDropdown: false },
     {
+      name: "News & Media",
+      href: "#",
+      hasDropdown: true,
+      image: "https://i.postimg.cc/MpZP2sXP/DSC08748-JPG.jpg",
+      groups: [
+        {
+          title: "PIS Chronicle",
+          items: [
+            { name: "Blog", href: "#blog" },
+            { name: "Newsletter", href: "#newsletter" },
+          ],
+        },
+      ],
+    },
+    {
       name: "Contact Us",
       href: "#",
       hasDropdown: true,
