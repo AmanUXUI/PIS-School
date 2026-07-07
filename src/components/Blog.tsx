@@ -126,7 +126,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title:
       "Pavna International School, Hathras: Shaping global leaders with a Cambridge International School curriculum",
     excerpt:
-      "It’s more crucial than ever to provide our kids with the skills they’ll need to take on the problems and seize the possibilities of tomorrow’s world. The mission of Pavna International School, Aligarh, is to educate the next generation of global leaders by providing them with the rigorous and enriching Cambridge International School curriculum. In this article, we’ll look at how the Cambridge curriculum is implemented at Pavna International School in Aligarh, India, and how it aids in shaping students into well-rounded, self-assured, and internationally competent citizens.",
+      "It’s more crucial than ever to provide our kids with the skills they’ll need to take on the problems and seize the possibilities of tomorrow’s world. The mission of Pavna International School, Aligarh, is to educate the next generation of global leaders by providing them with the rigorous and enriching Cambridge International School curriculum. In this article, we’ll look at how the Cambridge curriculum is implemented at Pavna International School in Aligarh, India, and how it aids in shaping students into well-rounded, self-assured, and internationally competent citizens. ",
     category: "Academics",
     date: "March 25, 2025",
     readTime: "6 min read",
@@ -137,7 +137,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title:
       "Discover the benefits of a Cambridge international education at Pavna International School, Hathras",
     excerpt:
-      "Why Cambridge credentials are overwhelmingly favored by top Ivy League and Russell Group institutions worldwide for admissions.",
+      "Choosing the right education for your child is a crucial decision that can significantly impact their future. Pavna International School, Aligarh, provides students with the opportunity to pursue a Cambridge International Education, offering a world-class curriculum that nurtures academic excellence, global perspectives, and holistic development. In this article, we will delve into the benefits of a Cambridge International Education at Pavna International School, Aligarh. ",
     category: "Academics",
     date: "March 12, 2025",
     readTime: "4 min read",
@@ -337,7 +337,7 @@ export const getPostContent = (post: BlogPost): string => {
       "In conclusion, Pavna International School, Aligarh, takes a unique approach to empowering students for success by prioritizing personalized learning, holistic development, and real-world skills within a supportive and inclusive environment. By choosing Pavna International School, parents can be confident that their children will receive an education that prepares them for a bright and successful future"
     );
   }
-  if (post.id === "post-9") {
+  if (post.id === "post-10") {
     return (
       "It’s more crucial than ever to provide our kids with the skills they’ll need to take on the problems and seize the possibilities of tomorrow’s world. The mission of Pavna International School, Aligarh, is to educate the next generation of global leaders by providing them with the rigorous and enriching Cambridge International School curriculum. In this article, we’ll look at how the Cambridge curriculum is implemented at Pavna International School in Aligarh, India, and how it aids in shaping students into well-rounded, self-assured, and internationally competent citizens. \n\n" +
       "Academic Excellence and Rigorous Curriculum \n\n" +
@@ -351,6 +351,40 @@ export const getPostContent = (post: BlogPost): string => {
       "Preparing Students for the Future  \n\n" +
       "The Cambridge International School curriculum equips students with the knowledge, skills, and attitudes needed to excel in a rapidly changing global landscape. By providing a comprehensive and forward-looking education, Pavna International School, Aligarh, prepares its students to adapt and thrive in an increasingly competitive and interconnected world. " +
       "In conclusion, Pavna International School, Aligarh, is dedicated to shaping global leaders by offering a world-class Cambridge International School curriculum that fosters academic excellence, critical thinking, and global awareness. By choosing Pavna International School, parents can ensure that their children receive an education that empowers them to become confident, responsible, and successful individuals who are ready to make a positive impact on the world. "
+    );
+  }
+  if (post.id === "post-11") {
+    return (
+      "Choosing the right education for your child is a crucial decision that can significantly impact their future. Pavna International School, Aligarh, provides students with the opportunity to pursue a Cambridge International Education, offering a world-class curriculum that nurtures academic excellence, global perspectives, and holistic development. In this article, we will delve into the benefits of a Cambridge International Education at Pavna International School, Aligarh. \n\n" +
+      "Academic Excellence and Rigor  \n\n" +
+      "The Cambridge International Education curriculum is renowned for its academic rigor and focus on developing critical thinking, problem-solving, and independent learning skills. By following this internationally recognized curriculum, Pavna International School, Aligarh, ensures that its students are well-prepared to excel in their studies and future endeavors. \n\n" +
+      "Global Perspectives and International Recognition  \n\n" +
+      "Cambridge International Education is designed with a global outlook, exposing students to diverse cultures, perspectives, and ideas. This global perspective helps students at Pavna International School, Aligarh, develop a broader understanding of the world and fosters adaptability and open-mindedness. Additionally, the Cambridge curriculum is well-respected and accepted by universities and employers all over the world, giving students a strong foundation for their higher education and career aspirations. \n\n" +
+      "Holistic Development and Extracurricular Opportunities  \n\n" +
+      "Pavna International School, Aligarh, understands the importance of a well-rounded education, which is why it offers a wide range of extracurricular activities in addition to the Cambridge curriculum. These activities, including sports, music, the arts, and community service, enable students to explore their passions and develop essential life skills such as teamwork, leadership, and resilience.\n\n" +
+      "Personalized learning and support  \n\n" +
+      "At Pavna International School in Aligarh, teachers are dedicated to providing personalized support and guidance to each student. The Cambridge curriculum’s flexible nature allows teachers to tailor their teaching methods and approaches to the unique needs and learning styles of individual students, ensuring that every child receives the attention and support they need to thrive. \n\n" +
+      "Innovative teaching and state-of-the-art facilities  \n\n" +
+      "Pavna International School, Aligarh, boasts state-of-the-art facilities and employs innovative teaching methods to create an engaging and dynamic learning environment. The school’s modern classrooms, well-equipped laboratories, and extensive library resources support the Cambridge curriculum’s emphasis on inquiry-based learning and hands-on experiences. " +
+      "A Safe Place That Welcomes Everyone   \n\n" +
+      "Aligarh’s Pavna International School strives to provide a welcoming and accepting community where all kids are respected and cared for. Students learn compassion, respect, and tolerance in an environment where they feel safe and accepted.  " +
+      "Academic achievement, international awareness, whole-person growth, individualized instruction, and a caring community are just a few of the many advantages children gain from a Cambridge International Education at Pavna International School in Aligarh. Parents may rest assured that their children will be well-prepared for the challenges of today’s globalized, competitive world thanks to the Cambridge curriculum offered at Pavna International School. "
+    );
+  }
+  if (post.id === "post-11") {
+    return (
+      "A comprehensive education that equips students for the challenges of the global stage is essential in today’s fast-paced and interconnected society. Just that is being carried out by Pavna International School, an affiliate of Cambridge International School. Pavna International School, a favorite choice for both parents and students, has earned a reputation for academic brilliance by providing a thorough and well-rounded curriculum. \n\n" +
+      "Global Outlook and a World-Class Curriculum   \n\n" +
+      "As a Cambridge International School Affiliate, Pavna International School, Aligarh, follows the globally recognized Cambridge curriculum. This curriculum is designed to encourage critical thinking, problem-solving, and independent learning, equipping students with the necessary skills to excel in the 21st century. Furthermore, the curriculum’s international perspective helps students develop a global outlook, fostering a deeper understanding of different cultures and perspectives. \n\n" +
+      "Holistic Education and Extracurricular Activities   \n\n" +
+      "At Pavna International School, Aligarh, the focus is not only on academics but also on nurturing the overall development of every student. The school offers a wide range of extracurricular activities, including sports, music, dance, art, and more, ensuring that students have ample opportunities to explore their passions and develop essential life skills.\n\n" +
+      "Dedicated faculty and personalized learning   \n\n" +
+      "The dedicated and experienced faculty at Pavna International School, Aligarh, play a pivotal role in shaping the students’ learning experience. Teachers employ innovative teaching methods and personalized learning approaches, catering to the unique needs of each student. This customized learning environment allows students to grow and excel at their own pace. \n\n" +
+      "State-of-the-Art Infrastructure   \n\n" +
+      "Pavna International School, Aligarh, boasts state-of-the-art infrastructure and facilities to create an optimal learning environment. The campus is equipped with spacious classrooms, well-stocked libraries, modern science and computer labs, and sports facilities, all designed to support the students’ academic and extracurricular pursuits. \n\n" +
+      "A Community of Lifelong Learners   \n\n" +
+      "The school’s commitment to nurturing a community of lifelong learners is evident in the strong emphasis placed on character building and values education. Pavna International School, Aligarh, instills in its students the values of empathy, integrity, and resilience, cultivating responsible global citizens prepared to make a positive impact on the world. " +
+      "In conclusion, Pavna International School, Aligarh, a Cambridge International School Affiliate, is unlocking excellence by providing students with a well-rounded, globally relevant education that fosters personal and academic growth. With its dedicated faculty, state-of-the-art facilities, and strong focus on holistic education, Pavna International School is truly shaping the leaders of tomorrow.  "
     );
   }
 

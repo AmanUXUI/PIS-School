@@ -35,7 +35,7 @@ import NotFound from "./components/NotFound";
 import GetInTouch from "./components/GetinTounch";
 import Blog from "./components/Blog";
 import ArticlePage from "./components/ArticlePage";
-
+import Newsletter from "./components/Newsletter";
 export default function App() {
   const [currentHash, setCurrentHash] = useState(window.location.hash);
 
@@ -94,7 +94,7 @@ export default function App() {
   const isCareers = currentHash === "#careers";
   const isBlog = currentHash === "#blog";
   const getinTounch = currentHash === "#get-in-touch";
-  const Newsletter = currentHash === "#newsletter";
+  const isNewsletter = currentHash === "#newsletter";
   const isContactUs =
     currentHash === "#contact-us" || currentHash === "#lets-talk";
 
@@ -146,6 +146,8 @@ export default function App() {
           <ContactUs />
         ) : isArticle ? (
           <ArticlePage />
+        ) : isNewsletter ? (
+          <Newsletter />
         ) : is404 ? (
           <NotFound />
         ) : (

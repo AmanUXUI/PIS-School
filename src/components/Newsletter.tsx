@@ -1,15 +1,15 @@
-import { FC, useState, FormEvent } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Mail, 
-  CheckCircle2, 
-  Sparkles, 
-  Download, 
-  BookOpen, 
-  Calendar, 
+import { FC, useState, FormEvent } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import {
+  Mail,
+  CheckCircle2,
+  Sparkles,
+  Download,
+  BookOpen,
+  Calendar,
   Clock,
-  ArrowUpRight
-} from 'lucide-react';
+  ArrowUpRight,
+} from "lucide-react";
 
 interface NewsletterIssue {
   id: string;
@@ -27,69 +27,70 @@ const NEWSLETTER_ISSUES: NewsletterIssue[] = [
     title: "Issue 01 | The Newsletter",
     issueNo: "Issue 01",
     date: "December 2025",
-    downloadUrl: "#"
+    downloadUrl: "#",
   },
   {
     id: "issue-2",
     title: "Issue 02 | The Newsletter",
     issueNo: "Issue 02",
     date: "January 2026",
-    downloadUrl: "#"
+    downloadUrl: "#",
   },
   {
     id: "issue-3",
     title: "Issue 03 | The Newsletter",
     issueNo: "Issue 03",
     date: "February 2026",
-    downloadUrl: "#"
+    downloadUrl: "#",
   },
   {
     id: "issue-4",
     title: "Issue 04 | The Newsletter",
     issueNo: "Issue 04",
     date: "March 2026",
-    downloadUrl: "#"
+    downloadUrl: "#",
   },
   {
     id: "issue-5",
     title: "Issue 05 | The Newsletter",
     issueNo: "Issue 05",
     date: "April 2026",
-    downloadUrl: "#"
+    downloadUrl: "#",
   },
   {
     id: "issue-6",
     title: "Issue 06 | The Newsletter",
     issueNo: "Issue 06",
     date: "May 2026",
-    downloadUrl: "#"
+    downloadUrl: "#",
   },
   {
     id: "issue-7",
     title: "Issue 07 | The Newsletter",
     issueNo: "Issue 07",
     date: "June 2026",
-    downloadUrl: "#"
-  }
+    downloadUrl: "#",
+  },
 ];
 
-export const Newsletter: FC = () => {
-  const [emailInput, setEmailInput] = useState<string>('');
-  const [subscribeError, setSubscribeError] = useState<string>('');
-  const [showSubscribedModal, setShowSubscribedModal] = useState<boolean>(false);
+const Newsletter: FC = () => {
+  const [emailInput, setEmailInput] = useState<string>("");
+  const [subscribeError, setSubscribeError] = useState<string>("");
+  const [showSubscribedModal, setShowSubscribedModal] =
+    useState<boolean>(false);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const handleSubscribe = (e: FormEvent) => {
     e.preventDefault();
-    setSubscribeError('');
+    setSubscribeError("");
 
     if (!emailInput.trim()) {
-      setSubscribeError('Please enter your email address');
+      setSubscribeError("Please enter your email address");
       return;
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.trim())) {
-      setSubscribeError('Please enter a valid email address');
+      setSubscribeError("Please enter a valid email address");
       return;
     }
 
@@ -98,36 +99,42 @@ export const Newsletter: FC = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       setShowSubscribedModal(true);
-      setEmailInput('');
+      setEmailInput("");
     }, 1200);
   };
 
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">
-      
       {/* 1. Page Header Section */}
       <section className="relative bg-brand-navy text-white overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
-          <img 
-            src="https://i.postimg.cc/13RChW47/DSC08428-JPG.jpg" 
-            alt="PIS Newsletter Background" 
+          <img
+            src="https://i.postimg.cc/13RChW47/DSC08428-JPG.jpg"
+            alt="PIS Newsletter Background"
             className="w-full h-full object-cover scale-105 filter blur-[2px]"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-navy to-transparent" />
         </div>
-        
+
         {/* Decorative Grid Patterns */}
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span className="hover:text-brand-orange transition-colors cursor-pointer" onClick={() => window.location.hash = ''}>Home</span>
+            <span
+              className="hover:text-brand-orange transition-colors cursor-pointer"
+              onClick={() => (window.location.hash = "")}
+            >
+              Home
+            </span>
             <span className="text-white/30">/</span>
             <span className="text-white/50">News & Media</span>
             <span className="text-white/30">/</span>
-            <span className="text-brand-orange font-bold font-sans">Newsletter</span>
+            <span className="text-brand-orange font-bold font-sans">
+              Newsletter
+            </span>
           </div>
 
           <motion.div
@@ -140,7 +147,9 @@ export const Newsletter: FC = () => {
               School Newsletter
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light font-gill max-w-2xl">
-              Access current monthly briefs, historical campus circulars, parenting tips, and comprehensive updates from Pavna International School.
+              Access current monthly briefs, historical campus circulars,
+              parenting tips, and comprehensive updates from Pavna International
+              School.
             </p>
           </motion.div>
         </div>
@@ -157,7 +166,9 @@ export const Newsletter: FC = () => {
               PIS Chronicle Archive
             </h2>
             <p className="text-neutral-500 text-[15px] font-medium leading-relaxed">
-              Select and browse through our monthly publication journals highlighting classroom excellence, student profiles, and parent circular guidance.
+              Select and browse through our monthly publication journals
+              highlighting classroom excellence, student profiles, and parent
+              circular guidance.
             </p>
           </div>
 
@@ -188,12 +199,15 @@ export const Newsletter: FC = () => {
 
                 {/* Right side: Download Button */}
                 <div className="shrink-0 flex items-center">
-                  <a 
+                  <a
                     href={issue.downloadUrl}
                     className="inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-dark-orange text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded-xl transition-all duration-300 shadow-sm hover:shadow active:scale-95 group/btn cursor-pointer"
                   >
                     <span>Download PDF</span>
-                    <Download size={14} className="transition-transform duration-300 group-hover/btn:translate-y-0.5" />
+                    <Download
+                      size={14}
+                      className="transition-transform duration-300 group-hover/btn:translate-y-0.5"
+                    />
                   </a>
                 </div>
               </motion.div>
@@ -205,13 +219,13 @@ export const Newsletter: FC = () => {
       {/* 4. Elegant Success Modal */}
       <AnimatePresence>
         {showSubscribedModal && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 bg-brand-navy/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
           >
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.95, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 20 }}
@@ -225,9 +239,11 @@ export const Newsletter: FC = () => {
               <h3 className="text-xl sm:text-2xl font-serif font-bold text-brand-navy mb-2">
                 Subscription Confirmed!
               </h3>
-              
+
               <p className="text-[#4B5563] text-xs sm:text-sm leading-relaxed font-medium mb-6">
-                Thank you! You have successfully subscribed to the Pavna International School Newsletter. Welcome to our community updates!
+                Thank you! You have successfully subscribed to the Pavna
+                International School Newsletter. Welcome to our community
+                updates!
               </p>
 
               <button
@@ -240,7 +256,8 @@ export const Newsletter: FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
-
     </div>
   );
 };
+
+export default Newsletter;
