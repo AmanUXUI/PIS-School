@@ -20,7 +20,7 @@ import {
   CheckCircle2,
   X,
 } from "lucide-react";
-const PRIMARY_EMAIL = "mathursakshi749@gmail.com";
+const PRIMARY_EMAIL = "ajay.dpsaligarh@gmail.com";
 
 const Careers: FC = () => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
@@ -60,15 +60,27 @@ const Careers: FC = () => {
       setErrors({ ...errors, [field]: "" });
     }
   };
-
-  // यहाँ सुधार किया गया है:
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
     if (selectedFile) {
+      const allowedExtensions = /(\.pdf|\.doc|\.docx)$/i;
+
+      if (!allowedExtensions.exec(selectedFile.name)) {
+        setErrors((prev) => ({
+          ...prev,
+          resume: "Only .pdf, .doc, and .docx files are allowed.",
+        }));
+        setFileObject(null);
+        setFileName("No file chosen");
+
+        event.target.value = "";
+        return;
+      }
+
       setFileObject(selectedFile);
       setFileName(selectedFile.name);
       if (errors.resume) {
-        setErrors({ ...errors, resume: "" });
+        setErrors((prev) => ({ ...prev, resume: "" }));
       }
     }
   };
