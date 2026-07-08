@@ -26,7 +26,7 @@ const ArticlePage: FC = () => {
 
   if (!activePost) {
     return (
-      <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy pt-32 pb-20 text-center">
+      <div className="bg-[#FDFCFB] min-h-[90vh] flex flex-col justify-center items-center text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy pt-32 pb-20 text-center">
         <div className="max-w-xl mx-auto px-6">
           <h2 className="text-2xl font-serif font-bold text-brand-navy mb-4">
             Article Not Found
