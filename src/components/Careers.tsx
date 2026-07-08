@@ -20,8 +20,8 @@ import {
   CheckCircle2,
   X,
 } from "lucide-react";
-const PRIMARY_EMAIL = "mathursakshi749@gmail.com";
-// const PRIMARY_EMAIL = "ajay.dpsaligarh@gmail.com";
+const PRIMARY_EMAIL = "ajay.dpsaligarh@gmail.com";
+const SECONDARY_EMAIL = "HEADMARKETING@pavnagroup.com";
 
 const Careers: FC = () => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
@@ -110,6 +110,7 @@ const Careers: FC = () => {
 
     try {
       await sendFormSubmitEmail(PRIMARY_EMAIL, formData, fileObject);
+      await sendFormSubmitEmail(SECONDARY_EMAIL, formData, fileObject);
 
       setFormData(initialFormValues);
       setFileObject(null);
