@@ -183,6 +183,24 @@ const Footer: FC = () => {
                     Principal's Message
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="#blog"
+                    className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#newsletter"
+                    className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
+                    Newsletter
+                  </a>
+                </li>
                 {/* <li>
                   <a href="#minds-behind-pis" className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
