@@ -178,7 +178,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "post-15",
     title:
-      "Making a racing car by students of PIS inauguration by the Chairman, Mr. Swapnil Jain",
+      "Making a racing car by students of PIS  inauguration by the Chairman, Mr. Swapnil Jain",
     excerpt:
       "Honorable Chairman Mr. Swapnil Jain inaugurated a completely hand-built, working racing car model designed and engineered by the brilliant minds of PIS.",
     category: "Achievements",
