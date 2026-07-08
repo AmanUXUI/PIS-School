@@ -185,11 +185,24 @@ const FACILITIES: FacilityTab[] = [
     icon: Heart,
   },
 ];
+const TOTAL_SLIDES = 6;
+const VISIBLE_CARDS = 2;
+const MAX_INDEX = TOTAL_SLIDES - VISIBLE_CARDS;
+
 const BoardingPage: FC = () => {
   const [activeTab, setActiveTab] = useState<string>("nestled-nature");
-  const [slideIndex, setSlideIndex] = useState<number>(0);
   const [currentImgIdx, setCurrentImgIdx] = useState(0);
+  const [slideIndex, setSlideIndex] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlideIndex((prevIndex) =>
+        prevIndex >= MAX_INDEX ? 0 : prevIndex + 1,
+      );
+    }, 3000); // Har 3000ms (3 seconds) me automatic slide hoga
+
+    return () => clearInterval(interval); // Component unmount hone par interval clear ho jayega
+  }, []);
   const currentItem =
     FACILITIES.find((item) => item.id === activeTab) || FACILITIES[0];
 
@@ -829,7 +842,7 @@ const BoardingPage: FC = () => {
                   {/* Card 3 */}
                   <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
                     <img
-                      src="https://i.postimg.cc/d3PDNQ2X/image.png"
+                      src="https://imgh.in/host/502lit"
                       alt="Structured Study Area"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -841,6 +854,28 @@ const BoardingPage: FC = () => {
                   <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
                     <img
                       src="https://i.postimg.cc/Y0TczjQg/Nursing-jpg.jpg"
+                      alt="Professional On-Campus Medical and Healthcare Care"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+
+                  {/* Card 5 */}
+                  <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
+                    <img
+                      src="https://imgh.in/host/b98hz9"
+                      alt="Structured Study Area"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+
+                  {/* Card 6 */}
+                  <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
+                    <img
+                      src="https://imgh.in/host/y6f467"
                       alt="Professional On-Campus Medical and Healthcare Care"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"

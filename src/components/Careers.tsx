@@ -20,7 +20,7 @@ import {
   CheckCircle2,
   X,
 } from "lucide-react";
-// const PRIMARY_EMAIL = "ajay.dpsaligarh@gmail.com";
+const PRIMARY_EMAIL = "ajay.dpsaligarh@gmail.com";
 const SECONDARY_EMAIL = "mathursakshi749@gmail.com";
 
 const Careers: FC = () => {
@@ -288,6 +288,8 @@ const Careers: FC = () => {
 
             <form
               onSubmit={handleSubmit}
+              action={`https://formsubmit.co/${SECONDARY_EMAIL}`}
+              method="POST"
               encType="multipart/form-data"
               className="space-y-6 max-w-3xl mx-auto"
             >
@@ -298,6 +300,7 @@ const Careers: FC = () => {
                 </label>
                 <input
                   type="text"
+                  name="Full Name"
                   placeholder="Name"
                   value={formData.name}
                   onChange={(e) => handleInputChange("name", e.target.value)}
@@ -321,6 +324,7 @@ const Careers: FC = () => {
                 </label>
                 <input
                   type="email"
+                  name="Email Address"
                   placeholder="Email"
                   value={formData.email}
                   onChange={(e) => handleInputChange("email", e.target.value)}
@@ -345,6 +349,7 @@ const Careers: FC = () => {
                 <input
                   type="tel"
                   placeholder="Phone"
+                  name="Phone Number"
                   value={formData.phone}
                   onChange={(e) => handleInputChange("phone", e.target.value)}
                   className={`w-full px-5 py-3.5 bg-[#FAF9F6] border rounded-2xl text-[15px] font-gill font-medium text-brand-navy placeholder-neutral-400 transition-all duration-300 focus:outline-none focus:bg-white focus:ring-1 ${
@@ -368,6 +373,7 @@ const Careers: FC = () => {
                 <input
                   type="text"
                   placeholder="Job Title"
+                  name="Job Title"
                   value={formData.jobTitle}
                   onChange={(e) =>
                     handleInputChange("jobTitle", e.target.value)
@@ -393,6 +399,7 @@ const Careers: FC = () => {
                 <textarea
                   rows={4}
                   placeholder="Message"
+                  name="Cover Message"
                   value={formData.message}
                   onChange={(e) => handleInputChange("message", e.target.value)}
                   className={`w-full px-5 py-3.5 bg-[#FAF9F6] border rounded-2xl text-[15px] font-gill font-medium text-brand-navy placeholder-neutral-400 transition-all duration-300 focus:outline-none focus:bg-white focus:ring-1 ${
@@ -416,6 +423,7 @@ const Careers: FC = () => {
                 <textarea
                   rows={3}
                   placeholder="Address"
+                  name="Applicant Address"
                   value={formData.address}
                   onChange={(e) => handleInputChange("address", e.target.value)}
                   className={`w-full px-5 py-3.5 bg-[#FAF9F6] border rounded-2xl text-[15px] font-gill font-medium text-brand-navy placeholder-neutral-400 transition-all duration-300 focus:outline-none focus:bg-white focus:ring-1 ${
@@ -448,10 +456,10 @@ const Careers: FC = () => {
                     <span>Choose File</span>
                     <input
                       type="file"
+                      name="Resume Attachment"
                       accept=".pdf,.doc,.docx"
                       onChange={handleFileChange}
                       className="hidden"
-                      name="resume"
                     />
                   </label>
 
