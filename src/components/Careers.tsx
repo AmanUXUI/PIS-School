@@ -157,10 +157,13 @@ const Careers: FC = () => {
     dataToSend.append("Submitted From Page Url", window.location.href);
     dataToSend.append("Submission Date", new Date().toLocaleString());
 
-    const response = await fetch(`https://formsubmit.co/${email}`, {
-      method: "POST",
-      body: dataToSend,
-    });
+    const response = await fetch(
+      `https://formsubmit.co/${encodeURIComponent(email)}`,
+      {
+        method: "POST",
+        body: dataToSend,
+      },
+    );
     if (!response.ok) {
       throw new Error("Failed to deliver payload to FormSubmit relay");
     }
