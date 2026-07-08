@@ -21,7 +21,7 @@ import {
   X,
 } from "lucide-react";
 const PRIMARY_EMAIL = "ajay.dpsaligarh@gmail.com";
-const SECONDARY_EMAIL = "mathursakshi749@gmail.com";
+// const SECONDARY_EMAIL = "mathursakshi749@gmail.com";
 
 const Careers: FC = () => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
@@ -110,7 +110,7 @@ const Careers: FC = () => {
 
     try {
       // await sendFormSubmitEmail(PRIMARY_EMAIL, formData, fileObject);
-      await sendFormSubmitEmail(SECONDARY_EMAIL, formData, fileObject);
+      await sendFormSubmitEmail(PRIMARY_EMAIL, formData, fileObject);
 
       setFormData(initialFormValues);
       setFileObject(null);
@@ -157,18 +157,15 @@ const Careers: FC = () => {
     dataToSend.append("Submitted From Page Url", window.location.href);
     dataToSend.append("Submission Date", new Date().toLocaleString());
 
-    const response = await fetch(
-      `https://formsubmit.co/${encodeURIComponent(email)}`,
-      {
-        method: "POST",
-        body: dataToSend,
-      },
-    );
-    if (!response.ok) {
-      throw new Error("Failed to deliver payload to FormSubmit relay");
-    }
+    const response = await fetch(`https://formsubmit.co/${email}`, {
+      method: "POST",
+      body: dataToSend,
+    });
 
-    return { success: true };
+    const text = await response.text();
+
+    console.log("Status:", response.status);
+    console.log("Response:", text);
   }
 
   return (
