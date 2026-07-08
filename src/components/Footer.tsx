@@ -362,7 +362,7 @@ const Footer: FC = () => {
 
               <div className="flex space-x-4">
                 <a
-                  href="https://www.facebook.com/pisaligarh"
+                  href="https://www.facebook.com/share/184LZ5d13u/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-[#1877F2] hover:border-[#1877F2] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
@@ -371,7 +371,7 @@ const Footer: FC = () => {
                   <i className="fab fa-facebook-f"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/pisaligarh/"
+                  href="https://www.instagram.com/pisaligarh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-[#E4405F] hover:border-[#E4405F] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
@@ -380,7 +380,7 @@ const Footer: FC = () => {
                   <i className="fab fa-instagram"></i>
                 </a>
                 <a
-                  href="https://www.youtube.com/@pisaligarh"
+                  href="https://youtube.com/@pisaligarh?si=Mf4qM92ykFoa6cfr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-[#FF0000] hover:border-[#FF0000] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"

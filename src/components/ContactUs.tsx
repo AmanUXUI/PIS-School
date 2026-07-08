@@ -240,12 +240,12 @@ export const ContactUs: FC = () => {
                   {
                     name: "Facebook",
                     icon: "fab fa-facebook-f",
-                    url: "https://www.facebook.com/pisaligarh",
+                    url: "https://www.facebook.com/share/184LZ5d13u/",
                   },
                   {
                     name: "Instagram",
                     icon: "fab fa-instagram",
-                    url: "https://www.instagram.com/pisaligarh/",
+                    url: "https://www.instagram.com/pisaligarh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
                   },
                   {
                     name: "Linkedin",
@@ -255,7 +255,7 @@ export const ContactUs: FC = () => {
                   {
                     name: "Youtube",
                     icon: "fab fa-youtube",
-                    url: "https://www.youtube.com/@pisaligarh",
+                    url: "https://youtube.com/@pisaligarh?si=Mf4qM92ykFoa6cfr",
                   },
                 ].map((social) => (
                   <a

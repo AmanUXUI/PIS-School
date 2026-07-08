@@ -15,7 +15,6 @@ interface NewsletterIssue {
   id: string;
   title: string;
   issueNo: string;
-  date: string;
   summary?: string;
   image?: string;
   downloadUrl: string;
@@ -26,14 +25,12 @@ const NEWSLETTER_ISSUES: NewsletterIssue[] = [
     id: "issue-1",
     title: "Issue 01 | The Newsletter",
     issueNo: "Issue 01",
-    date: "December 2025",
     downloadUrl: "https://test.pavnaintlschool.com/pavna-news_april2022.pdf",
   },
   {
     id: "issue-2",
     title: "Issue 02 | The Newsletter",
     issueNo: "Issue 02",
-    date: "January 2026",
     downloadUrl:
       "https://test.pavnaintlschool.com/Pavna-Newsletter-The-Communique-Issue-02.pdf",
   },
@@ -41,14 +38,12 @@ const NEWSLETTER_ISSUES: NewsletterIssue[] = [
     id: "issue-3",
     title: "Issue 03 | The Newsletter",
     issueNo: "Issue 03",
-    date: "February 2026",
     downloadUrl: "https://test.pavnaintlschool.com/PAVNA-NEWSLETTER-03.pdf",
   },
   {
     id: "issue-4",
     title: "Issue 04 | The Newsletter",
     issueNo: "Issue 04",
-    date: "March 2026",
     downloadUrl:
       "https://test.pavnaintlschool.com/NEWSLETTER-ISSUE-4-WEB-EDITION_compressed.pdf",
   },
@@ -56,7 +51,6 @@ const NEWSLETTER_ISSUES: NewsletterIssue[] = [
     id: "issue-5",
     title: "Issue 05 | The Newsletter",
     issueNo: "Issue 05",
-    date: "April 2026",
     downloadUrl:
       "https://test.pavnaintlschool.com/NEWSLETTER-ISSUE-5-WEB-EDITION_compressed.pdf",
   },
@@ -64,14 +58,12 @@ const NEWSLETTER_ISSUES: NewsletterIssue[] = [
     id: "issue-6",
     title: "Issue 06 | The Newsletter",
     issueNo: "Issue 06",
-    date: "May 2026",
     downloadUrl: "https://test.pavnaintlschool.com/A4-NEWSLETTER-ISSUE-06.pdf",
   },
   {
     id: "issue-7",
     title: "Issue 07 | The Newsletter",
     issueNo: "Issue 07",
-    date: "June 2026",
     downloadUrl: "https://test.pavnaintlschool.com/THE-COMMUNIQUE-ISSUE-7.pdf",
   },
 ];
@@ -193,10 +185,10 @@ const Newsletter: FC = () => {
                     <h3 className="text-base sm:text-lg font-serif font-bold text-brand-navy group-hover:text-brand-orange transition-colors">
                       {issue.title}
                     </h3>
-                    <div className="flex items-center gap-2 text-xs text-neutral-400 mt-1 font-sans font-semibold">
+                    {/* <div className="flex items-center gap-2 text-xs text-neutral-400 mt-1 font-sans font-semibold">
                       <Calendar size={12} />
                       <span>{issue.date}</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -208,11 +200,11 @@ const Newsletter: FC = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-dark-orange text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded-xl transition-all duration-300 shadow-sm hover:shadow active:scale-95 group/btn cursor-pointer"
                   >
-                    <span>Download PDF</span>
-                    <Download
+                    <span>View Document</span>
+                    {/* <Download
                       size={14}
                       className="transition-transform duration-300 group-hover/btn:translate-y-0.5"
-                    />
+                    /> */}
                   </a>
                 </div>
               </motion.div>

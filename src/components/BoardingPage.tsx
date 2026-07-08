@@ -138,7 +138,7 @@ const FACILITIES: FacilityTab[] = [
       "From horse riding, lawn tennis, and handball to a wide array of indoor and outdoor sports, our world-class infrastructure is designed to help every child discover and nurture their true athletic potential.",
     image: [
       "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-18.webp",
-      "https://imgh.in/host/apkfd4",
+      "https://imgh.in/host/es8h7h",
     ],
     icon: Activity,
   },
@@ -160,10 +160,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Entertainment Zone for Recreation",
     description:
       "A dedicated recreation and entertainment zone gives students healthy downtime — table tennis, board games, lounge areas, and more. Balance between study and play is fundamental to wellbeing.",
-    image: [
-      "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-20.webp",
-      "https://imgh.in/host/b98hz9",
-    ],
+    image: ["https://imgh.in/host/y6f467", "https://imgh.in/host/b98hz9"],
     icon: Smile,
   },
   {

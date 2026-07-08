@@ -155,9 +155,15 @@ export const CONTENT = {
     phone: "+91 88888 88888",
     email: "info@pavnaintlschool.com",
     socials: [
-      { name: "Facebook", href: "#" },
-      { name: "Instagram", href: "#" },
-      { name: "YouTube", href: "#" },
+      { name: "Facebook", href: "https://www.facebook.com/share/184LZ5d13u/" },
+      {
+        name: "Instagram",
+        href: "https://www.instagram.com/pisaligarh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      },
+      {
+        name: "YouTube",
+        href: "https://youtube.com/@pisaligarh?si=Mf4qM92ykFoa6cfr",
+      },
     ],
   },
 } as const;
