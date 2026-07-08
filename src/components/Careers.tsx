@@ -285,8 +285,6 @@ const Careers: FC = () => {
 
             <form
               onSubmit={handleSubmit}
-              action={`https://formsubmit.co/${SECONDARY_EMAIL}`}
-              method="POST"
               encType="multipart/form-data"
               className="space-y-6 max-w-3xl mx-auto"
             >
