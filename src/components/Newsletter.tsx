@@ -27,49 +27,52 @@ const NEWSLETTER_ISSUES: NewsletterIssue[] = [
     title: "Issue 01 | The Newsletter",
     issueNo: "Issue 01",
     date: "December 2025",
-    downloadUrl: "#",
+    downloadUrl: "https://test.pavnaintlschool.com/pavna-news_april2022.pdf",
   },
   {
     id: "issue-2",
     title: "Issue 02 | The Newsletter",
     issueNo: "Issue 02",
     date: "January 2026",
-    downloadUrl: "#",
+    downloadUrl:
+      "https://test.pavnaintlschool.com/Pavna-Newsletter-The-Communique-Issue-02.pdf",
   },
   {
     id: "issue-3",
     title: "Issue 03 | The Newsletter",
     issueNo: "Issue 03",
     date: "February 2026",
-    downloadUrl: "#",
+    downloadUrl: "https://test.pavnaintlschool.com/PAVNA-NEWSLETTER-03.pdf",
   },
   {
     id: "issue-4",
     title: "Issue 04 | The Newsletter",
     issueNo: "Issue 04",
     date: "March 2026",
-    downloadUrl: "#",
+    downloadUrl:
+      "https://test.pavnaintlschool.com/NEWSLETTER-ISSUE-4-WEB-EDITION_compressed.pdf",
   },
   {
     id: "issue-5",
     title: "Issue 05 | The Newsletter",
     issueNo: "Issue 05",
     date: "April 2026",
-    downloadUrl: "#",
+    downloadUrl:
+      "https://test.pavnaintlschool.com/NEWSLETTER-ISSUE-5-WEB-EDITION_compressed.pdf",
   },
   {
     id: "issue-6",
     title: "Issue 06 | The Newsletter",
     issueNo: "Issue 06",
     date: "May 2026",
-    downloadUrl: "#",
+    downloadUrl: "https://test.pavnaintlschool.com/A4-NEWSLETTER-ISSUE-06.pdf",
   },
   {
     id: "issue-7",
     title: "Issue 07 | The Newsletter",
     issueNo: "Issue 07",
     date: "June 2026",
-    downloadUrl: "#",
+    downloadUrl: "https://test.pavnaintlschool.com/THE-COMMUNIQUE-ISSUE-7.pdf",
   },
 ];
 
@@ -201,6 +204,8 @@ const Newsletter: FC = () => {
                 <div className="shrink-0 flex items-center">
                   <a
                     href={issue.downloadUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-dark-orange text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded-xl transition-all duration-300 shadow-sm hover:shadow active:scale-95 group/btn cursor-pointer"
                   >
                     <span>Download PDF</span>

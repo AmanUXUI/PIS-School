@@ -115,11 +115,11 @@ export default function Navbar() {
     };
   }, []);
 
-  const isLinkActive = (link: (typeof CONTENT.navLinks)[0]) => {
+  const isLinkActive = (link: any) => {
     if (link.href === currentHash && link.href !== "#") return true;
     if (link.groups) {
-      return link.groups.some((group) =>
-        group.items.some((item) => item.href === currentHash),
+      return link.groups.some((group: any) =>
+        group.items.some((item: any) => item.href === currentHash),
       );
     }
     return false;
@@ -180,14 +180,14 @@ export default function Navbar() {
                   "flex items-center gap-1 transition-all",
                   link.name === "Apply Online"
                     ? "bg-brand-orange text-white hover:bg-brand-dark-orange py-2 px-5 rounded-[4px] font-bold text-[13px] hover:shadow-md"
-                    : link.name === "Pay Fees Online"
-                      ? "border border-brand-orange text-brand-orange hover:bg-brand-orange/5 py-[7px] px-5 rounded-[4px] font-bold text-[13px]"
-                      : cn(
-                          "text-[12px] font-bold transition-colors py-4",
-                          activeDropdown === link.name || isLinkActive(link)
-                            ? "text-brand-orange"
-                            : "text-brand-navy hover:text-brand-orange",
-                        ),
+                    : // : link.name === "Pay Fees Online"
+                      // ? "border border-brand-orange text-brand-orange hover:bg-brand-orange/5 py-[7px] px-5 rounded-[4px] font-bold text-[13px]"
+                      cn(
+                        "text-[12px] font-bold transition-colors py-4",
+                        activeDropdown === link.name || isLinkActive(link)
+                          ? "text-brand-orange"
+                          : "text-brand-navy hover:text-brand-orange",
+                      ),
                 )}
               >
                 {link.name}
@@ -249,10 +249,17 @@ export default function Navbar() {
                                 {group.title}
                               </h5>
                               <div className="flex flex-col gap-1">
-                                {group.items.map((item) => (
+                                {group.items.map((item: any) => (
                                   <a
                                     key={item.name}
                                     href={item.href}
+                                    // 👇 FIX: Checked for explicit newTab property here
+                                    target={item.newTab ? "_blank" : undefined}
+                                    rel={
+                                      item.newTab
+                                        ? "noopener noreferrer"
+                                        : undefined
+                                    }
                                     onMouseEnter={() =>
                                       setHoveredItem(item.name)
                                     }
@@ -339,8 +346,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Action Button removed */}
-
         {/* Mobile Menu Button */}
         <button
           className="lg:hidden text-brand-navy"
@@ -369,20 +374,20 @@ export default function Navbar() {
                 </a>
               );
             }
-            if (link.name === "Pay Fees Online") {
-              return (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-center gap-2 border border-brand-orange text-brand-orange px-5 py-2.5 rounded-[4px] font-bold text-center mt-2.5 text-sm"
-                >
-                  {link.name}
-                </a>
-              );
-            }
+            // if (link.name === "Pay Fees Online") {
+            //   return (
+            //     <a
+            //       key={link.name}
+            //       href={link.href}
+            //       target="_blank"
+            //       rel="noopener noreferrer"
+            //       onClick={() => setMobileMenuOpen(false)}
+            //       className="flex items-center justify-center gap-2 border border-brand-orange text-brand-orange px-5 py-2.5 rounded-[4px] font-bold text-center mt-2.5 text-sm"
+            //     >
+            //       {link.name}
+            //     </a>
+            //   );
+            // }
 
             return (
               <div key={link.name} className="flex flex-col">
@@ -427,10 +432,15 @@ export default function Navbar() {
                         <p className="text-[10px] font-bold uppercase tracking-wider text-brand-orange/70">
                           {group.title}
                         </p>
-                        {group.items.map((item) => (
+                        {group.items.map((item: any) => (
                           <a
                             key={item.name}
                             href={item.href}
+                            // 👇 FIX: Added target check for Mobile list links too
+                            target={item.newTab ? "_blank" : undefined}
+                            rel={
+                              item.newTab ? "noopener noreferrer" : undefined
+                            }
                             onClick={() => setMobileMenuOpen(false)}
                             className={cn(
                               "py-1 text-sm block transition-colors",

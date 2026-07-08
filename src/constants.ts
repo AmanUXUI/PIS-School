@@ -160,4 +160,4 @@ export const CONTENT = {
       { name: "YouTube", href: "#" },
     ],
   },
-};
+} as const;
