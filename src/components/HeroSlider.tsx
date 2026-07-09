@@ -21,8 +21,7 @@ export default function HeroSlider() {
               }}
               className="absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50 pointer-events-none select-none max-w-none"
               src="https://www.youtube.com/embed/8KcmbR076nU?autoplay=1&mute=1&loop=1&playlist=8KcmbR076nU&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&playsinline=1"
-              title="Welcome to Pavna International School Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              title="YouTube video player"
             ></iframe>
           </div>
 
