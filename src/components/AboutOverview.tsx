@@ -163,7 +163,7 @@ export default function AboutOverview() {
 
                 {/* Main Heading */}
                 <h2 className="text-3xl md:text-[42px] font-sans font-bold md:leading-[50px] tracking-tight text-brand-navy mb-6">
-                  A Premier Cambridge & Apple Distinguished School
+                  A Cambridge & Apple Distinguished School
                 </h2>
               </div>
 
