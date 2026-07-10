@@ -25,46 +25,50 @@ const NEWSLETTER_ISSUES: NewsletterIssue[] = [
     id: "issue-1",
     title: "Issue 01 | The Newsletter",
     issueNo: "Issue 01",
-    downloadUrl: "https://test.pavnaintlschool.com/pavna-news_april2022.pdf",
+    downloadUrl:
+      "https://pavnaintlschool.com/uploads/docs/pavna-news_april2022.pdf",
   },
   {
     id: "issue-2",
     title: "Issue 02 | The Newsletter",
     issueNo: "Issue 02",
     downloadUrl:
-      "https://test.pavnaintlschool.com/Pavna-Newsletter-The-Communique-Issue-02.pdf",
+      "https://pavnaintlschool.com/uploads/docs/Pavna-Newsletter-The-Communique-Issue-02.pdf",
   },
   {
     id: "issue-3",
     title: "Issue 03 | The Newsletter",
     issueNo: "Issue 03",
-    downloadUrl: "https://test.pavnaintlschool.com/PAVNA-NEWSLETTER-03.pdf",
+    downloadUrl:
+      "https://pavnaintlschool.com/uploads/docs/PAVNA-NEWSLETTER-03.pdf",
   },
   {
     id: "issue-4",
     title: "Issue 04 | The Newsletter",
     issueNo: "Issue 04",
     downloadUrl:
-      "https://test.pavnaintlschool.com/NEWSLETTER-ISSUE-4-WEB-EDITION_compressed.pdf",
+      "https://pavnaintlschool.com/uploads/docs/NEWSLETTER-ISSUE-4-WEB-EDITION_compressed.pdf",
   },
   {
     id: "issue-5",
     title: "Issue 05 | The Newsletter",
     issueNo: "Issue 05",
     downloadUrl:
-      "https://test.pavnaintlschool.com/NEWSLETTER-ISSUE-5-WEB-EDITION_compressed.pdf",
+      "https://pavnaintlschool.com/uploads/docs/NEWSLETTER-ISSUE-5-WEB-EDITION_compressed.pdf",
   },
   {
     id: "issue-6",
     title: "Issue 06 | The Newsletter",
     issueNo: "Issue 06",
-    downloadUrl: "https://test.pavnaintlschool.com/A4-NEWSLETTER-ISSUE-06.pdf",
+    downloadUrl:
+      "https://pavnaintlschool.com/uploads/docs/A4-NEWSLETTER-ISSUE-06.pdf",
   },
   {
     id: "issue-7",
     title: "Issue 07 | The Newsletter",
     issueNo: "Issue 07",
-    downloadUrl: "https://test.pavnaintlschool.com/THE-COMMUNIQUE-ISSUE-7.pdf",
+    downloadUrl:
+      "https://pavnaintlschool.com/uploads/docs/THE-COMMUNIQUE-ISSUE-7.pdf",
   },
 ];
 

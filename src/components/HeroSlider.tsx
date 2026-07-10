@@ -11,21 +11,18 @@ export default function HeroSlider() {
       >
         <div className="flex-grow relative bg-[#201A5B] overflow-hidden">
           {/* Background Video Frame */}
-          <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
-            <iframe
-              style={{
-                width: "177.78vh",
-                height: "56.25vw",
-                minWidth: "100%",
-                minHeight: "100%",
-              }}
-              className="absolute top-[54%] left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50 pointer-events-none select-none max-w-none"
-              src="https://www.youtube.com/embed/8KcmbR076nU?autoplay=1&mute=1&loop=1&playlist=8KcmbR076nU&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&playsinline=1"
-              title="YouTube video player"
-            ></iframe>
+          <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
+            <video
+              className="absolute inset-0 w-full h-full object-cover opacity-50"
+              src="/Pavna_Hero_Section_Video.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+            />
           </div>
 
-          {/* Premium Vertical Overlay Gradient */}
           <div
             className="absolute inset-0 z-10 pointer-events-none"
             style={{
