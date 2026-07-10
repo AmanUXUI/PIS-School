@@ -145,8 +145,8 @@ const CampusLife: FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6">
-              <div className="flex flex-col items-start w-fit max-w-full">
-                <div className="flex items-center gap-3 mb-6 w-full">
+              <div className="flex flex-col items-center md:items-start max-w-full">
+                <div className="flex  justify-center md:justify-start  items-center gap-3 mb-6 w-full">
                   <div className="w-6 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                     A CAMPUS DESIGNED TO INSPIRE
@@ -154,7 +154,7 @@ const CampusLife: FC = () => {
                   <div className="w-6 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
+                <h2 className="text-center md:text-left text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
                   Campus Environment
                 </h2>
               </div>
@@ -244,8 +244,8 @@ const CampusLife: FC = () => {
             {/* Right side: Content */}
             <div className="lg:col-span-6 flex flex-col justify-between">
               <div>
-                <div className="flex flex-col items-start w-fit max-w-full">
-                  <div className="flex items-center gap-3 mb-6 w-full">
+                <div className="flex flex-col items-center md:items-start  w-fit max-w-full">
+                  <div className="flex items-center justify-center md:justify-start   gap-3 mb-6 w-full">
                     <div className="w-6 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                     <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                       EXPLORE OUR ACADEMIC INFRASTRUCTURE
@@ -253,7 +253,7 @@ const CampusLife: FC = () => {
                     <div className="w-6 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   </div>
 
-                  <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
+                  <h2 className="text-3xl text-center md:text-left sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
                     Academic Infrastructure
                   </h2>
                 </div>
@@ -306,8 +306,8 @@ const CampusLife: FC = () => {
             {/* Left side: Content */}
             <div className="lg:col-span-6 flex flex-col justify-between">
               <div>
-                <div className="flex flex-col items-start w-fit max-w-full">
-                  <div className="flex items-center gap-3 mb-6 w-full">
+                <div className="flex flex-col items-center md:items-start  w-fit max-w-full">
+                  <div className="flex items-center justify-center md:justify-start   gap-3 mb-6 w-full">
                     <div className="w-6 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                     <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                       THE HEART OF CAMPUS OPERATIONS
@@ -315,7 +315,7 @@ const CampusLife: FC = () => {
                     <div className="w-6 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   </div>
 
-                  <h3 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
+                  <h3 className="text-center md:text-left text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
                     Administration Block
                   </h3>
                 </div>
@@ -398,8 +398,8 @@ const CampusLife: FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left side: Content & Cards */}
             <div className="order-2 lg:order-1 lg:col-span-6 flex flex-col justify-center">
-              <div className="flex flex-col items-start w-fit max-w-full">
-                <div className="flex items-center gap-3 mb-6 w-full">
+              <div className="flex flex-col items-center md:items-start max-w-full">
+                <div className="flex items-center justify-center md:justify-start gap-3 mb-6 w-full">
                   <div className="w-6 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                     OLYMPIC-STANDARD SPORTS
@@ -407,7 +407,7 @@ const CampusLife: FC = () => {
                   <div className="w-6 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
+                <h2 className="text-center md:text-left text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
                   Sports Facilities
                 </h2>
               </div>
@@ -494,8 +494,8 @@ const CampusLife: FC = () => {
       <section className="py-16 md:py-24 bg-[#FAF9F6] border-t border-b border-gray-100/85">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-12">
-            <div className="flex flex-col items-start w-fit max-w-full">
-              <div className="flex items-center gap-3 mb-6 w-full">
+            <div className="flex flex-col items-center md:items-start w-fit max-w-full">
+              <div className="flex items-center justify-center md:justify-start  gap-3 mb-6 w-full">
                 <div className="w-6 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                   LEARNING BEYOND THE CLASSROOM
@@ -503,7 +503,7 @@ const CampusLife: FC = () => {
                 <div className="w-6 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
+              <h2 className="text-center md:text-left text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
                 Co-Curricular Activities (ECA)
               </h2>
             </div>

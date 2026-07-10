@@ -115,10 +115,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Premium Boarding Facilities Nestled in Nature",
     description:
       "Set in a serene, green campus away from city noise, our boarding facilities provide children with the calm and space they need to focus, reflect, and recharge a true home away from home.",
-    image: [
-      "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-16.webp",
-      "https://imgh.in/host/0k5zrh",
-    ],
+    image: ["/images/OverlayShadow-16.webp", "/images/DSC09206.JPG.webp"],
     icon: Leaf,
   },
   {
@@ -127,7 +124,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "AC Rooms with Attached Bathrooms",
     description:
       "Our triple-sharing air-conditioned rooms are designed for comfort, cleanliness, and camaraderie. Each room has an attached bathroom and is maintained to the highest hygiene standards year-round.",
-    image: ["https://imgh.in/host/tzjqe8", "https://imgh.in/host/4jm1sw"],
+    image: ["/images/2O0A1138.webp", "/images/2O0A1077.webp"],
     icon: Snowflake,
   },
   {
@@ -136,10 +133,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "State-of-the-Art Sports Facilities",
     description:
       "From horse riding, lawn tennis, and handball to a wide array of indoor and outdoor sports, our world-class infrastructure is designed to help every child discover and nurture their true athletic potential.",
-    image: [
-      "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-18.webp",
-      "https://imgh.in/host/es8h7h",
-    ],
+    image: ["/images/OverlayShadow-18.webp", "/images/image_2.webp"],
     icon: Activity,
   },
   {
@@ -148,10 +142,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Holistic Co-Curricular Exposure",
     description:
       "Pottery, sculpture, textile design, and industrial design are just the beginning. Our diverse range of co-curricular activities empowers students to explore their passions, staying creatively vibrant and emotionally grounded.",
-    image: [
-      "https://pavnaschool.com/wp-content/uploads/2026/04/OverlayShadow-19.webp",
-      "https://imgh.in/host/7y9bsn",
-    ],
+    image: ["/images/OverlayShadow-19.webp", "/images/DSC06155.JPG.webp"],
     icon: Palette,
   },
   {
@@ -160,7 +151,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Entertainment Zone for Recreation",
     description:
       "A dedicated recreation and entertainment zone gives students healthy downtime — table tennis, board games, lounge areas, and more. Balance between study and play is fundamental to wellbeing.",
-    image: ["https://imgh.in/host/y6f467", "https://imgh.in/host/b98hz9"],
+    image: ["/images/image_3.webp", "https://imgh.in/host/b98hz9"],
     icon: Smile,
   },
   {
@@ -228,7 +219,7 @@ const BoardingPage: FC = () => {
       <section className="relative bg-brand-navy text-white overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
           <img
-            src="https://pavnaschool.com/wp-content/uploads/2026/04/Boarding-facility-2-1.webp"
+            src="/images/Boarding-facility-2-1.webp"
             alt="Boarding Campus Hero"
             className="w-full h-full object-cover scale-105 filter blur-[1px]"
           />
@@ -278,15 +269,15 @@ const BoardingPage: FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
             {/* Left Content Area */}
             <div className="lg:col-span-7 flex flex-col justify-center">
-              <div className="flex flex-col items-start w-fit max-w-full">
-                <div className="flex items-center gap-3 mb-6 w-full">
+              <div className="flex flex-col items-center md:items-start w-fit max-w-full">
+                <div className="flex items-center justify-center md:justify-start   gap-3 mb-6 w-full">
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                     Setting The Record Straight
                   </span>
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-8">
+                <h2 className="text-center md:text-left text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-8">
                   The Truth About Boarding Schools Today
                 </h2>
               </div>
@@ -744,8 +735,8 @@ const BoardingPage: FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-6 flex flex-col justify-center">
-              <div className="flex flex-col items-start w-fit max-w-full">
-                <div className="flex items-center gap-3 mb-6 w-full">
+              <div className="flex flex-col items-center md:items-start w-fit max-w-full">
+                <div className="flex items-center justify-center md:justify-start   gap-3 mb-6 w-full">
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-[28px] tracking-[1.65px] uppercase font-bold text-brand-orange">
                     BOARDING LIFE
@@ -753,7 +744,7 @@ const BoardingPage: FC = () => {
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-8">
+                <h2 className="text-center md:text-left text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-8">
                   A Home Away From Home
                 </h2>
               </div>

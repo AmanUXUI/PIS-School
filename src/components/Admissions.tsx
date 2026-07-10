@@ -79,7 +79,7 @@ const Admissions: FC = () => {
       <section className="relative bg-brand-navy text-white overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
           <img
-            src="https://i.postimg.cc/qMqw1NY4/DSC08559-JPG.jpg"
+            src="/images/DSC08559.webp"
             alt="School Admissions Background"
             className="w-full h-full object-cover scale-105 filter blur-[2px]"
             referrerPolicy="no-referrer"
@@ -125,15 +125,15 @@ const Admissions: FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5">
-              <div className="flex flex-col items-start w-fit max-w-full">
-                <div className="flex items-center gap-3 mb-6 w-full">
+              <div className="flex flex-col items-start  max-w-full">
+                <div className="flex items-center justify-center md:justify-start gap-3 mb-6 w-full">
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                     Future-Ready Minds
                   </span>
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
+                <h2 className="text-center md:text-left text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
                   Why Choose Pavna International School?
                 </h2>
 
@@ -177,7 +177,7 @@ const Admissions: FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <div className="flex flex-col items-start w-fit max-w-full">
-              <div className="flex items-center gap-3 mb-6 w-full">
+              <div className="flex items-center justify-center md:justify-start   gap-3 mb-6 w-full">
                 <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                   Admission Process
@@ -185,7 +185,7 @@ const Admissions: FC = () => {
                 <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
+              <h2 className="text-center md:text-left text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
                 A Simple & Transparent Admission Journey
               </h2>
             </div>
@@ -238,14 +238,14 @@ const Admissions: FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-12">
               <div className="flex flex-col items-start w-fit max-w-full">
-                <div className="flex items-center gap-3 mb-6 w-full">
+                <div className="flex items-center justify-center md:justify-start   gap-3 mb-6 w-full">
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                     Admission Policies
                   </span>
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6 max-w-2xl">
+                <h2 className="text-center md:text-left text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6 max-w-2xl">
                   Fair, Transparent & Student-Centric
                 </h2>
               </div>
@@ -304,15 +304,15 @@ const Admissions: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Header */}
           <div className="max-w-3xl mb-12 md:mb-16">
-            <div className="flex flex-col items-start w-fit max-w-full">
-              <div className="flex items-center gap-3 mb-6 w-full">
+            <div className="flex flex-col items-start max-w-full">
+              <div className="flex items-center justify-center md:justify-start   gap-3 mb-6 w-full">
                 <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                   Investment in Excellence
                 </span>
                 <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
+              <h2 className="text-center md:text-left text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
                 Fee Structure & Financials
               </h2>
             </div>

@@ -35,59 +35,59 @@ const itemMediaMap: Record<
 > = {
   // Academics
   "Early Years (Age 3 To 5 Years)": {
-    image: "https://i.postimg.cc/G27wmxSp/Early-Years.jpg",
+    image: "/images/image_212.webp",
     title: "Early Years",
     subtitle: "Play-based inquiry & foundation",
   },
   "Primary (Age 5 To 11 Years)": {
-    image: "https://i.postimg.cc/j5g0S4k5/Primary.jpg",
+    image: "/images/DSC05741.JPG.webp",
     title: "Primary Years",
     subtitle: "Core skills & creative learning",
   },
   "Lower Secondary (Age 11 to 14 Years)": {
-    image: "https://i.postimg.cc/XJHSYkDq/Low-Secondary.jpg",
+    image: "/images/DSC06249.webp",
     title: "Lower Secondary",
     subtitle: "Structured disciplines & active discovery",
   },
   "Upper Secondary - IGCSE (Age 14 To 16 Years)": {
-    image: "https://i.postimg.cc/mDXfgy6L/Upper-Secondary.jpg",
+    image: "/images/DSC08985.JPG.webp",
     title: "Upper Secondary",
     subtitle: "Cambridge qualifications for 14-16",
   },
   "Advance - AS & A Level (Age 16 To 18 Years)": {
-    image: "https://i.postimg.cc/QtxZDymR/Advance.jpg",
+    image: "/images/Advance.jpg",
     title: "Advance Years",
     subtitle: "Pre-university international standard",
   },
 
   // Contact Us
   "Contact Us": {
-    image: "https://i.postimg.cc/8z6zBbmm/DSC09241-JPG.jpg",
+    image: "/images/DSC09241.webp",
     title: "Contact Us",
     subtitle: "Reach our Sasni campus directly",
   },
   "Let's Talk": {
-    image: "https://i.postimg.cc/13RChW47/DSC08428-JPG.jpg",
+    image: "/images/DSC08428.webp",
     title: "Let's Talk",
     subtitle: "Connect directly with advisors",
   },
   Careers: {
-    image: "https://i.postimg.cc/MpZP2sXP/DSC08748-JPG.jpg",
+    image: "/images/DSC08748.webp",
     title: "Careers",
     subtitle: "Grow your teaching career with us",
   },
   "Enquire Now": {
-    image: "https://i.postimg.cc/qMqw1NY4/DSC08559-JPG.jpg",
+    image: "/images/DSC08559.webp",
     title: "Enquire Now",
     subtitle: "Start your admissions journey",
   },
   Blog: {
-    image: "https://i.postimg.cc/MpZP2sXP/DSC08748-JPG.jpg",
+    image: "/images/DSC08748.webp",
     title: "Our Blog",
     subtitle: "Campus happenings & insights",
   },
   Newsletter: {
-    image: "https://i.postimg.cc/13RChW47/DSC08428-JPG.jpg",
+    image: "/images/DSC08428.webp",
     title: "Monthly Newsletter",
     subtitle: "PIS Chronicle publications",
   },
@@ -141,7 +141,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center shrink-0">
           <img
-            src="https://i.postimg.cc/v84rD5Yc/cropped-PS-INTERNATIONAL-1-1-scaled-1-2048x684.jpg"
+            src="/images/image.webp"
             alt="Pavna School Logo"
             className="h-10 md:h-14 w-auto object-contain cursor-pointer"
             referrerPolicy="no-referrer"

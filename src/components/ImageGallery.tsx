@@ -8,7 +8,7 @@ const STAGES = [
     id: "early-years",
     title: "Early Years",
     tag: "(Age 3 TO 5 Yrs)",
-    image: "https://i.postimg.cc/G27wmxSp/Early-Years.jpg",
+    image: "/images/image_212.webp",
     description:
       "The school offers co-educational boarding and day places at key academic stages.",
     link: "Find out more →",
@@ -18,7 +18,7 @@ const STAGES = [
     id: "primary",
     title: "Primary",
     tag: "(Age 5 TO 11 Yrs)",
-    image: "https://i.postimg.cc/j5g0S4k5/Primary.jpg",
+    image: "/images/DSC05741.JPG.webp",
     description:
       "Broad, balanced curriculum focused on intellectual development.",
     link: "Find out more →",
@@ -28,7 +28,7 @@ const STAGES = [
     id: "lower-secondary",
     title: "Lower Secondary",
     tag: "(Age 11 TO 14 Yrs)",
-    image: "https://i.postimg.cc/XJHSYkDq/Low-Secondary.jpg",
+    image: "/images/DSC06249.webp",
     description:
       "Transitioning to deeper academic focus and personal development.",
     link: "Find out more →",

@@ -30,14 +30,14 @@ const FEATURES = [
 ];
 
 const IMAGES = [
-  "https://imgh.in/host/32a3sz",
-  "https://imgh.in/host/502lit",
-  "https://imgh.in/host/7brxa8",
-  "https://imgh.in/host/tzjqe8",
-  "https://imgh.in/host/xdy5s8",
-  "https://imgh.in/host/7h0ubp",
-  "https://i.postimg.cc/mkPp8Qk1/Chat-GPT-Image-Jul-4-2026-03-32-21-PM.png",
-  "https://i.postimg.cc/8PFxHVfb/Chat-GPT-Image-Jul-4-2026-03-28-32-PM.png",
+  "/images/image_60.webp",
+  "/images/image_83.webp",
+  "/images/2O0A1077.webp",
+  "/images/2O0A1138.webp",
+  "/images/DSC05147.webp",
+  "/images/DSC06065.JPG.webp",
+  "/images/Chat-GPT-Image-Jul-4-2026-03-32-21-PM.png",
+  "/images/Chat-GPT-Image-Jul-4-2026-03-28-32-PM.png",
 ];
 
 export default function BoardingSection() {

@@ -121,7 +121,7 @@ const UpperSecondary: FC = () => {
                     <GraduationCap size={24} className="text-brand-orange" />
                   </div>
                   <div>
-                    <p className="italic text-brand-navy font-serif text-[15px] sm:text-[16px] leading-relaxed mb-3 font-medium">
+                    <p className="text-left italic text-brand-navy font-serif text-[15px] sm:text-[16px] leading-relaxed mb-3 font-medium">
                       "Language is the road map of a culture. It tells you where
                       its people come from and where they are going."
                     </p>

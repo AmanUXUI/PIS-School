@@ -121,13 +121,13 @@ const AdvanceYears: FC = () => {
                     <GraduationCap size={24} className="text-brand-orange" />
                   </div>
                   <div>
-                    <p className="italic text-brand-navy font-serif text-[15px] sm:text-[16px] leading-relaxed mb-3 font-medium">
+                    <p className="text-left italic text-brand-navy font-serif text-[15px] sm:text-[16px] leading-relaxed mb-3 font-medium">
                       "Students who have studied Cambridge International AS & A
                       Levels have a real depth of understanding of the subject
                       matter."
                     </p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[11px] uppercase tracking-wider font-bold text-brand-navy">
+                    <div className="flex md:items-center gap-2">
+                      <span className="text-[11px] uppercase tracking-wider font-bold text-brand-navy text-left ">
                         Stuart Schmill{" "}
                         <span className="text-brand-orange">
                           (Dean of Admissions, MIT, USA)

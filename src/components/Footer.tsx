@@ -70,7 +70,7 @@ const Footer: FC = () => {
             <div className="md:col-span-6 lg:col-span-3">
               <div className="mb-6 bg-white inline-block p-3.5 rounded-[4px] border border-white/10 shadow-lg">
                 <img
-                  src="https://i.postimg.cc/v84rD5Yc/cropped-PS-INTERNATIONAL-1-1-scaled-1-2048x684.jpg"
+                  src="/images/image.webp"
                   alt="Pavna School Logo"
                   className="h-10 md:h-12 w-auto object-contain"
                 />
@@ -403,7 +403,7 @@ const Footer: FC = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 font-medium text-[10px] uppercase tracking-widest">
             <p>&copy; 2026 Pavna School. All rights reserved.</p>
-            <div className="space-x-5 mt-5 md:mt-0 flex items-center">
+            {/* <div className="space-x-5 mt-5 md:mt-0 flex items-center">
               <a
                 href="#"
                 onClick={(e) => e.preventDefault()}
@@ -427,7 +427,7 @@ const Footer: FC = () => {
               >
                 Sitemap
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

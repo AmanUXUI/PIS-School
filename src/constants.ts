@@ -6,7 +6,7 @@ export const CONTENT = {
       name: "About",
       href: "#",
       hasDropdown: true,
-      image: "https://i.postimg.cc/Ssp2zP0j/DSC05926-JPG.jpg",
+      image: "/images/dsc05926.webp",
       groups: [
         {
           title: "About",
@@ -38,7 +38,7 @@ export const CONTENT = {
     {
       name: "Curriculum",
       hasDropdown: true,
-      image: "https://i.postimg.cc/W4cb9J5M/DSC06249-JPG.jpg",
+      image: "/images/DSC06249.webp",
       groups: [
         {
           title: "Academic",
@@ -69,7 +69,7 @@ export const CONTENT = {
       name: "News & Media",
       href: "#",
       hasDropdown: true,
-      image: "https://i.postimg.cc/MpZP2sXP/DSC08748-JPG.jpg",
+      image: "/images/DSC08748.webp",
       groups: [
         {
           title: "PIS Chronicle",
@@ -84,7 +84,7 @@ export const CONTENT = {
       name: "Contact Us",
       href: "#",
       hasDropdown: true,
-      image: "https://i.postimg.cc/8z6zBbmm/DSC09241-JPG.jpg",
+      image: "/images/DSC09241.webp",
       groups: [
         {
           title: "Get In Touch",
@@ -104,11 +104,11 @@ export const CONTENT = {
     },
   ],
   heroImages: [
-    "https://i.postimg.cc/d3MHbwTd/DSC05685-JPG.jpg",
-    "https://i.postimg.cc/kgM13jDj/DSC05807-JPG.jpg",
-    "https://i.postimg.cc/13RChW47/DSC08428-JPG.jpg",
-    "https://i.postimg.cc/MpZP2sXP/DSC08748-JPG.jpg",
-    "https://i.postimg.cc/qMqw1NY4/DSC08559-JPG.jpg",
+    "/images/DSC05685.webp",
+    "/images/DSC05807.webp",
+    "/images/DSC08428.webp",
+    "/images/DSC08748.webp",
+    "/images/DSC08559.webp",
   ],
   about: {
     title: "Where Small Steps Build Lifelong Greatness",

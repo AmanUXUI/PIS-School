@@ -109,7 +109,7 @@ const LowerSecondary: FC = () => {
                     <GraduationCap size={24} className="text-brand-orange" />
                   </div>
                   <div>
-                    <p className="italic text-brand-navy font-serif text-[15px] sm:text-[16px] leading-relaxed mb-3 font-medium">
+                    <p className="italic text-left text-brand-navy font-serif text-[15px] sm:text-[16px] leading-relaxed mb-3 font-medium">
                       "Each subject helps to develop different kinds of skills
                       and this is especially true of Art & Design. Different
                       students respond to different subjects, so having more

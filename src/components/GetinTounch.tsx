@@ -9,7 +9,7 @@ export const GetInTouch: FC = () => {
       <section className="relative bg-brand-navy text-white overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
           <img
-            src="https://i.postimg.cc/8z6zBbmm/DSC09241-JPG.jpg"
+            src="/images/DSC09241.webp"
             alt="School Contact Background"
             className="w-full h-full object-cover scale-105 filter blur-[2px]"
           />

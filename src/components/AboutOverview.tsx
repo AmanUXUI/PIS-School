@@ -153,7 +153,7 @@ export default function AboutOverview() {
             <div className="lg:col-span-7 flex flex-col justify-center">
               {/* Section Subhead Accent & Heading Wrapper */}
               <div className="flex flex-col items-start w-fit max-w-full">
-                <div className="flex items-center gap-3 mb-3 w-full">
+                <div className="flex items-center justify-center md:justify-start gap-3 mb-3 w-full">
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-[28px] tracking-[1.65px] uppercase font-bold text-brand-orange">
                     About the School
@@ -162,12 +162,12 @@ export default function AboutOverview() {
                 </div>
 
                 {/* Main Heading */}
-                <h2 className="text-3xl md:text-[42px] font-sans font-bold md:leading-[50px] tracking-tight text-brand-navy mb-6">
+                <h2 className="text-3xl md:text-[42px] font-sans font-bold md:leading-[50px] tracking-tight text-center md:text-left text-brand-navy mb-6">
                   A Cambridge & Apple Distinguished School
                 </h2>
               </div>
 
-              <div className="text-[15px] sm:text-[16px] leading-[26px] text-neutral-600 font-normal space-y-6">
+              <div className="text-[15px] sm:text-[16px] leading-[26px] text-neutral-600 font-normal space-y-6 text-center md:text-left">
                 <p>
                   Pavna International School is a leading Cambridge Curriculum
                   school in India, committed to academic excellence, holistic

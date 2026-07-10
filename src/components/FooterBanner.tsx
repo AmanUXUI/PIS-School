@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from "motion/react";
 
 export default function FooterBanner() {
   return (
@@ -12,14 +12,14 @@ export default function FooterBanner() {
       >
         <picture>
           {/* Mobile version */}
-          <source 
-            media="(max-width: 768px)" 
-            srcSet="https://i.postimg.cc/pTLJs8GT/Banner-Mobile.jpg" 
+          <source
+            media="(max-width: 768px)"
+            srcSet="/images/Banner-Mobile.jpg"
           />
           {/* Desktop version */}
-          <img 
-            src="https://i.postimg.cc/xddGZm3h/Banner-Desktop.webp" 
-            alt="Pavna School Banner" 
+          <img
+            src="/images/Banner-Desktop.webp"
+            alt="Pavna School Banner"
             className="w-full h-auto block"
           />
         </picture>

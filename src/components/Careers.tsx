@@ -256,7 +256,7 @@ const Careers: FC = () => {
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden shadow-xl border border-neutral-100 group">
                 <img
-                  src="https://i.postimg.cc/DzXsyNw5/DSC06204-JPG-(1).jpg"
+                  src="/images/DSC06204.JPG.webp"
                   alt="Pavna International School Campus Learning"
                   className="w-full h-auto object-cover transform scale-100 group-hover:scale-103 transition-transform duration-700"
                 />

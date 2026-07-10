@@ -186,7 +186,7 @@ const CurriculumPage: FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-[52px] lg:text-[52px] font-sans font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight text-white mb-4">
+            <h1 className="text-4xl  md:text-[52px] lg:text-[52px] font-sans font-bold leading-tight md:leading-[58px] lg:leading-[58px] tracking-tight text-white mb-4">
               Cambridge International Programmes & Qualifications
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light font-gill max-w-2xl">
@@ -204,14 +204,14 @@ const CurriculumPage: FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-6">
               <div className="flex flex-col items-start w-fit max-w-full">
-                <div className="flex items-center gap-3 mb-4 w-full">
+                <div className="flex items-center  justify-center md:justify-start  gap-3 mb-4 w-full">
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                     World Class Standard
                   </span>
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy mb-6">
+                <h2 className="text-3xl text-center md:text-left sm:text-4xl font-serif font-bold text-brand-navy mb-6">
                   Cambridge International Education
                 </h2>
               </div>
@@ -254,14 +254,14 @@ const CurriculumPage: FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           {/* Left-aligned Title */}
           <div className="max-w-3xl mb-10 text-left">
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center  justify-center md:justify-start  gap-3 mb-4">
               <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
               <span className="text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                 Age 3 to 19 Stages
               </span>
               <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight">
+            <h2 className="text-3xl sm:text-4xl text-center md:text-left font-serif font-bold text-brand-navy leading-tight tracking-tight">
               A clear path for educational success
             </h2>
           </div>
@@ -466,14 +466,14 @@ const CurriculumPage: FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-5">
               <div className="flex flex-col items-start w-fit max-w-full">
-                <div className="flex items-center gap-3 mb-6 w-full">
+                <div className="flex items-center  justify-center md:justify-start  gap-3 mb-6 w-full">
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                     Trusted Education
                   </span>
                   <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
+                <h2 className="text-3xl text-center md:text-left sm:text-4xl font-serif font-bold text-brand-navy leading-tight tracking-tight mb-6">
                   Why Parents Choose Pavna International School
                 </h2>
               </div>
