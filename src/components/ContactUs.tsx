@@ -9,56 +9,15 @@ import {
   AlertCircle,
   X,
 } from "lucide-react";
-
-// Cascading States and Cities
-const STATES_CITIES_MAP: Record<string, string[]> = {
-  "Uttar Pradesh": [
-    "Hathras",
-    "Aligarh",
-    "Agra",
-    "Noida",
-    "Ghaziabad",
-    "Lucknow",
-    "Kanpur",
-  ],
-  Delhi: ["New Delhi", "Dwarka", "Rohini"],
-  Haryana: ["Gurgaon", "Faridabad", "Rohtak", "Sonipat"],
-  Rajasthan: ["Jaipur", "Udaipur", "Jodhpur", "Kota"],
-  Maharashtra: ["Mumbai", "Pune", "Nagpur", "Thane"],
-  Karnataka: ["Bangalore", "Mysore", "Mangalore"],
-  Other: ["Other"],
-};
-
-const ADMISSION_GRADES = [
-  "Playgroup",
-  "Nursery",
-  "LKG",
-  "UKG",
-  "Grade 1",
-  "Grade 2",
-  "Grade 3",
-  "Grade 4",
-  "Grade 5",
-  "Grade 6",
-  "Grade 7",
-  "Grade 8",
-  "Grade 9",
-  "Grade 10",
-  "Grade 11",
-  "Grade 12",
-];
-
-const SCHOOLING_OPTIONS = ["Day Schooling", "Day Boarding", "Full Boarding"];
-
-const COUNTRY_CODES = [
-  { code: "+91", label: "IND (+91)" },
-  { code: "+1", label: "USA (+1)" },
-  { code: "+44", label: "UK (+44)" },
-  { code: "+971", label: "UAE (+971)" },
-  { code: "+65", label: "SGP (+65)" },
-];
+import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 export const ContactUs: FC = () => {
+  useSEO({
+    title: "Contact Us |Pavna International School ",
+    description: "",
+    keywords: "",
+  });
   // Form States
   const [captchaCode, setCaptchaCode] = useState("");
   const [captchaBgSeed, setCaptchaBgSeed] = useState<
@@ -119,12 +78,12 @@ export const ContactUs: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-white/50">Contact Us</span>
             <span className="text-white/30">/</span>
@@ -192,12 +151,12 @@ export const ContactUs: FC = () => {
                     <strong className="text-base font-serif font-bold text-brand-navy mb-1 leading-none transition-colors duration-300 group-hover:text-brand-orange">
                       Call Us
                     </strong>
-                    <a
-                      href="tel:+918266954007"
+                    <Link
+                      to="tel:+918266954007"
                       className="text-[16px] leading-[24px] font-medium font-gill text-[#4B5563] hover:text-brand-orange transition-colors"
                     >
                       +91 82669 54007
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -209,12 +168,12 @@ export const ContactUs: FC = () => {
                     <strong className="text-base font-serif font-bold text-brand-navy mb-1 leading-none transition-colors duration-300 group-hover:text-brand-orange">
                       Email Address
                     </strong>
-                    <a
-                      href="mailto:info@pavnaintlschool.com"
+                    <Link
+                      to="mailto:info@pavnaintlschool.com"
                       className="text-[16px] leading-[24px] font-medium font-gill text-[#4B5563] hover:text-brand-orange transition-colors break-all"
                     >
                       info@pavnaintlschool.com
-                    </a>
+                    </Link>
                   </div>
                 </div>
 

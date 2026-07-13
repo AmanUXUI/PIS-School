@@ -1,8 +1,15 @@
 import React, { FC } from "react";
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin, Navigation, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 export const GetInTouch: FC = () => {
+  useSEO({
+    title: "Contact |Pavna International School ",
+    description: "",
+    keywords: "",
+  });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">
       {/* 1. Header Hero Panel with Breadcrumbs (consistent with existing pages) */}
@@ -22,12 +29,12 @@ export const GetInTouch: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-white/50">Contact Us</span>
             <span className="text-white/30">/</span>
@@ -80,12 +87,12 @@ export const GetInTouch: FC = () => {
                 <strong className="text-lg font-serif font-bold text-brand-navy mb-2 transition-colors duration-300 group-hover:text-brand-orange">
                   Call Us
                 </strong>
-                <a
-                  href="tel:+918266954007"
+                <Link
+                  to="tel:+918266954007"
                   className="text-[16px] font-medium font-gill text-[#4B5563] hover:text-brand-orange transition-colors"
                 >
                   +91 82669 54007
-                </a>
+                </Link>
               </div>
 
               <div className="flex flex-col items-center text-center p-6 bg-[#FAF9F6] rounded-2xl border border-neutral-100/50 group hover:-translate-y-1 transition-all duration-300">
@@ -95,12 +102,12 @@ export const GetInTouch: FC = () => {
                 <strong className="text-lg font-serif font-bold text-brand-navy mb-2 transition-colors duration-300 group-hover:text-brand-orange">
                   Email Address
                 </strong>
-                <a
-                  href="mailto:info@pavnaintlschool.com"
+                <Link
+                  to="mailto:info@pavnaintlschool.com"
                   className="text-[16px] font-medium font-gill text-[#4B5563] hover:text-brand-orange transition-colors break-all"
                 >
                   info@pavnaintlschool.com
-                </a>
+                </Link>
               </div>
 
               <div className="flex flex-col items-center text-center p-6 bg-[#FAF9F6] rounded-2xl border border-neutral-100/50 group hover:-translate-y-1 transition-all duration-300">

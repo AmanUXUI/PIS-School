@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { cn } from "../lib/utils";
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const STAGES = [
   {
@@ -38,17 +39,17 @@ const STAGES = [
     id: "upper-secondary",
     title: "Upper Secondary - IGCSE",
     tag: "(Age 14 TO 16 Yrs)",
-    image: "https://i.postimg.cc/mDXfgy6L/Upper-Secondary.jpg",
+    image: "/images/image_312.webp",
     description:
       "Rigorous academic preparation for international recognized qualifications.",
     link: "Find out more →",
     position: "center",
   },
   {
-    id: "advance",
+    id: "advance-as-a-level",
     title: "Advance - AS & A Level",
     tag: "(Age 16 TO 18 Yrs)",
-    image: "https://i.postimg.cc/QtxZDymR/Advance.jpg",
+    image: "/images/Advance.jpg",
     description:
       "Expert guidance for university success and global leadership roles.",
     link: "Find out more →",
@@ -188,12 +189,12 @@ export default function ImageGallery() {
                   <p className="text-white/70 text-xs sm:text-sm md:text-lg mb-4 md:mb-8 max-w-xs leading-relaxed font-semibold">
                     {stage.description}
                   </p>
-                  <a
-                    href={`#${stage.id}`}
+                  <Link
+                    to={`/${stage.id}`}
                     className="inline-flex items-center gap-2 text-yellow-400 text-[10px] md:text-[11px] font-bold uppercase tracking-[2px] hover:text-white transition-colors pointer-events-auto"
                   >
                     {stage.link}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

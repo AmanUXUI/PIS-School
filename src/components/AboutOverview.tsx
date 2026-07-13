@@ -13,8 +13,15 @@ import {
   Footprints,
 } from "lucide-react";
 import PavnaEcosystem from "./PavnaEcosystem";
+import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 export default function AboutOverview() {
+  useSEO({
+    title: "About Overview |Pavna International School ",
+    description: "",
+    keywords: "",
+  });
   // Exact content lists for Vision and Mission (from OCR Page 1)
   const visionParagraphs = [
     "To enable every learner to become the best version of themselves – confident in their identity, grounded in values, and inspired to learn, lead, and live with purpose.",
@@ -101,12 +108,12 @@ export default function AboutOverview() {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumb path */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-white/50">About</span>
             <span className="text-white/30">/</span>
@@ -334,22 +341,22 @@ export default function AboutOverview() {
               </div>
 
               {/* Center Home button */}
-              <button
-                onClick={() => (window.location.hash = "")}
-                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
+              <Link
+                to="/"
+                className="text-decoration-none inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
               >
                 Return to Homepage
                 <ArrowRight size={15} />
-              </button>
+              </Link>
 
               {/* Next button */}
               <div className="w-full sm:w-auto text-right order-3">
-                <a
-                  href="#chairmans-message"
+                <Link
+                  to="/chairmans-message"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
                 >
                   Chairman's Message &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>

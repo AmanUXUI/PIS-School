@@ -9,6 +9,8 @@ import {
   Filter,
   BookOpen,
 } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 export interface BlogPost {
   id: string;
@@ -504,6 +506,11 @@ Through collaboration, mentorship, and world-class educational tools, we empower
 };
 
 const Blog: FC = () => {
+  useSEO({
+    title: "Blog |Pavna International School ",
+    description: "",
+    keywords: "",
+  });
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -559,12 +566,12 @@ const Blog: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-white/50">News & Media</span>
             <span className="text-white/30">/</span>
@@ -662,7 +669,7 @@ const Blog: FC = () => {
                   {/* Card Thumbnail */}
                   <div
                     onClick={() => {
-                      window.location.hash = `#blog/${getSlug(post.title)}`;
+                      window.location.hash = `/blog/${getSlug(post.title)}`;
                       window.scrollTo(0, 0);
                     }}
                     className="relative h-56 overflow-hidden bg-neutral-900 group cursor-pointer"
@@ -706,7 +713,7 @@ const Blog: FC = () => {
 
                     <h4
                       onClick={() => {
-                        window.location.hash = `#blog/${getSlug(post.title)}`;
+                        window.location.hash = `/blog/${getSlug(post.title)}`;
                         window.scrollTo(0, 0);
                       }}
                       className="text-lg font-serif font-bold text-brand-navy mb-3 leading-snug line-clamp-2 hover:text-brand-orange transition-colors cursor-pointer"
@@ -719,9 +726,8 @@ const Blog: FC = () => {
                     </p>
 
                     <div className="mt-auto pt-4 border-t border-neutral-50">
-                      <a
-                        href={`#blog/${getSlug(post.title)}`}
-                        onClick={() => window.scrollTo(0, 0)}
+                      <Link
+                        to={`/blog/${getSlug(post.title)}`}
                         className="inline-flex items-center gap-1.5 text-brand-orange hover:text-brand-dark-orange text-xs font-bold tracking-wider uppercase cursor-pointer group"
                       >
                         <span>Read Story</span>
@@ -729,7 +735,7 @@ const Blog: FC = () => {
                           size={12}
                           className="transition-transform duration-300 group-hover:translate-x-1"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </motion.article>

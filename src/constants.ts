@@ -4,22 +4,21 @@ export const CONTENT = {
   navLinks: [
     {
       name: "About",
-      href: "#",
       hasDropdown: true,
       image: "/images/dsc05926.webp",
       groups: [
         {
           title: "About",
           items: [
-            { name: "Overview", href: "#about-overview" },
-            { name: "Academic Team", href: "#academic-team" },
+            { name: "Overview", href: "/about-overview" },
+            { name: "Academic Team", href: "/academic-team" },
           ],
         },
         {
           title: "Leadership Team",
           items: [
-            { name: "Chairman's Message", href: "#chairmans-message" },
-            { name: "Principal's Message", href: "#principals-message" },
+            { name: "Chairman's Message", href: "/chairmans-message" },
+            { name: "Principal's Message", href: "/principals-message" },
             {
               name: "Board Members",
               href: "https://pavnaschool.com/board-members/",
@@ -30,7 +29,7 @@ export const CONTENT = {
               href: "https://pavnaschool.com/core-team/",
               newTab: true,
             },
-            // { name: "Minds Behind PIS", href: "#minds-behind-pis" },
+            // { name: "Minds Behind PIS", href: "/minds-behind-pis" },
           ],
         },
       ],
@@ -43,55 +42,53 @@ export const CONTENT = {
         {
           title: "Academic",
           items: [
-            { name: "Curriculum Overview", href: "#curriculum" },
-            { name: "Early Years (Age 3 To 5 Years)", href: "#early-years" },
-            { name: "Primary (Age 5 To 11 Years)", href: "#primary" },
+            { name: "Curriculum Overview", href: "/curriculum" },
+            { name: "Early Years (Age 3 To 5 Years)", href: "/early-years" },
+            { name: "Primary (Age 5 To 11 Years)", href: "/primary" },
             {
               name: "Lower Secondary (Age 11 to 14 Years)",
-              href: "#lower-secondary",
+              href: "/lower-secondary",
             },
             {
               name: "Upper Secondary - IGCSE (Age 14 To 16 Years)",
-              href: "#upper-secondary",
+              href: "/upper-secondary",
             },
             {
               name: "Advance - AS & A Level (Age 16 To 18 Years)",
-              href: "#advance-as-a-level",
+              href: "/advance-as-a-level",
             },
           ],
         },
       ],
     },
-    { name: "Campus Life", href: "#campus-life", hasDropdown: false },
-    { name: "Boarding", href: "#boarding", hasDropdown: false },
-    { name: "Admissions", href: "#admissions", hasDropdown: false },
+    { name: "Campus Life", href: "/campus-life", hasDropdown: false },
+    { name: "Boarding", href: "/boarding", hasDropdown: false },
+    { name: "Admissions", href: "/admissions", hasDropdown: false },
     {
       name: "News & Media",
-      href: "#",
       hasDropdown: true,
       image: "/images/DSC08748.webp",
       groups: [
         {
           title: "PIS Chronicle",
           items: [
-            { name: "Blog", href: "#blog" },
-            { name: "Newsletter", href: "#newsletter" },
+            { name: "Blog", href: "/blog" },
+            { name: "Newsletter", href: "/newsletter" },
           ],
         },
       ],
     },
     {
       name: "Contact Us",
-      href: "#",
       hasDropdown: true,
       image: "/images/DSC09241.webp",
       groups: [
         {
           title: "Get In Touch",
           items: [
-            { name: "Let's Talk", href: "#lets-talk" },
-            { name: "Careers", href: "#careers" },
-            { name: "Get in Touch", href: "#get-in-touch" },
+            { name: "Let's Talk", href: "/lets-talk" },
+            { name: "Careers", href: "/careers" },
+            { name: "Get in Touch", href: "/get-in-touch" },
           ],
         },
       ],

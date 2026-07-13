@@ -1,29 +1,15 @@
-import { FC, useState, useEffect } from "react";
-import { motion } from "motion/react";
+import { FC } from "react";
+import { useParams, useNavigate } from "react-router-dom"; // 1. हुक्स इम्पोर्ट करें
 import { Calendar, ArrowLeft } from "lucide-react";
 import { BLOG_POSTS, getPostContent, getSlug } from "./Blog";
 
 const ArticlePage: FC = () => {
-  const [postId, setPostId] = useState<string | null>(null);
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    const handleHash = () => {
-      const hash = window.location.hash;
-      if (hash.startsWith("#blog/")) {
-        setPostId(hash.replace("#blog/", ""));
-      } else {
-        setPostId(null);
-      }
-    };
-    window.addEventListener("hashchange", handleHash);
-    handleHash();
-    return () => window.removeEventListener("hashchange", handleHash);
-  }, []);
-
-  const activePost = postId
-    ? BLOG_POSTS.find((p) => getSlug(p.title) === postId || p.id === postId)
+  const activePost = id
+    ? BLOG_POSTS.find((p) => getSlug(p.title) === id || p.id === id)
     : null;
-
   if (!activePost) {
     return (
       <div className="bg-[#FDFCFB] min-h-[90vh] flex flex-col justify-center items-center text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy pt-32 pb-20 text-center">
@@ -35,7 +21,7 @@ const ArticlePage: FC = () => {
             The requested article could not be located or has been moved.
           </p>
           <button
-            onClick={() => (window.location.hash = "#blog")}
+            onClick={() => navigate("/blog")} // 5. क्लीन राउट पर भेजें
             className="inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-dark-orange text-white text-xs font-bold tracking-wider uppercase px-6 py-3 rounded-full transition-colors cursor-pointer"
           >
             <ArrowLeft size={14} />
@@ -56,7 +42,7 @@ const ArticlePage: FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Back Button */}
         <button
-          onClick={() => (window.location.hash = "#blog")}
+          onClick={() => navigate("/blog")} // 6. हैश की जगह क्लीन URL
           className="inline-flex items-center gap-2 text-neutral-500 hover:text-brand-orange text-xs font-bold tracking-wider uppercase mb-8 transition-colors cursor-pointer group"
         >
           <ArrowLeft
@@ -144,8 +130,8 @@ const ArticlePage: FC = () => {
                 <div
                   key={related.id}
                   onClick={() => {
-                    window.location.hash = `#blog/${getSlug(related.title)}`;
-                    window.scrollTo(0, 0);
+                    // 7. हैश के बिना क्लीन रीडायरेक्शन
+                    navigate(`/blog/${getSlug(related.title)}`);
                   }}
                   className="group cursor-pointer bg-white rounded-xl overflow-hidden border border-neutral-100 shadow-sm hover:shadow-md transition-all duration-300"
                 >

@@ -20,10 +20,16 @@ import {
   CheckCircle2,
   X,
 } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 const PRIMARY_EMAIL = "ajay.dpsaligarh@gmail.com";
 const SECONDARY_EMAIL = "HEADMARKETING@pavnagroup.com";
 
 const Careers: FC = () => {
+  useSEO({
+    title: "Career |Pavna International School ",
+    description: "",
+    keywords: "",
+  });
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [fileObject, setFileObject] = useState<File | null>(null);

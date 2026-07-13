@@ -15,6 +15,7 @@ import {
   Sparkles,
   ClipboardList,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const STATES_CITIES_MAP: Record<string, string[]> = {
   "Uttar Pradesh": [
@@ -119,12 +120,12 @@ const EnquireNow: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-white/50">Admissions</span>
             <span className="text-white/30">/</span>
@@ -214,29 +215,29 @@ const EnquireNow: FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="w-full sm:w-auto text-left order-2 sm:order-1">
-              <a
-                href="#admissions"
+              <Link
+                to="/admissions"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
               >
                 &larr; Admissions Overview
-              </a>
+              </Link>
             </div>
 
-            <button
-              onClick={() => (window.location.hash = "")}
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
+            <Link
+              to="/"
+              className="text-decoration-none inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
             >
               Return to Homepage
               <ArrowRight size={15} />
-            </button>
+            </Link>
 
             <div className="w-full sm:w-auto text-right order-3">
-              <a
-                href="#contact-us"
+              <Link
+                to="/contact-us"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
               >
                 Contact Us &rarr;
-              </a>
+              </Link>
             </div>
           </div>
         </div>

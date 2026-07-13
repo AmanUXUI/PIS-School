@@ -15,20 +15,19 @@ import {
   Info,
   Mail,
 } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 const Admissions: FC = () => {
   const [activeFeeTab, setActiveFeeTab] = useState<"day-boarders" | "boarders">(
     "day-boarders",
   );
   const [copiedField, setCopiedField] = useState<string | null>(null);
-
-  const handleCopy = (text: string, field: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedField(field);
-    setTimeout(() => {
-      setCopiedField(null);
-    }, 2000);
-  };
+  useSEO({
+    title: "Admissions |Pavna International School ",
+    description: "",
+    keywords: "",
+  });
 
   const steps = [
     {
@@ -93,12 +92,12 @@ const Admissions: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-brand-orange font-bold">Admission</span>
           </div>
@@ -137,15 +136,15 @@ const Admissions: FC = () => {
                   Why Choose Pavna International School?
                 </h2>
 
-                <a
-                  href="https://pavnaintlschool.campuscare.cloud/"
+                <Link
+                  to="https://pavnaintlschool.campuscare.cloud/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-[4px] bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer font-gill"
                 >
                   Apply Now
                   <ArrowRight size={15} />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -255,15 +254,15 @@ const Admissions: FC = () => {
                 maintaining our academic standards.
               </p>
 
-              <a
-                href="https://pavnaintlschool.campuscare.cloud/"
+              <Link
+                to="https://pavnaintlschool.campuscare.cloud/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-[4px] bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer font-gill"
               >
                 Apply Now
                 <ArrowRight size={15} />
-              </a>
+              </Link>
             </div>
 
             <div className="lg:col-span-12 max-w-4xl space-y-4">
@@ -928,8 +927,8 @@ const Admissions: FC = () => {
               <div className="text-[10px] uppercase tracking-widest text-white/40 font-bold font-gill mb-1.5">
                 For queries & verification
               </div>
-              <a
-                href="mailto:accounts@pavnaintlschool.com"
+              <Link
+                to="mailto:accounts@pavnaintlschool.com"
                 className="text-white hover:text-brand-orange font-bold text-[15px] flex items-center gap-2.5 transition-colors group"
               >
                 <Mail
@@ -937,7 +936,7 @@ const Admissions: FC = () => {
                   className="text-brand-orange group-hover:scale-110 transition-transform"
                 />
                 accounts@pavnaintlschool.com
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -946,31 +945,31 @@ const Admissions: FC = () => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
               {/* Previous Link */}
               <div className="w-full sm:w-auto text-left order-2 sm:order-1">
-                <a
-                  href="#boarding"
+                <Link
+                  to="/boarding"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-gill"
                 >
                   &larr; Boarding
-                </a>
+                </Link>
               </div>
 
               {/* Home Return */}
-              <button
-                onClick={() => (window.location.hash = "")}
-                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
+              <Link
+                to="/"
+                className="text-decoration-none inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
               >
                 Return to Homepage
                 <ArrowRight size={15} />
-              </button>
+              </Link>
 
               {/* Next Link */}
               <div className="w-full sm:w-auto text-right order-3">
-                <a
-                  href="#blog"
+                <Link
+                  to="/blog"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-gill"
                 >
                   News & Media &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>

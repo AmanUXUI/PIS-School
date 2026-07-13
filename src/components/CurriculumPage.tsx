@@ -18,6 +18,8 @@ import {
   Sparkles,
   Heart,
 } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 interface FAQItem {
   question: string;
@@ -53,6 +55,11 @@ const FAQ_DATA: FAQItem[] = [
 ];
 
 const CurriculumPage: FC = () => {
+  useSEO({
+    title: "Curriculum |Pavna International School ",
+    description: "",
+    keywords: "",
+  });
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
   const [activeStageIdx, setActiveStageIdx] = useState<number>(0);
 
@@ -73,8 +80,8 @@ const CurriculumPage: FC = () => {
       ],
       description:
         "Our Early Years programme encourages curiosity, communication, creativity, and social development through engaging, play-based learning experiences. Children develop strong foundations that prepare them for future academic success.",
-      image: "https://i.postimg.cc/G27wmxSp/Early-Years.jpg",
-      link: "#early-years",
+      image: "/images/image_212.webp",
+      link: "/early-years",
       color:
         "border-purple-200 hover:border-purple-400 text-purple-600 bg-purple-50/30",
     },
@@ -90,8 +97,8 @@ const CurriculumPage: FC = () => {
       ],
       description:
         "The Primary programme strengthens literacy, numeracy, science, and global awareness. Students explore concepts through interactive learning, building confidence, collaboration, and problem-solving skills from an early age.",
-      image: "https://i.postimg.cc/j5g0S4k5/Primary.jpg",
-      link: "#primary",
+      image: "/images/DSC05741.JPG.webp",
+      link: "/primary",
       color:
         "border-blue-200 hover:border-blue-400 text-blue-600 bg-blue-50/30",
     },
@@ -107,8 +114,8 @@ const CurriculumPage: FC = () => {
       ],
       description:
         "Lower Secondary expands students' understanding across core subjects while encouraging analytical thinking, communication, teamwork, and independent learning. Regular assessments help monitor progress and guide personalised learning.",
-      image: "https://i.postimg.cc/XJHSYkDq/Low-Secondary.jpg",
-      link: "#lower-secondary",
+      image: "/images/DSC06249.webp",
+      link: "/lower-secondary",
       color:
         "border-green-200 hover:border-green-400 text-green-600 bg-green-50/30",
     },
@@ -124,8 +131,8 @@ const CurriculumPage: FC = () => {
       ],
       description:
         "The Cambridge IGCSE curriculum provides students with internationally recognised qualifications across a wide choice of subjects. It develops subject expertise, critical thinking, research abilities, and practical application of knowledge, preparing learners for higher education.",
-      image: "https://i.postimg.cc/mDXfgy6L/Upper-Secondary.jpg",
-      link: "#upper-secondary",
+      image: "/images/image_312.webp",
+      link: "/upper-secondary",
       color:
         "border-orange-200 hover:border-orange-400 text-brand-orange bg-orange-50/30",
     },
@@ -141,8 +148,8 @@ const CurriculumPage: FC = () => {
       ],
       description:
         "Cambridge Advanced programmes offer in-depth subject knowledge and academic rigour. Students develop advanced analytical, research, and communication skills that are valued by leading universities and employers worldwide.",
-      image: "https://i.postimg.cc/QtxZDymR/Advance.jpg",
-      link: "#advance-as-a-level",
+      image: "/images/Advance.jpg",
+      link: "/advance-as-a-level",
       color: "border-red-200 hover:border-red-400 text-red-600 bg-red-50/30",
     },
   ];
@@ -153,7 +160,7 @@ const CurriculumPage: FC = () => {
       <section className="relative bg-brand-navy text-white overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
           <img
-            src="https://i.postimg.cc/W4cb9J5M/DSC06249-JPG.jpg"
+            src="/images/DSC06249.webp"
             alt="School Campus Curriculum Background"
             className="w-full h-full object-cover scale-105 filter blur-[2px]"
           />
@@ -166,12 +173,12 @@ const CurriculumPage: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-white/50">Academics</span>
             <span className="text-white/30">/</span>
@@ -355,13 +362,13 @@ const CurriculumPage: FC = () => {
                       </ul>
 
                       <div className="flex pt-2">
-                        <a
-                          href={stage.link}
+                        <Link
+                          to={stage.link}
                           className="inline-flex items-center justify-center gap-2 py-3 px-6 rounded-xl bg-brand-orange hover:bg-brand-orange/90 text-white text-xs sm:text-sm font-bold uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-lg active:scale-95"
                         >
                           Explore Program Details
                           <ArrowRight size={14} className="stroke-[2.5]" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </motion.div>
@@ -490,7 +497,7 @@ const CurriculumPage: FC = () => {
             <div className="lg:col-span-7 bg-white p-6 sm:p-8 md:p-10 rounded-3xl border border-neutral-200/60 shadow-md flex flex-col md:flex-row items-center gap-8">
               <div className="relative aspect-[4/3] w-full md:w-[45%] rounded-2xl overflow-hidden bg-neutral-100 shrink-0">
                 <img
-                  src="https://i.postimg.cc/TPzWWQgg/Trusted-Legacy-of-Educational-Excellence.jpg"
+                  src="/images/DSC09066.JPG.webp"
                   alt="Pavna Learning Environment"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -583,31 +590,31 @@ const CurriculumPage: FC = () => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
               {/* Previous button - Minds Behind PIS */}
               <div className="w-full sm:w-auto text-left order-2 sm:order-1">
-                <a
-                  href="#principals-message"
+                <Link
+                  to="/principals-message"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
                 >
                   &larr; Principal's Message
-                </a>
+                </Link>
               </div>
 
               {/* Center Home button */}
-              <button
-                onClick={() => (window.location.hash = "")}
-                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
+              <Link
+                to="/"
+                className="text-decoration-none inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
               >
                 Return to Homepage
                 <ArrowRight size={15} />
-              </button>
+              </Link>
 
               {/* Next button */}
               <div className="w-full sm:w-auto text-right order-3">
-                <a
-                  href="#early-years"
+                <Link
+                  to="/early-years"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
                 >
                   Early Years &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>

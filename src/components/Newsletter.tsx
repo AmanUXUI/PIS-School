@@ -10,6 +10,8 @@ import {
   Clock,
   ArrowUpRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 interface NewsletterIssue {
   id: string;
@@ -73,35 +75,13 @@ const NEWSLETTER_ISSUES: NewsletterIssue[] = [
 ];
 
 const Newsletter: FC = () => {
-  const [emailInput, setEmailInput] = useState<string>("");
-  const [subscribeError, setSubscribeError] = useState<string>("");
   const [showSubscribedModal, setShowSubscribedModal] =
     useState<boolean>(false);
-  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
-
-  const handleSubscribe = (e: FormEvent) => {
-    e.preventDefault();
-    setSubscribeError("");
-
-    if (!emailInput.trim()) {
-      setSubscribeError("Please enter your email address");
-      return;
-    }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.trim())) {
-      setSubscribeError("Please enter a valid email address");
-      return;
-    }
-
-    setIsSubmitting(true);
-    // Simulate API registration
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setShowSubscribedModal(true);
-      setEmailInput("");
-    }, 1200);
-  };
-
+  useSEO({
+    title: "Newsletter |Pavna International School ",
+    description: "",
+    keywords: "",
+  });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">
       {/* 1. Page Header Section */}
@@ -122,12 +102,12 @@ const Newsletter: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-white/50">News & Media</span>
             <span className="text-white/30">/</span>
@@ -198,8 +178,8 @@ const Newsletter: FC = () => {
 
                 {/* Right side: Download Button */}
                 <div className="shrink-0 flex items-center">
-                  <a
-                    href={issue.downloadUrl}
+                  <Link
+                    to={issue.downloadUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-dark-orange text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded-xl transition-all duration-300 shadow-sm hover:shadow active:scale-95 group/btn cursor-pointer"
@@ -209,7 +189,7 @@ const Newsletter: FC = () => {
                       size={14}
                       className="transition-transform duration-300 group-hover/btn:translate-y-0.5"
                     /> */}
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             ))}

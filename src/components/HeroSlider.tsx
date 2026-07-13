@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { CONTENT } from "../constants";
+import { Link } from "react-router-dom";
 
 export default function HeroSlider() {
   return (
@@ -72,26 +73,28 @@ export default function HeroSlider() {
                 transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
                 className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center sm:justify-start w-full"
               >
-                <motion.button
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={() => (window.location.hash = "#curriculum")}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 bg-brand-orange text-white text-[11px] font-bold uppercase tracking-widest hover:bg-white hover:text-[#201A5B] transition-all duration-300 shadow-md rounded-[4px] whitespace-nowrap cursor-pointer group"
-                >
-                  <span>Explore Curriculum</span>
-                  <ArrowRight
-                    size={14}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={() => (window.location.hash = "#campus-life")}
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 bg-transparent border border-white/30 text-white text-[11px] font-bold uppercase tracking-widest hover:bg-white hover:text-[#201A5B] transition-all duration-300 shadow-sm rounded-[4px] whitespace-nowrap cursor-pointer"
-                >
-                  <span>View Campus</span>
-                </motion.button>
+                <Link to="/curriculum">
+                  <motion.button
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 bg-brand-orange text-white text-[11px] font-bold uppercase tracking-widest hover:bg-white hover:text-[#201A5B] transition-all duration-300 shadow-md rounded-[4px] whitespace-nowrap cursor-pointer group"
+                  >
+                    <span>Explore Curriculum</span>
+                    <ArrowRight
+                      size={14}
+                      className="transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                  </motion.button>
+                </Link>
+                <Link to="/campus-life">
+                  <motion.button
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 bg-transparent border border-white/30 text-white text-[11px] font-bold uppercase tracking-widest hover:bg-white hover:text-[#201A5B] transition-all duration-300 shadow-sm rounded-[4px] whitespace-nowrap cursor-pointer"
+                  >
+                    <span>View Campus</span>
+                  </motion.button>
+                </Link>
               </motion.div>
             </div>
           </div>

@@ -20,6 +20,8 @@ import {
   ChevronDown,
   Heart,
 } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 interface FacilityTab {
   id: string;
@@ -30,84 +32,6 @@ interface FacilityTab {
   icon: any;
 }
 
-const PurpleEducationIcon: FC = () => (
-  <svg
-    viewBox="0 0 100 100"
-    className="w-full h-full"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="50" cy="50" r="50" fill="#EFEBFF" />
-    <circle cx="50" cy="33" r="8" fill="#7C3AED" />
-    <path
-      d="M26 53 C26 51 28 50 31 50 C38 50 45 53 50 56 C55 53 62 50 69 50 C72 50 74 51 74 53 V67 C74 69 72 70 69 70 C62 70 55 67 50 64 C45 67 38 70 31 70 C28 70 26 69 26 67 V53 Z"
-      fill="#7C3AED"
-    />
-    <path
-      d="M50 56 V64"
-      stroke="#EFEBFF"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-    />
-  </svg>
-);
-
-const BlueShieldIcon: FC = () => (
-  <svg
-    viewBox="0 0 100 100"
-    className="w-full h-full"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="50" cy="50" r="50" fill="#E0F2FE" />
-    <path
-      d="M50 22 C62 22 72 25 72 25 C72 25 72 47 72 53 C72 65 62 73 50 78 C38 73 28 65 28 53 C28 47 28 25 28 25 C28 25 38 22 50 22 Z"
-      fill="#2563EB"
-    />
-    <path
-      d="M50 40.5 C52.5 37 57.5 37 59.5 40.5 C61.5 45 50 53 50 53 C50 53 38.5 45 40.5 40.5 C42.5 37 47.5 37 50 40.5 Z"
-      fill="#E0F2FE"
-    />
-  </svg>
-);
-
-const GreenMealIcon: FC = () => (
-  <svg
-    viewBox="0 0 100 100"
-    className="w-full h-full"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="50" cy="50" r="50" fill="#D1FAE5" />
-    <rect
-      x="28"
-      y="28"
-      width="44"
-      height="44"
-      rx="10"
-      stroke="#059669"
-      strokeWidth="8"
-      fill="none"
-    />
-    <circle cx="50" cy="50" r="9" fill="#059669" />
-  </svg>
-);
-
-const PinkBedIcon: FC = () => (
-  <svg
-    viewBox="0 0 100 100"
-    className="w-full h-full"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <circle cx="50" cy="50" r="50" fill="#FFE4E6" />
-    <rect x="26" y="32" width="7" height="36" rx="3.5" fill="#E11D48" />
-    <rect x="67" y="50" width="7" height="18" rx="3.5" fill="#E11D48" />
-    <rect x="33" y="53" width="34" height="7" rx="3.5" fill="#E11D48" />
-    <circle cx="41" cy="45" r="6" fill="#E11D48" />
-    <rect x="49" y="42" width="18" height="11" rx="3" fill="#E11D48" />
-  </svg>
-);
 const FACILITIES: FacilityTab[] = [
   {
     id: "nestled-nature",
@@ -151,7 +75,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Entertainment Zone for Recreation",
     description:
       "A dedicated recreation and entertainment zone gives students healthy downtime — table tennis, board games, lounge areas, and more. Balance between study and play is fundamental to wellbeing.",
-    image: ["/images/image_3.webp", "https://imgh.in/host/b98hz9"],
+    image: ["/images/image_3.webp", "/images/image_tabletennies.webp"],
     icon: Smile,
   },
   {
@@ -160,7 +84,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Pure Vegetarian Dining",
     description:
       "Our in-house kitchen serves freshly prepared, pure vegetarian meals three times a day — nutritionally balanced menus curated to support growing minds and bodies with wholesome, hygienic food.",
-    image: ["https://imgh.in/host/7h0ubp", "https://imgh.in/host/apkfd4"],
+    image: ["/images/DSC06065.JPG.webp", "/images/DSC05168.webp"],
     icon: Utensils,
   },
   {
@@ -169,10 +93,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Medical Facilities",
     description:
       "We ensure every student's well-being with 24/7 medical care, routine health check-ups, and immediate first-aid support.",
-    image: [
-      "https://i.postimg.cc/YqCBQ7rH/Nursing-jpg.jpg",
-      "https://imgh.in/host/502lit",
-    ],
+    image: ["/images/image_60.webp", "/images/image_83.webp"],
     icon: Heart,
   },
 ];
@@ -181,6 +102,11 @@ const VISIBLE_CARDS = 2;
 const MAX_INDEX = TOTAL_SLIDES - VISIBLE_CARDS;
 
 const BoardingPage: FC = () => {
+  useSEO({
+    title: "Boarding |Pavna International School ",
+    description: "",
+    keywords: "",
+  });
   const [activeTab, setActiveTab] = useState<string>("nestled-nature");
   const [currentImgIdx, setCurrentImgIdx] = useState(0);
   const [slideIndex, setSlideIndex] = useState(0);
@@ -232,12 +158,12 @@ const BoardingPage: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-brand-orange font-bold">Boarding Life</span>
           </div>
@@ -811,7 +737,7 @@ const BoardingPage: FC = () => {
                   {/* Card 1 */}
                   <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
                     <img
-                      src="https://i.postimg.cc/wBhhwbnz/DSC06023-JPG.jpg"
+                      src="/images/DSC06023.JPG.webp"
                       alt="Comfortable Boarding Dorm"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -822,7 +748,7 @@ const BoardingPage: FC = () => {
                   {/* Card 2 */}
                   <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
                     <img
-                      src="https://i.postimg.cc/sgp9CzPy/DSC06065-JPG.jpg"
+                      src="/images/DSC06065.JPG.webp"
                       alt="Boarding Life Student Room"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -833,7 +759,7 @@ const BoardingPage: FC = () => {
                   {/* Card 3 */}
                   <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
                     <img
-                      src="https://imgh.in/host/502lit"
+                      src="/images/image_83.webp"
                       alt="Structured Study Area"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -844,7 +770,7 @@ const BoardingPage: FC = () => {
                   {/* Card 4 */}
                   <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
                     <img
-                      src="https://i.postimg.cc/Y0TczjQg/Nursing-jpg.jpg"
+                      src="/images/image_60.webp"
                       alt="Professional On-Campus Medical and Healthcare Care"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -855,7 +781,7 @@ const BoardingPage: FC = () => {
                   {/* Card 5 */}
                   <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
                     <img
-                      src="https://imgh.in/host/b98hz9"
+                      src="/images/image_tabletennies.webp"
                       alt="Structured Study Area"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -866,7 +792,7 @@ const BoardingPage: FC = () => {
                   {/* Card 6 */}
                   <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
                     <img
-                      src="https://imgh.in/host/y6f467"
+                      src="/images/image_3.webp"
                       alt="Professional On-Campus Medical and Healthcare Care"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -887,31 +813,31 @@ const BoardingPage: FC = () => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
               {/* Previous button */}
               <div className="w-full sm:w-auto text-left order-2 sm:order-1">
-                <a
-                  href="#campus-life"
+                <Link
+                  to="/campus-life"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
                 >
                   &larr; Campus Life
-                </a>
+                </Link>
               </div>
 
               {/* Center Home button */}
-              <button
-                onClick={() => (window.location.hash = "")}
-                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
+              <Link
+                to="/"
+                className="text-decoration-none inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer w-full sm:w-auto order-1 sm:order-2"
               >
                 Return to Homepage
                 <ArrowRight size={15} />
-              </button>
+              </Link>
 
               {/* Next button */}
               <div className="w-full sm:w-auto text-right order-3">
-                <a
-                  href="#admissions"
+                <Link
+                  to="/admissions"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
                 >
                   Admissions Journey &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>

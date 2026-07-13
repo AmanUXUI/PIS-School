@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { Quote, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { Quote, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
 
 const InstagramIcon = ({ className }: { className?: string }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className={className}
   >
     <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -35,28 +35,34 @@ const REELS_DATA: TestimonialReel[] = [
     parentName: "Mrs. Meenakshi Sharma",
     role: "Parent of Grade 8 Student",
     url: "https://www.instagram.com/reel/DYPmM5HEp3y/?igsh=YzZsYjd5YndwN2s0",
-    thumbnail: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80",
+    thumbnail:
+      "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80",
     sparkText: "Holistic Academics",
-    quote: "Pavna provides a transformative experience where students build incredible confidence, high-quality character, and intellectual curiosity."
+    quote:
+      "Pavna provides a transformative experience where students build incredible confidence, high-quality character, and intellectual curiosity.",
   },
   {
     title: "Shaping Leaders of Tomorrow",
     parentName: "Mr. & Mrs. Kapoor",
     role: "Parents of Grade 11 IGCSE Student",
     url: "https://www.instagram.com/reel/DYTqWeNAE6d/?igsh=MWpkcTJzbjY5czc0bg==",
-    thumbnail: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80",
+    thumbnail:
+      "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80",
     sparkText: "Global Readiness",
-    quote: "Preparing children beautifully for international boards while keeping them deeply rooted in rich core human values."
+    quote:
+      "Preparing children beautifully for international boards while keeping them deeply rooted in rich core human values.",
   },
   {
     title: "A Nurturing & Safe Environment",
     parentName: "Dr. Aditya Sen",
     role: "Parent of Boarding Student",
     url: "https://www.instagram.com/reel/DaXcMnBiCGj/?igsh=aGJ3aHo2d2M1M2s=",
-    thumbnail: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&q=80",
+    thumbnail:
+      "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&q=80",
     sparkText: "Safe Haven & Mentor Support",
-    quote: "The boarding facilities are unmatched. The teachers serve as genuine mentors, giving parents complete peace of mind."
-  }
+    quote:
+      "The boarding facilities are unmatched. The teachers serve as genuine mentors, giving parents complete peace of mind.",
+  },
 ];
 
 export default function ParentTestimonials() {
@@ -76,12 +82,14 @@ export default function ParentTestimonials() {
   };
 
   return (
-    <section className="py-16 bg-[#FAF9F5] border-t border-b border-gray-200 relative overflow-hidden" id="parent-testimonials">
+    <section
+      className="py-16 bg-[#FAF9F5] border-t border-b border-gray-200 relative overflow-hidden"
+      id="parent-testimonials"
+    >
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
         {/* Header Section */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -89,7 +97,9 @@ export default function ParentTestimonials() {
           >
             <div className="flex items-center justify-center gap-3 mb-5 w-full">
               <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
-              <span className="shrink-0 text-brand-orange text-[11px] leading-[28px] tracking-[1.65px] uppercase font-bold">Community Voice</span>
+              <span className="shrink-0 text-brand-orange text-[11px] leading-[28px] tracking-[1.65px] uppercase font-bold">
+                Community Voice
+              </span>
               <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
             </div>
 
@@ -98,15 +108,16 @@ export default function ParentTestimonials() {
             </h2>
           </motion.div>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.25 }}
             className="text-[#4B5563] text-[16px] leading-[24px] font-medium font-gill max-w-2xl mx-auto"
           >
-            Experience the genuine moments and heartfelt journeys shared directly by our parent community. 
-            Click on any card to play their complete interactive video story on Instagram.
+            Experience the genuine moments and heartfelt journeys shared
+            directly by our parent community. Click on any card to play their
+            complete interactive video story on Instagram.
           </motion.p>
         </div>
 
@@ -127,10 +138,9 @@ export default function ParentTestimonials() {
                 {/* The Pure Reel Widget Frame */}
                 <div className="relative flex-grow bg-black select-none">
                   {reelCode ? (
-                    <iframe 
-                      src={`https://www.instagram.com/reel/${reelCode}/embed`} 
+                    <iframe
+                      src={`https://www.instagram.com/reel/${reelCode}/embed`}
                       className="w-full h-full border-0 absolute inset-0"
-                      allowtransparency="true"
                       allowFullScreen
                       allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                       scrolling="no"
@@ -160,10 +170,9 @@ export default function ParentTestimonials() {
                 className="w-full h-full relative"
               >
                 {getReelCode(REELS_DATA[activeIdx].url) ? (
-                  <iframe 
-                    src={`https://www.instagram.com/reel/${getReelCode(REELS_DATA[activeIdx].url)}/embed`} 
+                  <iframe
+                    src={`https://www.instagram.com/reel/${getReelCode(REELS_DATA[activeIdx].url)}/embed`}
                     className="w-full h-full border-0 absolute inset-0"
-                    allowtransparency="true"
                     allowFullScreen
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                     scrolling="no"
@@ -185,14 +194,13 @@ export default function ParentTestimonials() {
                 <button
                   key={idx}
                   onClick={() => setActiveIdx(idx)}
-                  className={`h-2 rounded-full transition-all duration-300 ${activeIdx === idx ? 'bg-[#f48120] w-6' : 'bg-[#f48120]/20 w-2'}`}
+                  className={`h-2 rounded-full transition-all duration-300 ${activeIdx === idx ? "bg-[#f48120] w-6" : "bg-[#f48120]/20 w-2"}`}
                   aria-label={`Go to slide ${idx + 1}`}
                 />
               ))}
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

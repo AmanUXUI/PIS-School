@@ -24,56 +24,56 @@ export default function AboutSection() {
       title: "Apple Distinguished School",
       description:
         "Recognized as a hub of innovation, leadership, and educational excellence through tech-enabled learning.",
-      url: "https://i.postimg.cc/bJnC8qR0/DSC05703-JPG.jpg",
+      url: "/images/image_apple.webp",
       icon: <Smartphone size={16} className="stroke-[2.5]" />,
     },
     {
       title: "Strong Academic Foundation",
       description:
         "Prepares students for advanced studies and higher education pathways.",
-      url: "https://i.postimg.cc/Y2LyhTTq/DSC05785-JPG.jpg",
+      url: "/images/image_academic.webp",
       icon: <GraduationCap size={16} className="stroke-[2.5]" />,
     },
     {
       title: "Multiple Career Pathways",
       description:
         "Keeps future academic and career opportunities open across disciplines.",
-      url: "https://i.postimg.cc/1z2CL8D6/DSC08765-JPG.jpg",
+      url: "/images/image_64.webp",
       icon: <Target size={16} className="stroke-[2.5]" />,
     },
     {
       title: "Experiential Learning Approach",
       description:
         "Hands-on learning experiences that transform knowledge into practical skills and real-world understanding.",
-      url: "https://i.postimg.cc/MK7qm5R6/Experiential-Learning-Approach.jpg",
+      url: "/images/image_82.webp",
       icon: <Compass size={16} className="stroke-[2.5]" />,
     },
     {
       title: "Future-Ready Skills Development",
       description:
         "Building leadership, creativity, communication, and problem-solving skills for tomorrow's careers.",
-      url: "https://i.postimg.cc/nL5yJ975/Future-Ready-Skills-Development.jpg",
+      url: "/images/DSC06143.JPG.webp",
       icon: <Cpu size={16} className="stroke-[2.5]" />,
     },
     {
       title: "World-Class Infrastructure",
       description:
         "Modern classrooms, advanced learning spaces, and premium facilities designed for holistic growth.",
-      url: "https://i.postimg.cc/W43VjPyz/World-Class-Infrastructure.jpg",
+      url: "/images/DSC09206.JPG.webp",
       icon: <School size={16} className="stroke-[2.5]" />,
     },
     {
       title: "Global Exposure with Strong Values",
       description:
         "International perspectives combined with strong ethics, character development, and cultural awareness.",
-      url: "https://i.postimg.cc/hGk77MTr/Global-Exposure-with-Strong-Values.jpg",
+      url: "/images/image_66.webp",
       icon: <Globe size={16} className="stroke-[2.5]" />,
     },
     {
       title: "Trusted Legacy of Educational Excellence",
       description:
         "A proven commitment to academic success, student achievement, and holistic education excellence.",
-      url: "https://i.postimg.cc/TPzWWQgg/Trusted-Legacy-of-Educational-Excellence.jpg",
+      url: "/images/DSC09066.JPG.webp",
       icon: <Award size={16} className="stroke-[2.5]" />,
     },
   ];
@@ -83,13 +83,13 @@ export default function AboutSection() {
       title: "Our Vision",
       description:
         "To enable every learner to become the best version of themselves - confident in their identity, grounded in values, and inspired to learn, lead, and live with purpose.\n\nWe envision Pavna Schools as vibrant ecosystems that blend intellect with humility, tradition with innovation, ambition with compassion, and individuality with community.",
-      image: "https://i.postimg.cc/sDX0mLp4/DSC05807-JPG.jpg",
+      image: "/images/DSC05807.webp",
     },
     {
       title: "Our Mission",
       description:
         "Our mission is to provide a nurturing and inspiring educational environment where every learner feels valued, respected, empowered to reach their full potential, and express themselves freely. We are committed to delivering holistic, experiential, inquiry-led and interdisciplinary learning that blends academic excellence with emotional, social, and ethical growth.\n\nThrough innovative teaching practices, dedicated faculty, and a unified curriculum, we aim to shape confident, compassionate, and curious learners who are prepared to thrive in a dynamic world.\n\nOur goal is to make quality education accessible and impactful creating institutions that are rooted in trust, inclusivity, and a deep sense of social responsibility",
-      image: "https://i.postimg.cc/NjnTGwvg/DSC05789-JPG.jpg",
+      image: "/images/DSC05789.JPG.webp",
     },
   ];
 

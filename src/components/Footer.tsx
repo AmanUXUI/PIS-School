@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
 const Footer: FC = () => {
   return (
@@ -37,8 +38,8 @@ const Footer: FC = () => {
 
             <div className="w-full lg:w-5/12 flex flex-col space-y-5 relative z-10">
               {/* Apply Now Premium Card Button */}
-              <a
-                href="#admissions"
+              <Link
+                to="/admissions"
                 className="group/btn relative flex items-center justify-between bg-brand-orange text-white p-5 md:p-6 rounded-[8px] hover:bg-brand-darkOrange transition-all duration-300 shadow-glow transform hover:-translate-y-1 overflow-hidden border border-brand-orange/50 hover:border-white/20"
               >
                 <div className="absolute inset-0 w-0 bg-white/20 transition-all duration-500 ease-out group-hover/btn:w-full"></div>
@@ -53,7 +54,7 @@ const Footer: FC = () => {
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center relative z-10 group-hover/btn:bg-white group-hover/btn:text-brand-orange transition-colors duration-300 shadow-sm">
                   <i className="fas fa-arrow-right transform -rotate-45 group-hover/btn:rotate-0 transition-transform duration-300"></i>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -148,64 +149,64 @@ const Footer: FC = () => {
               </h4>
               <ul className="space-y-4 text-[13px]">
                 <li>
-                  <a
-                    href="#about-overview"
+                  <Link
+                    to="/about-overview"
                     className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Overview
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#academic-team"
+                  <Link
+                    to="/academic-team"
                     className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Academic Team
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#chairmans-message"
+                  <Link
+                    to="/chairmans-message"
                     className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Chairman's Message
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#principals-message"
+                  <Link
+                    to="/principals-message"
                     className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Principal's Message
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#blog"
+                  <Link
+                    to="/blog"
                     className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#newsletter"
+                  <Link
+                    to="/newsletter"
                     className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Newsletter
-                  </a>
+                  </Link>
                 </li>
                 {/* <li>
-                  <a href="#minds-behind-pis" className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group">
+                  <Link to="/minds-behind-pis" className="text-gray-400 hover:text-brand-orange transition-all duration-300 flex items-center group">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-orange scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Minds Behind PIS
-                  </a> 
+                  </Link> 
                 </li> */}
               </ul>
             </div>
@@ -218,58 +219,58 @@ const Footer: FC = () => {
               </h4>
               <ul className="space-y-4 text-[13px]">
                 <li>
-                  <a
-                    href="#curriculum"
+                  <Link
+                    to="/curriculum"
                     className="text-gray-400 hover:text-brand-sky transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-sky scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Curriculum Overview
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#early-years"
+                  <Link
+                    to="/early-years"
                     className="text-gray-400 hover:text-brand-sky transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-sky scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Early Years (3 - 5 Years)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#primary"
+                  <Link
+                    to="/primary"
                     className="text-gray-400 hover:text-brand-sky transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-sky scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Primary (5 - 11 Years)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#lower-secondary"
+                  <Link
+                    to="/lower-secondary"
                     className="text-gray-400 hover:text-brand-sky transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-sky scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Lower Secondary (11 - 14 Years)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#upper-secondary"
+                  <Link
+                    to="/upper-secondary"
                     className="text-gray-400 hover:text-brand-sky transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-sky scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Upper Secondary (14 - 16 Years)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#advance-as-a-level"
+                  <Link
+                    to="/advance-as-a-level"
                     className="text-gray-400 hover:text-brand-sky transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-sky scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     AS & A Level (16 - 18 Years)
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -282,58 +283,58 @@ const Footer: FC = () => {
               </h4>
               <ul className="space-y-4 text-[13px]">
                 <li>
-                  <a
-                    href="#admissions"
+                  <Link
+                    to="/admissions"
                     className="text-gray-400 hover:text-brand-yellow transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-yellow scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Admissions Process
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#boarding"
+                  <Link
+                    to="/boarding"
                     className="text-gray-400 hover:text-brand-yellow transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-yellow scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Boarding Life
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#campus-life"
+                  <Link
+                    to="/campus-life"
                     className="text-gray-400 hover:text-brand-yellow transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-yellow scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Campus Life
-                  </a>
+                  </Link>
                 </li>
                 {/* <li>
-                  <a
-                    href="#careers"
+                  <Link
+                    to="/careers"
                     className="text-gray-400 hover:text-brand-yellow transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-yellow scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Careers
-                  </a>
+                  </Link>
                 </li> */}
                 {/* <li>
-                  <a
-                    href="#enquire-now"
+                  <Link
+                    to="/enquire-now"
                     className="text-gray-400 hover:text-brand-yellow transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-yellow scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Enquire Now
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#lets-talk"
+                  <Link
+                    to="/lets-talk"
                     className="text-gray-400 hover:text-brand-yellow transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-yellow scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
                     Let's Talk
-                  </a>
+                  </Link>
                 </li> */}
                 <li>
                   <a

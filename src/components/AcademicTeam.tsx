@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { motion } from "motion/react";
+import { useSEO } from "../hooks/useSEO";
 
 interface TeamMember {
   name: string;
@@ -138,6 +139,11 @@ const teamMembers: TeamMember[] = [
 ];
 
 const AcademicTeam: FC = () => {
+  useSEO({
+    title: "Academic Team |Pavna International School ",
+    description: "",
+    keywords: "",
+  });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">
       {/* 1. Header Hero Panel with Breadcrumbs */}

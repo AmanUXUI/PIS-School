@@ -3,6 +3,7 @@ import { CONTENT } from "../constants";
 import { Menu, X, ChevronDown, User, ArrowRight } from "lucide-react";
 import { cn } from "../lib/utils";
 import { motion, AnimatePresence } from "motion/react";
+import { Link, useNavigate } from "react-router-dom";
 
 const getItemDescription = (name: string): string => {
   const descriptions: Record<string, string> = {
@@ -94,6 +95,7 @@ const itemMediaMap: Record<
 };
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -116,7 +118,7 @@ export default function Navbar() {
   }, []);
 
   const isLinkActive = (link: any) => {
-    if (link.href === currentHash && link.href !== "#") return true;
+    if (link.href === currentHash && link.href !== "/") return true;
     if (link.groups) {
       return link.groups.some((group: any) =>
         group.items.some((item: any) => item.href === currentHash),
@@ -139,14 +141,14 @@ export default function Navbar() {
     >
       <div className="max-w-[1440px] mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center shrink-0">
+        <Link to="/" className="flex items-center shrink-0">
           <img
             src="/images/image.webp"
             alt="Pavna School Logo"
             className="h-10 md:h-14 w-auto object-contain cursor-pointer"
             referrerPolicy="no-referrer"
           />
-        </a>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center gap-6 xl:gap-7 h-full">
@@ -164,8 +166,8 @@ export default function Navbar() {
                 }
               }}
             >
-              <a
-                href={"href" in link ? link.href : "#"}
+              <Link
+                to={"href" in link ? link.href : "/"}
                 target={
                   "href" in link && link.href?.startsWith("http")
                     ? "_blank"
@@ -200,7 +202,7 @@ export default function Navbar() {
                     )}
                   />
                 )}
-              </a>
+              </Link>
 
               {/* Desktop Dropdown Content */}
               <AnimatePresence>
@@ -250,9 +252,9 @@ export default function Navbar() {
                               </h5>
                               <div className="flex flex-col gap-1">
                                 {group.items.map((item: any) => (
-                                  <a
+                                  <Link
                                     key={item.name}
-                                    href={item.href}
+                                    to={item.href}
                                     // 👇 FIX: Checked for explicit newTab property here
                                     target={item.newTab ? "_blank" : undefined}
                                     rel={
@@ -284,7 +286,7 @@ export default function Navbar() {
                                         className="text-brand-orange opacity-0 -translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-x-0 transition-all duration-300"
                                       />
                                     </div>
-                                  </a>
+                                  </Link>
                                 ))}
                               </div>
                             </div>
@@ -362,16 +364,16 @@ export default function Navbar() {
           {CONTENT.navLinks.map((link) => {
             if (link.name === "Apply Online") {
               return (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
+                  to={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
                   className="flex items-center justify-center gap-2 bg-brand-orange text-white px-5 py-3 rounded-[4px] font-bold text-center mt-4 text-sm shadow-sm"
                 >
                   {link.name}
-                </a>
+                </Link>
               );
             }
             // if (link.name === "Pay Fees Online") {
@@ -404,7 +406,7 @@ export default function Navbar() {
                         activeDropdown === link.name ? null : link.name,
                       );
                     } else if ("href" in link && link.href) {
-                      window.location.hash = link.href.replace("#", "");
+                      navigate(link.href);
                       setMobileMenuOpen(false);
                     }
                   }}
@@ -433,9 +435,9 @@ export default function Navbar() {
                           {group.title}
                         </p>
                         {group.items.map((item: any) => (
-                          <a
+                          <Link
                             key={item.name}
-                            href={item.href}
+                            to={item.href}
                             // 👇 FIX: Added target check for Mobile list links too
                             target={item.newTab ? "_blank" : undefined}
                             rel={
@@ -450,7 +452,7 @@ export default function Navbar() {
                             )}
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     ))}
