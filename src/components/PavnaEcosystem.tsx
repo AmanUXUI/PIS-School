@@ -20,7 +20,7 @@ const ecosystemData: SectionData[] = [
     title: "Students",
     circleClass:
       "bg-[rgba(243,121,32,0.8)] border-4 border-[#ccc2ad] top-0 left-1/2 -translate-x-1/2 pt-16 justify-center",
-    mobileImage: "https://iili.io/qtGMKI2.webp",
+    mobileImage: "/images/qtGMKI2.webp",
     content: {
       traditional: [
         "Homework, assignments and assessment prep",
@@ -37,7 +37,7 @@ const ecosystemData: SectionData[] = [
     title: "Parents",
     circleClass:
       "bg-[rgba(253,185,19,0.8)] border-4 border-[#ccca97] bottom-4 left-2 pt-24 pl-10 justify-start",
-    mobileImage: "https://iili.io/qtGM2e4.webp",
+    mobileImage: "/images/qtGM2e4.webp",
     content: {
       traditional: ["PTMs and Report cards"],
       pavna: [
@@ -51,7 +51,7 @@ const ecosystemData: SectionData[] = [
     title: "Teachers",
     circleClass:
       "bg-[rgba(0,174,239,0.8)] border-4 border-[#82b7cc] bottom-4 right-2 pt-24 pl-28 justify-start",
-    mobileImage: "https://iili.io/qtGM3ml.webp",
+    mobileImage: "/images/qtGM3ml.webp",
     content: {
       traditional: [
         "Fixed curriculum",
@@ -94,7 +94,7 @@ const PavnaEcosystem: FC = () => {
         {/* ============================================== */}
         <div className="hidden lg:flex w-full justify-center items-center gap-4 relative mt-16 h-[520px] scale-[0.95] origin-top z-[1]">
           <img
-            src="https://imgh.in/host/8ydgny"
+            src="/images/image_pavnaeco.webp"
             alt="Pavna School Ecosystem Desktop"
           />
         </div>
@@ -104,7 +104,7 @@ const PavnaEcosystem: FC = () => {
         {/* ============================================== */}
         <div className="flex lg:hidden flex-col items-center gap-4 relative z-[1] mt-4 w-full">
           <img
-            src="https://iili.io/qtGMzdb.png"
+            src="/images/qtGMzdb.png"
             className="mb-2 max-w-full"
             alt="Ecosystem Diagram Map"
           />

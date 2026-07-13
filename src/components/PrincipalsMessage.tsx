@@ -61,7 +61,7 @@ const PrincipalsMessage: FC = () => {
             <div className="lg:col-span-5 relative group flex flex-col h-full">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white border border-neutral-100 h-full min-h-[450px] lg:min-h-0 flex-1">
                 <img
-                  src="https://i.postimg.cc/vBDFRKW9/Guest-Image-4.png"
+                  src="/images/image_53.webp"
                   alt="Ms. Aarti Nigam, Principal"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105"
                   referrerPolicy="no-referrer"
@@ -162,10 +162,10 @@ const PrincipalsMessage: FC = () => {
             {/* Next button */}
             <div className="w-full sm:w-auto text-right order-3">
               <a
-                href="#minds-behind-pis"
+                href="#curriculum"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
               >
-                Minds Behind PIS &rarr;
+                Curriculum &rarr;
               </a>
             </div>
           </div>

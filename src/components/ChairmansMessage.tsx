@@ -61,7 +61,7 @@ const ChairmansMessage: FC = () => {
             <div className="lg:col-span-5 relative group flex flex-col h-full">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white border border-neutral-100 h-full min-h-[450px] lg:min-h-0 flex-1">
                 <img
-                  src="https://i.postimg.cc/J0twLXm8/Guest-Image-2.png"
+                  src="/images/image_40.webp"
                   alt="Mr. Swapnil Jain, Chairman"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105"
                   referrerPolicy="no-referrer"

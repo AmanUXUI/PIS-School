@@ -964,14 +964,14 @@ const Admissions: FC = () => {
               </button>
 
               {/* Next Link */}
-              {/* <div className="w-full sm:w-auto text-right order-3">
-                <a 
+              <div className="w-full sm:w-auto text-right order-3">
+                <a
                   href="#blog"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-gill"
                 >
                   News & Media &rarr;
                 </a>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

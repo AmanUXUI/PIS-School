@@ -140,7 +140,7 @@ export default function AboutOverview() {
               <div className="absolute -inset-2 bg-gradient-to-r from-brand-orange to-brand-navy rounded-2xl blur-lg opacity-10 group-hover:opacity-20 transition-opacity duration-1000" />
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-square">
                 <img
-                  src="https://i.postimg.cc/bvBB4ttS/image.png"
+                  src="/images/DSC09096.webp"
                   alt="School Philosophy"
                   className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-[1.5s]"
                   referrerPolicy="no-referrer"

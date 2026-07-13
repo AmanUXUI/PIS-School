@@ -46,7 +46,7 @@ export default function App() {
     "#academic-team",
     "#chairmans-message",
     "#principals-message",
-    "#minds-behind-pis",
+    // "#minds-behind-pis",
     "#curriculum",
     "#early-years",
     "#primary",
@@ -81,7 +81,7 @@ export default function App() {
   const isAcademicTeam = currentHash === "#academic-team";
   const isChairmansMessage = currentHash === "#chairmans-message";
   const isPrincipalsMessage = currentHash === "#principals-message";
-  const isMindsBehindPIS = currentHash === "#minds-behind-pis";
+  // const isMindsBehindPIS = currentHash === "#minds-behind-pis";
   const isCurriculum = currentHash === "#curriculum";
   const isEarlyYears = currentHash === "#early-years";
   const isPrimary = currentHash === "#primary";
@@ -116,8 +116,6 @@ export default function App() {
           <ChairmansMessage />
         ) : isPrincipalsMessage ? (
           <PrincipalsMessage />
-        ) : isMindsBehindPIS ? (
-          <MindsBehindPIS />
         ) : isCurriculum ? (
           <CurriculumPage />
         ) : isEarlyYears ? (

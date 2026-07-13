@@ -888,10 +888,10 @@ const BoardingPage: FC = () => {
               {/* Previous button */}
               <div className="w-full sm:w-auto text-left order-2 sm:order-1">
                 <a
-                  href="#advance-as-a-level"
+                  href="#campus-life"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-neutral-200 hover:border-brand-orange hover:text-brand-orange text-brand-navy text-[13px] font-bold tracking-wider transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 cursor-pointer bg-white w-full sm:w-auto font-sans"
                 >
-                  &larr; Advance - AS & A Level
+                  &larr; Campus Life
                 </a>
               </div>
 
