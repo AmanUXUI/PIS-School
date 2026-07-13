@@ -13,77 +13,67 @@ const SPORTS_GUESTS: Guest[] = [
   {
     name: "Mary Kom",
     title: "Olympic Medalist; World Champion Boxer",
-    image:
-      "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/hjlfvs07nd8qj2p1ibmh",
+    image: "/images/image_7.webp",
     initials: "MK",
   },
   {
     name: "Mahendra Singh Dhoni",
     title: "Former Captain, Indian Cricket Team",
-    image:
-      "https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg",
+    image: "/images/Indian-cricketer-Mahendra-Singh-Dhoni-2011.webp",
     initials: "MSD",
   },
   {
     name: "Kapil Dev",
     title: "Cricketing Legend",
-    image:
-      "https://www.celebrityspeakersindia.com/uploads/8/1/1/5/8115412/s875466462545645924_p5_i2_w620.jpeg",
+    image: "/images/image_8.webp",
     initials: "KD",
   },
   {
     name: "Sushil Kumar",
     title: "Olympic Medalist Wrestler",
-    image:
-      "https://img.olympics.com/images/image/private//t_s_w440/f_auto/primary/wlj4twjphrpfz5bqviyv",
+    image: "/images/image_9.webp",
     initials: "SK",
   },
   {
     name: "Saina Nehwal",
     title: "Olympic Medalist, International Badminton Player",
-    image:
-      "https://cdn.britannica.com/00/256400-050-257C7E7A/india-saina-nehwal-with-bronze-medal-womens-singles-badminton-match-at-london-summer-olympic-games.jpg",
+    image: "/images/image_10.webp",
     initials: "SN",
   },
   {
     name: "Vijender Singh",
     title: "Olympic Medalist Boxer; Professional Boxer",
-    image:
-      "https://images.yourstory.com/cs/2/3fb20ae02dc911e9af58c17e6cc3d915/Imageou82-1596101659734.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75",
+    image: "/images/image_11.webp",
     initials: "VS",
   },
   {
     name: "Sunita Rani",
     title: "International Athlete; Arjuna Awardee",
-    image:
-      "https://images.tribuneindia.com/cms/gall_content/2018/4/2018_4$largeimg02_Monday_2018_022503868.jpg",
+    image: "/images/image_12.webp",
     initials: "SR",
   },
   {
     name: "Dhanraj Pillay",
     title: "Former Captain, Indian Hockey Team",
-    image:
-      "https://images.news18.com/ibnlive/uploads/2021/08/1628216779_dhanraj-pillai.jpg",
+    image: "/images/image_13.webp",
     initials: "DP",
   },
   {
     name: "Maninder Singh",
     title: "Former Indian Cricketer",
-    image: "https://www.dronacharyacricketacademy.com/images/coach-11.jpg",
+    image: "/images/image_14.webp",
     initials: "MS",
   },
   {
     name: "Mohinder Amarnath",
     title: "Former Indian Cricketer; World Cup Winner (1983)",
-    image:
-      "https://m.media-amazon.com/images/M/MV5BZGEyNjJjMTEtNzBhYi00NjUzLTk2MTAtY2Q5MGZhYWMzNDEzXkEyXkFqcGc@._V1_.jpg",
+    image: "/images/image_15.webp",
     initials: "MA",
   },
   {
     name: "Chetan Sharma",
     title: "Former Indian Cricketer; Former Chief Selector, BCCI",
-    image:
-      "https://media.crictracker.com/media/attachments/1690528474906_Chetan-Sharma.jpeg",
+    image: "/images/image_16.webp",
     initials: "CS",
   },
 ];
@@ -92,131 +82,116 @@ const VIP_GUESTS: Guest[] = [
   {
     name: "Dr. A.P.J. Abdul Kalam",
     title: "Former President of India; Eminent Scientist",
-    image:
-      "https://www.tallengestore.com/cdn/shop/products/DrAPJAbdulKalam-ex-PresidentofIndia-MissileManOfIndia-Portrait.jpg?v=1688682507",
+    image: "/images/image_17.webp",
     initials: "APJ",
   },
   {
     name: "Rajnath Singh",
     title: "Defence Minister of India",
-    image:
-      "https://cdn.wionews.com/sites/default/files/2022/05/12/261796-rajnath-sigh.jpg",
+    image: "/images/image_18.webp",
     initials: "RS",
   },
   {
     name: "Kiran Bedi",
     title: "Former IPS Officer; Eminent Civil Servant",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Dr._Kiran_Bedi_in_2017_%28cropped%29.jpg/250px-Dr._Kiran_Bedi_in_2017_%28cropped%29.jpg",
+    image: "/images/image_19.webp",
     initials: "KB",
   },
   {
     name: "Sudha Murthy",
     title: "Author & Prolific Philanthropist",
-    image: "https://in-focusindia.com/wp-content/uploads/2025/04/1-6.jpg",
+    image: "/images/image-20.webp",
     initials: "SM",
   },
   {
     name: "Indra Nooyi",
     title: "Business Executive; Former CEO of PepsiCo",
-    image:
-      "https://www.globalindian.com/wp-content/uploads/2022/07/card_indra-nooyi_amrita.jpg",
+    image: "/images/image_21.webp",
     initials: "IN",
   },
   {
     name: "Kalyan Singh",
     title: "Former Chief Minister, Uttar Pradesh",
-    image: "https://im.rediff.com/news/2021/aug/21kalyan-singh.jpg",
+    image: "/images/image_22.webp",
     initials: "KS",
   },
   {
     name: "Shobhana Narayan",
     title: "Renowned Kathak Dancer; Senior Civil Servant",
-    image:
-      "https://img.etimg.com/thumb/msid-88867233,width-650,height-488,imgsize-146238,resizemode-75/shovana-narayan-wearing-jewellery-from-zoyas-rouge-collection.jpg",
+    image: "/images/image_23.webp",
     initials: "SN",
   },
   {
     name: "Dr. Shayama Chona",
     title: "Educationist, Padma Bhushan & Padma Shri Awardee",
-    image: "https://i.postimg.cc/02gKr06L/Guest-Image.png",
+    image: "/images/image_24.webp",
     initials: "SC",
     imageClass: "scale-[1.25]",
   },
   {
     name: "Gopaldas Neeraj",
     title: "Renowned Poet & Lyricist; Padma Shri & Padma Bhushan Awardee",
-    image:
-      "https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTIzNzVhZTEwLTRkOTctMTFlZi1hNjQ3LTQ3NDllNWIwYjdlMS5qcGc=",
+    image: "/images/image_25.webp",
     initials: "GN",
   },
   {
     name: "Sahab Singh Verma",
     title: "Former Chief Minister, Delhi",
-    image:
-      "https://akm-img-a-in.tosshub.com/sites/indiacontent/0/images/product/public/26102018/00/00/00/26/67/11/266711/659-F88sa3-000772.jpg",
+    image: "/image/image_26.webp",
     initials: "SSV",
   },
   {
     name: "Madan Lal Khurana",
     title: "Former Chief Minister, Delhi",
-    image:
-      "https://img.etimg.com/thumb/width-1200,height-1200,imgsize-216995,resizemode-75,msid-66399592/news/politics-and-nation/delhi-to-observe-2-day-mourning-over-ex-cm-madan-lal-khuranas-death.jpg",
+    image: "/images/image_27.webp",
     initials: "MLK",
   },
   {
     name: "Salman Khurshid",
     title: "Former Minister of External Affairs of India",
-    image:
-      "https://chamberofsalmankhurshid.com/wp-content/uploads/2022/12/SK4.jpg",
+    image: "/images/image_28.webp",
     initials: "SK",
   },
   {
     name: "Lal Krishna Advani",
     title: "Former Deputy Prime Minister of India",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/e/e9/L.K._Advani.jpg",
+    image: "/images/image_29.webp",
     initials: "LKA",
   },
   {
     name: "Mulayam Singh Yadav",
     title: "Former Defence Minister of India",
-    image:
-      "https://images.deccanchronicle.com/dc-Cover-9gtllojgng4sqcotmmhv39kqm6-20170301003325.Medi.jpeg",
+    image: "/images/image_30.webp",
     initials: "MSY",
   },
   {
     name: "Akhilesh Yadav",
     title: "Former Chief Minister, Uttar Pradesh",
-    image: "https://samajwadiparty.in/_assets/img/president.jpg",
+    image: "/images/image_31.webp",
     initials: "AY",
   },
   {
     name: "Lalu Prasad Yadav",
     title: "Former Railway Minister of India",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/1/16/Lalu_Prasad_Yadav_addressing_the_EEC_-_2006_%28cropped%29.jpg",
+    image: "/images/image_32.webp",
     initials: "LPY",
   },
   {
     name: "Sachin Pilot",
     title: "Former Deputy Chief Minister, Rajasthan",
-    image:
-      "https://www.livemint.com/lm-img/img/2023/07/08/original/PTI07-08-2023-000124B-0_1688819408368.jpg",
+    image: "/images/image_33.webp",
     initials: "SP",
   },
   {
     name: "Nanaji Deshmukh",
     title: "Social Activist; Nationalist Leader",
-    image:
-      "https://organiser.org/wp-content/uploads/NBImages/2021/02/27/2_10_10_24_Nanaji_1.jpg",
+    image: "/images/image_34.webp",
     initials: "ND",
   },
   {
     name: "Murli Manohar Joshi",
     title: "Former Union Minister; Eminent Scholar & Leader",
-    image:
-      "https://www.thehitavada.com/Encyc/2019/11/10/2_10_21_39_joshi_1_H@@IGHT_547_W@@IDTH_835.jpg",
+    image: "/images/image_35.webp",
     initials: "MMJ",
   },
 ];

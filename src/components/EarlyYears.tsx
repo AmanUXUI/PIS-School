@@ -200,22 +200,22 @@ const EarlyYears: FC = () => {
               {[
                 {
                   name: "Physical Development",
-                  image: "https://i.postimg.cc/5y2ScY24/shoes.png",
+                  image: "/images/image_80.webp",
                   desc: "Strengthening fine and gross motor movements through creative and active play.",
                 },
                 {
                   name: "Language and Communication Development",
-                  image: "https://i.postimg.cc/gj2H9X2k/message.png",
+                  image: "/images/image (1).webp",
                   desc: "Building rich vocabulary, reading familiarity, and self-expression skills.",
                 },
                 {
                   name: "Cognitive Development",
-                  image: "https://i.postimg.cc/fyRf4tRD/brain.png",
+                  image: "/images/image (2).webp",
                   desc: "Enabling structured thinking, observation, scientific inquiry, and logical reasoning.",
                 },
                 {
                   name: "Social and Emotional Development",
-                  image: "https://i.postimg.cc/fyRf4tRW/heart.png",
+                  image: "/images/image (3).webp",
                   desc: "Cultivating self-awareness, personal values, emotional control, and friendships.",
                 },
               ].map((area, i) => {
@@ -256,17 +256,17 @@ const EarlyYears: FC = () => {
               {
                 label: "The Spiral Approach",
                 text: "Develops knowledge, understanding and skills through a spiral approach, by revisiting and engaging with topics and skills in more depth at each stage.",
-                image: "https://i.postimg.cc/G27wmxSp/Early-Years.jpg",
+                image: "/images/image_212.webp",
               },
               {
                 label: "Development Milestones",
                 text: "Helps learners to meet internationally established milestones for early development.",
-                image: "https://i.postimg.cc/KcP24XjX/DSC05706-JPG.jpg",
+                image: "/images/DSC05706.JPG.webp",
               },
               {
                 label: "Individualized Monitoring",
                 text: "Although children develop at different rates, the curriculum provides a structure for teaching and learning that helps us for monitor and support each child's progress.",
-                image: "https://i.postimg.cc/XNDL0qK2/image.png",
+                image: "/images/ChatGPT Image Jun 29, 2026, 04_49_04 PM.webp",
               },
             ].map((col, index) => (
               <motion.div
@@ -330,32 +330,32 @@ const EarlyYears: FC = () => {
               {
                 title: "Communication, Language & Literacy",
                 text: "Your child will be encouraged to develop their speaking, listening, reading and writing skills.",
-                image: "https://i.postimg.cc/qMH5FQ8W/Group-1.png",
+                image: "/images/image_(5).webp",
               },
               {
                 title: "Creative Expression",
                 text: "Your child will have the chance to express their ideas in a creative way.",
-                image: "https://i.postimg.cc/RVxDYG7r/Group-1-1.png",
+                image: "/images/image_(4).webp",
               },
               {
                 title: "Personal, Social & Emotional Development",
                 text: "Your child will develop social skills, and build self-esteem and confidence.",
-                image: "https://i.postimg.cc/pXM6SkfM/Group-1-2.png",
+                image: "/images/image_(3).webp",
               },
               {
                 title: "Mathematics",
                 text: "Your child will begin to develop mathematical thinking and language.",
-                image: "https://i.postimg.cc/YqBsP86K/Group-1-3.png",
+                image: "/images/image_(2).webp",
               },
               {
                 title: "Physical Development",
                 text: "Your child will develop different types of movement skills and build the foundations for a healthy lifestyle, supporting strong physical Development For Children from an early age.",
-                image: "https://i.postimg.cc/4NRS0w6T/Group-1-4.png",
+                image: "/images/image_(1).webp",
               },
               {
                 title: "Understanding the World",
                 text: "Your child will learn to reflect, question, explore and interact with the world around them.",
-                image: "https://i.postimg.cc/4NRS0w6Z/Group-1-5.png",
+                image: "/images/image_81.webp",
               },
             ].map((item, i) => {
               return (

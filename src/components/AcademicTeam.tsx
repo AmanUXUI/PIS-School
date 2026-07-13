@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { motion } from "motion/react";
 import { useSEO } from "../hooks/useSEO";
+import { Link } from "react-router-dom";
 
 interface TeamMember {
   name: string;
@@ -163,12 +164,12 @@ const AcademicTeam: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-white/50">About</span>
             <span className="text-white/30">/</span>

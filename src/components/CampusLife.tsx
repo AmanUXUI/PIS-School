@@ -27,40 +27,40 @@ import { Link } from "react-router-dom";
 import { useSEO } from "../hooks/useSEO";
 
 const adminImages = [
-  "https://i.postimg.cc/pXdscR2c/admin-block-1-jpg.jpg",
-  "https://i.postimg.cc/tCgBvpXm/admin-block-2-jpg.jpg",
-  "https://i.postimg.cc/BQvm74qV/admin-block-3-jpg.jpg",
-  "https://i.postimg.cc/9FfLgCWk/admin-block-4-jpg.jpg",
-  "https://pavna-int.vercel.app/assets/admin%20block%205-BdOSmCRL.webp",
+  "/images/admin block 1.webp",
+  "/images/admin block 2.webp",
+  "/images/admin block 3.webp",
+  "/images/admin block 4.webp",
+  "/images/admin block 5.webp",
 ];
 
 const environmentImages = [
-  "https://imgh.in/host/6lvn92",
-  "https://i.postimg.cc/VkQbrWHG/enviroment-11-jpg.jpg",
-  "https://i.postimg.cc/BbBgLnJ0/Chat-GPT-Image-Jun-11-2026-11-27-03-AM.png",
-  "https://imgh.in/host/rg727k",
-  "https://i.postimg.cc/nhbQjGwK/enviroment-4-jpg.jpg",
-  "https://i.postimg.cc/9Q5qRYNt/enviroment-5-jpg.jpg",
-  "https://i.postimg.cc/qvVChxZx/enviroment-6-jpg.jpg",
-  "https://i.postimg.cc/pLbnhJ1k/enviroment-7-jpg.jpg",
-  "https://i.postimg.cc/Gmws8xSq/enviroment-8-jpg.jpg",
-  "https://i.postimg.cc/htW7z13C/enviroment-9-jpg.jpg",
-  "https://i.postimg.cc/Njqr9kPn/enviroment-jpg.jpg",
+  "/images/6lvn92.png",
+  "/images/enviroment 11.webp",
+  "/images/image_84.webp",
+  "/images/enviroment 3.webp",
+  "/images/enviroment 4.webp",
+  "/images/enviroment 5.webp",
+  "/images/enviroment 6.webp",
+  "/images/enviroment 7.webp",
+  "/images/enviroment 8.webp",
+  "/images/enviroment 9.webp",
+  "/images/enviroment-jpg.jpg",
 ];
 
 const academicImages = [
-  "https://i.postimg.cc/Hx2f5z2Q/DSC06155-JPG.jpg",
-  "https://i.postimg.cc/W3nQr8nr/DSC06164-JPG.jpg",
-  "https://i.postimg.cc/QtbR5mbW/DSC06229-JPG.jpg",
-  "https://i.postimg.cc/1zpxRsVB/DSC08709-JPG.jpg",
+  "/images/DSC06155.JPG.webp",
+  "/images/DSC06164.JPG.webp",
+  "/images/image_78.webp",
+  "/images/DSC08709.JPG.webp",
 ];
 
 const sportsImages = [
-  "https://i.postimg.cc/05SZGP1x/SWIMMING-JPG.jpg",
-  "https://i.postimg.cc/XvDxLvvW/Whats-App-Image-2026-06-29-at-16-23-22.jpg",
-  "https://imgh.in/host/kql5mm",
-  "https://pavna-int.vercel.app/assets/ChatGPT%20Image%20Jun%2029_%202026_%2005_11_29%20PM-C1NFuqbR.webp",
-  "https://pavna-int.vercel.app/assets/ChatGPT%20Image%20Jun%2029_%202026_%2004_09_46%20PM-Ccq-_uh_.webp",
+  "/images/SWIMMING.JPG.webp",
+  "/images/Whats-App-Image-2026-06-29-at-16-23-22.jpg",
+  "/images/image_2.webp",
+  "/images/ChatGPT Image Jun 29_ 2026_ 05_11_29 PM-C1NFuqbR.webp",
+  "/images/ChatGPT Image Jun 29_ 2026_ 04_09_46 PM-Ccq-_uh_.webp",
 ];
 
 const CampusLife: FC = () => {
@@ -108,7 +108,7 @@ const CampusLife: FC = () => {
       <section className="relative bg-brand-navy text-white overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
           <img
-            src="https://i.postimg.cc/sDX0mLp4/DSC05807-JPG.jpg"
+            src="/images/DSC05807.webp"
             alt="Campus Life Background"
             className="w-full h-full object-cover scale-105 filter blur-[2px]"
           />
@@ -531,37 +531,37 @@ const CampusLife: FC = () => {
             {[
               {
                 name: "Textile",
-                image: "https://imgh.in/host/i9edig",
+                image: "/images/i9edig.jpg",
                 icon: Scissors,
                 desc: "Exploring standard weaves, patterns, and creative fiber expressions to design unique fabrics.",
               },
               {
                 name: "Pottery",
-                image: "https://i.postimg.cc/QdNBKSyJ/pottery.jpg",
+                image: "/images/pottery.jpg",
                 icon: BookOpen,
                 desc: "Nurturing deep literary voices, rhythmic expressions, and creative linguistic craftsmanship.",
               },
               {
                 name: "AI & Robotics",
-                image: "https://imgh.in/host/inkczw",
+                image: "/images/inkczw.jpg",
                 icon: Cpu,
                 desc: "Engaging with cutting-edge electronics, logic block coding, and mechanical assemblies.",
               },
               {
                 name: "Music (Indian & Western)",
-                image: "https://imgh.in/host/j4cq2l",
+                image: "/images/j4cq2l.jpg",
                 icon: Music,
                 desc: "Cultivating vocal and instrumental mastery across classical and contemporary genres.",
               },
               {
                 name: "Performing Arts",
-                image: "https://imgh.in/host/05xe1f",
+                image: "/images/05xe1f.jpg",
                 icon: Layers,
                 desc: "Developing poise, theatrical confidence, stage presence, and expressive dramatic skills.",
               },
               {
                 name: "Visual Arts",
-                image: "https://imgh.in/host/82j4iu",
+                image: "/images/82j4iu.jpg",
                 icon: Palette,
                 desc: "Unleashing fine creative imagination through painting, drawing, sculpting, and digital media.",
               },

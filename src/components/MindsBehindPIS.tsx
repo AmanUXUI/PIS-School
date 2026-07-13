@@ -11,6 +11,7 @@ import {
   TrendingUp,
   Brain,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const MindsBehindPIS: FC = () => {
   return (
@@ -25,12 +26,12 @@ const MindsBehindPIS: FC = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 text-xs md:text-sm text-brand-gray mb-6">
-            <span
-              className="hover:text-brand-orange transition-colors cursor-pointer font-medium"
-              onClick={() => (window.location.hash = "")}
+            <Link
+              className="text-decoration-none hover:text-brand-orange transition-colors cursor-pointer"
+              to="/"
             >
               Home
-            </span>
+            </Link>
             <span className="text-white/30">/</span>
             <span className="text-white/50">Leadership Team</span>
             <span className="text-white/30">/</span>

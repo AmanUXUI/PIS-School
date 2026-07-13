@@ -25,7 +25,7 @@ const ITEMS: DistinctionItem[] = [
     icon: <Cpu className="w-5 h-5" />,
     iconBg: "bg-orange-50",
     iconColor: "text-brand-orange",
-    image: "https://iili.io/CqMyomX.jpg",
+    image: "/images/image_61.webp",
     highlights: [
       "Coding & Innovation Lab",
       "Cambridge Curriculum Standard",
@@ -43,8 +43,7 @@ const ITEMS: DistinctionItem[] = [
     icon: <Trophy className="w-5 h-5" />,
     iconBg: "bg-sky-50",
     iconColor: "text-brand-sky",
-    image:
-      "https://pavnaschoolaligarh.com/wp-content/uploads/2026/04/tab-img-3.webp",
+    image: "/images/tab-img-3.webp",
     highlights: [
       "Horse Riding & Swimming",
       "Modern Indoor/Outdoor Courts",
@@ -65,7 +64,7 @@ const ITEMS: DistinctionItem[] = [
     icon: <GraduationCap className="w-5 h-5" />,
     iconBg: "bg-emerald-50",
     iconColor: "text-emerald-600",
-    image: "https://iili.io/CqV9uu1.jpg",
+    image: "/images/image_62.webp",
     highlights: [
       "Highly Qualified Experts",
       "Personalized Mentor Support",
@@ -86,8 +85,7 @@ const ITEMS: DistinctionItem[] = [
     icon: <Bus className="w-5 h-5" />,
     iconBg: "bg-amber-50",
     iconColor: "text-amber-600",
-    image:
-      "https://i.postimg.cc/BbBgLnJ0/Chat-GPT-Image-Jun-11-2026-11-27-03-AM.png",
+    image: "/images/image_84.webp",
     highlights: [
       "Fully Air-Conditioned Buses",
       "GPS-Enabled Live Tracking",

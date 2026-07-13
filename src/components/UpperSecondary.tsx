@@ -38,7 +38,7 @@ const UpperSecondary: FC = () => {
       >
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
           <img
-            src="https://i.postimg.cc/mDXfgy6L/Upper-Secondary.jpg"
+            src="/images/image_312.webp"
             alt="Cambridge Upper Secondary Background"
             className="w-full h-full object-cover scale-105 filter blur-[2px]"
             referrerPolicy="no-referrer"
@@ -146,7 +146,7 @@ const UpperSecondary: FC = () => {
             <div className="lg:col-span-5">
               <div className="relative aspect-square w-full rounded-2xl overflow-hidden shadow-md border border-neutral-100">
                 <img
-                  src="https://i.postimg.cc/mDXfgy6L/Upper-Secondary.jpg"
+                  src="/images/image_312.webp"
                   alt="Cambridge Upper Secondary Students"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

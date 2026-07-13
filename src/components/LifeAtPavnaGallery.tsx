@@ -1,26 +1,26 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
+import { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
 const IMAGES = [
-  'https://i.postimg.cc/28RnyYNS/DSC08423-JPG.jpg',
-  'https://i.postimg.cc/bvsZLVf6/DSC08807-JPG.jpg',
-  'https://i.postimg.cc/dVnC5TkQ/DSC08550-JPG.jpg',
-  'https://i.postimg.cc/3NBr32HH/DSC09219-JPG.jpg',
-  'https://i.postimg.cc/wvN7Ytvs/DSC08713-JPG.jpg',
-  'https://i.postimg.cc/pdGDLnRk/DSC08313-JPG.jpg',
-  'https://i.postimg.cc/2y4bhqNf/DSC08480-JPG.jpg',
-  'https://i.postimg.cc/XY2ZfSmX/DSC08696-JPG.jpg',
-  'https://i.postimg.cc/sDd5xzCD/DSC08358-JPG.jpg',
-  'https://i.postimg.cc/FKBL45xX/DSC08557-JPG.jpg',
-  'https://i.postimg.cc/SxV9gzXP/DSC08462-JPG.jpg',
-  'https://i.postimg.cc/Xq37MQmx/DSC09205-JPG.jpg',
-  'https://i.postimg.cc/d38kr7cw/DSC08687-JPG.jpg',
-  'https://i.postimg.cc/BbWPjTyM/DSC08466-JPG.jpg',
-  'https://i.postimg.cc/sDs1bgRd/DSC08961-JPG.jpg',
-  'https://i.postimg.cc/2y4bhqND/DSC08669-JPG.jpg',
-  'https://i.postimg.cc/NF4GQRw0/DSC09061-JPG.jpg',
-  'https://i.postimg.cc/J4xt8C1v/DSC09287-JPG.jpg'
+  "/images/image_student3.webp",
+  "/images/image_student.webp",
+  "/images/image_38.webp",
+  "/images/image_39.webp",
+  "/images/DSC08709.JPG.webp",
+  "/images/image_41.webp",
+  "/images/image_42.webp",
+  "/images/image_43.webp",
+  "/images/image_44.webp",
+  "/images/DSC08559.webp",
+  "/images/image_group.webp",
+  "/images/DSC09206.JPG.webp",
+  "/images/image_48.webp",
+  "/images/image_42.webp",
+  "/images/image_50.webp",
+  "/images/image_51.webp",
+  "/images/image_kulad.webp",
+  "/images/DSC09282.webp",
 ];
 
 export default function LifeAtPavnaGallery() {
@@ -49,8 +49,8 @@ export default function LifeAtPavnaGallery() {
   };
 
   return (
-    <section 
-      id="life-at-pavna" 
+    <section
+      id="life-at-pavna"
       className="py-16 md:py-24 relative bg-[#FDFCFB] overflow-hidden border-b border-gray-100"
     >
       {styleBlock}
@@ -66,17 +66,19 @@ export default function LifeAtPavnaGallery() {
         <h2 className="text-2xl sm:text-4xl md:text-[42px] lg:text-[42px] font-bold text-brand-navy tracking-tight leading-tight md:leading-[50px] lg:leading-[50px] mb-4">
           Campus Gallery
         </h2>
-
       </div>
 
       {/* SINGLE HORIZONTAL ROW INFINITE LOOP DECK */}
-      <div 
+      <div
         className="relative w-full overflow-hidden flex py-2 select-none"
-        style={{ maskImage: 'linear-gradient(to right, transparent, #000 10%, #000 90%, transparent)' }}
+        style={{
+          maskImage:
+            "linear-gradient(to right, transparent, #000 10%, #000 90%, transparent)",
+        }}
       >
-        <div 
+        <div
           className="flex gap-6 w-max anim-gallery-scroller hover:[animation-play-state:paused] pointer-events-auto cursor-pointer"
-          style={{ animationDuration: '80s' }}
+          style={{ animationDuration: "80s" }}
         >
           {repeatedImages.map((url, index) => (
             <div
@@ -102,12 +104,10 @@ export default function LifeAtPavnaGallery() {
         </div>
       </div>
 
-
-
       {/* EXTREMELY MINIMAL, DISTRACTION-FREE VIEWPORT LIGHTBOX */}
       <AnimatePresence>
         {selectedIdx !== null && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -116,7 +116,7 @@ export default function LifeAtPavnaGallery() {
           >
             {/* Top Close Control Layout */}
             <div className="absolute top-6 right-6 text-white z-50">
-              <button 
+              <button
                 onClick={() => setSelectedIdx(null)}
                 className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 hover:scale-105 transition-all text-white flex items-center justify-center cursor-pointer duration-300"
                 aria-label="Close Lightbox"
@@ -126,7 +126,7 @@ export default function LifeAtPavnaGallery() {
             </div>
 
             {/* Navigation buttons: Left Arrow */}
-            <button 
+            <button
               onClick={(e) => {
                 e.stopPropagation();
                 prevSlide();
@@ -138,7 +138,7 @@ export default function LifeAtPavnaGallery() {
             </button>
 
             {/* Navigation buttons: Right Arrow */}
-            <button 
+            <button
               onClick={(e) => {
                 e.stopPropagation();
                 nextSlide();
@@ -150,7 +150,7 @@ export default function LifeAtPavnaGallery() {
             </button>
 
             {/* Lightbox Animated Display Body (no captions, purely image focused) */}
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.97 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.97 }}
@@ -158,8 +158,8 @@ export default function LifeAtPavnaGallery() {
               className="max-w-5xl w-full max-h-[85vh] flex items-center justify-center relative"
               onClick={(e) => e.stopPropagation()}
             >
-              <img 
-                src={IMAGES[selectedIdx]} 
+              <img
+                src={IMAGES[selectedIdx]}
                 alt="Selected Campus Moment"
                 referrerPolicy="no-referrer"
                 className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl select-none"

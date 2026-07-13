@@ -33,7 +33,7 @@ const LowerSecondary: FC = () => {
       >
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
           <img
-            src="https://i.postimg.cc/XJHSYkDq/Low-Secondary.jpg"
+            src="/images/DSC06249.webp"
             alt="Cambridge Lower Secondary Background"
             className="w-full h-full object-cover scale-105 filter blur-[2px]"
             referrerPolicy="no-referrer"
@@ -139,7 +139,7 @@ const LowerSecondary: FC = () => {
             <div className="lg:col-span-5">
               <div className="relative aspect-square w-full rounded-2xl overflow-hidden shadow-md border border-neutral-100">
                 <img
-                  src="https://i.postimg.cc/bvBB4ttS/image.png"
+                  src="/images/DSC09096.webp"
                   alt="Cambridge Lower Secondary Learners"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -271,18 +271,17 @@ const LowerSecondary: FC = () => {
               {
                 label: "Pedagogy",
                 text: "The approaches that help teaching and learning to take place.",
-                image:
-                  "https://i.postimg.cc/TPzWWQgg/Trusted-Legacy-of-Educational-Excellence.jpg",
+                image: "/images/DSC09066.JPG.webp",
               },
               {
                 label: "Curriculum",
                 text: "The required knowledge, understanding and skills.",
-                image: "https://i.postimg.cc/W4cb9J5M/DSC06249-JPG.jpg",
+                image: "/images/DSC06249.webp",
               },
               {
                 label: "Assessment",
                 text: "The process of finding out what learners have learned.",
-                image: "https://i.postimg.cc/pdGDLnRk/DSC08313-JPG.jpg",
+                image: "/images/image_41.webp",
               },
             ].map((col, index) => (
               <motion.div

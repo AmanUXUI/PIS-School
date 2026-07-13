@@ -30,7 +30,7 @@ const PrimaryYears: FC = () => {
       >
         <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
           <img
-            src="https://i.postimg.cc/j5g0S4k5/Primary.jpg"
+            src="/images/DSC05741.JPG.webp"
             alt="Cambridge Primary Background"
             className="w-full h-full object-cover scale-105 filter blur-[2px]"
             referrerPolicy="no-referrer"
@@ -207,17 +207,17 @@ const PrimaryYears: FC = () => {
               {
                 label: "Pedagogy",
                 text: "The approaches that help teaching and learning to take place.",
-                image: "https://i.postimg.cc/1zppvYb8/DSC05824-JPG.jpg",
+                image: "/images/DSC05824-JPG.jpg",
               },
               {
                 label: "Curriculum",
                 text: "The required knowledge, understanding and skills.",
-                image: "https://i.postimg.cc/SswWJTSs/curricluam.png",
+                image: "/images/ChatGPT Image Jun 29, 2026, 04_53_32 PM.webp",
               },
               {
                 label: "Assessment",
                 text: "The process of finding out what learners have learned.",
-                image: "https://imgh.in/host/nimp81",
+                image: "/images/ChatGPT Image Jun 29, 2026, 04_49_04 PM.webp",
               },
             ].map((col, index) => (
               <motion.div
