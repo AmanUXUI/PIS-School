@@ -87,7 +87,7 @@ export const ContactUs: FC = () => {
             <span className="text-white/30">/</span>
             <span className="text-white/50">Contact Us</span>
             <span className="text-white/30">/</span>
-            <span className="text-brand-orange font-bold">Get In Touch</span>
+            <span className="text-brand-orange font-bold">Let's Talk</span>
           </div>
 
           <motion.div
@@ -97,11 +97,12 @@ export const ContactUs: FC = () => {
             className="max-w-3xl"
           >
             <h1 className="text-4xl md:text-[52px] lg:text-[52px] font-sans font-bold leading-tight tracking-tight text-white mb-4">
-              Get In Touch
+              Let's Start a Conversation
             </h1>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light font-gill max-w-2xl">
-              We would love to hear from you. Reach out to us for any
-              information or queries!
+              Have a question or need more information? We'd love to hear from
+              you. Fill out the form below, and our team will get back to you as
+              soon as possible.
             </p>
           </motion.div>
         </div>

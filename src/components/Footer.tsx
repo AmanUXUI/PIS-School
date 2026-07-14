@@ -59,7 +59,7 @@ const Footer: FC = () => {
           </div>
         </div>
       </div>
-
+      <div className="w-screen h-1 bg-gradient-to-r from-[#F48120] via-[#FFCA05] to-[#00B7DD]" />
       {/* 2. Main Footer Links & Info */}
       <div className="pt-16 md:pt-24 pb-10 relative">
         {/* Background Pattern */}

@@ -15,7 +15,7 @@ export default function HeroSlider() {
           <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
             <video
               className="absolute inset-0 w-full h-full object-cover opacity-50"
-              src="/Pavna_Hero_Section_Video.mp4"
+              src="/Pavna_Hero_Section_Video.webm"
               autoPlay
               muted
               loop
