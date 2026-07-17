@@ -93,7 +93,7 @@ const Footer: FC = () => {
                     Pavna International School, Aligarh–Agra Highway, Sasni,
                     Hathras, Uttar Pradesh – 204216, India
                     <div className="mt-1 text-brand-sky font-bold flex items-center">
-                      <i className="fas fa-phone-alt mr-2 text-[10px]"></i> +91
+                      <i className="fas fa-phone mr-2 text-[10px]"></i> +91
                       82669 54007
                     </div>
                   </div>
@@ -108,7 +108,7 @@ const Footer: FC = () => {
                     8 Km Milestone on SH-33, Hathras–Mathura Road, Hathras –
                     204213 (U.P.), India
                     <div className="mt-1 text-brand-sky font-bold flex items-center">
-                      <i className="fas fa-phone-alt mr-2 text-[10px]"></i> +91
+                      <i className="fas fa-phone mr-2 text-[10px]"></i> +91
                       7500812182
                     </div>
                   </div>
@@ -123,7 +123,7 @@ const Footer: FC = () => {
                     Agra Highway, Near Gyan Mahavidyalaya, Aligarh – 202001,
                     Uttar Pradesh, India
                     <div className="mt-1 text-brand-sky font-bold flex items-center">
-                      <i className="fas fa-phone-alt mr-2 text-[10px]"></i> +91
+                      <i className="fas fa-phone mr-2 text-[10px]"></i> +91
                       8006409344
                     </div>
                   </div>
