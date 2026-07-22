@@ -57,7 +57,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "State-of-the-Art Sports Facilities",
     description:
       "From horse riding, lawn tennis, and handball to a wide array of indoor and outdoor sports, our world-class infrastructure is designed to help every child discover and nurture their true athletic potential.",
-    image: ["/images/OverlayShadow-18.webp", "/images/image_2.webp"],
+    image: ["/images/DSC04013.webp", "/images/DSC_03532.webp"],
     icon: Activity,
   },
   {
@@ -66,7 +66,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Holistic Co-Curricular Exposure",
     description:
       "Pottery, sculpture, textile design, and industrial design are just the beginning. Our diverse range of co-curricular activities empowers students to explore their passions, staying creatively vibrant and emotionally grounded.",
-    image: ["/images/OverlayShadow-19.webp", "/images/DSC06155.JPG.webp"],
+    image: ["/images/WhatsApp.webp", "/images/DSC05760.webp"],
     icon: Palette,
   },
   {
@@ -75,7 +75,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Entertainment Zone for Recreation",
     description:
       "A dedicated recreation and entertainment zone gives students healthy downtime — table tennis, board games, lounge areas, and more. Balance between study and play is fundamental to wellbeing.",
-    image: ["/images/image_3.webp", "/images/image_tabletennies.webp"],
+    image: ["/images/DSC0_3813.webp", "/images/DSC_03837.webp"],
     icon: Smile,
   },
   {
@@ -84,7 +84,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Pure Vegetarian Dining",
     description:
       "Our in-house kitchen serves freshly prepared, pure vegetarian meals three times a day — nutritionally balanced menus curated to support growing minds and bodies with wholesome, hygienic food.",
-    image: ["/images/DSC06065.JPG.webp", "/images/DSC05168.webp"],
+    image: ["/images/DSC06065.JPG.webp", "/images/DSC_05760.webp"],
     icon: Utensils,
   },
   {

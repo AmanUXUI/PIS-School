@@ -137,12 +137,10 @@ const Admissions: FC = () => {
                 </h2>
 
                 <Link
-                  to="https://pavnaintlschool.campuscare.cloud/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  to="/lets-talk"
                   className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-[4px] bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer font-gill"
                 >
-                  Apply Now
+                  Enquiery Now
                   <ArrowRight size={15} />
                 </Link>
               </div>
@@ -255,12 +253,10 @@ const Admissions: FC = () => {
               </p>
 
               <Link
-                to="https://pavnaintlschool.campuscare.cloud/"
-                target="_blank"
-                rel="noopener noreferrer"
+                to="/lets-talk"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-[4px] bg-brand-orange hover:bg-brand-dark-orange text-white text-[13px] font-bold tracking-wider transition-all shadow-md active:scale-95 cursor-pointer font-gill"
               >
-                Apply Now
+                Enquiery Now
                 <ArrowRight size={15} />
               </Link>
             </div>

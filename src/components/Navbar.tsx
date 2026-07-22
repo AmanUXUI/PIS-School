@@ -180,7 +180,7 @@ export default function Navbar() {
                 }
                 className={cn(
                   "flex items-center gap-1 transition-all",
-                  link.name === "Apply Online"
+                  link.name === "Enquiery Now"
                     ? "bg-brand-orange text-white hover:bg-brand-dark-orange py-2 px-5 rounded-[4px] font-bold text-[13px] hover:shadow-md"
                     : // : link.name === "Pay Fees Online"
                       // ? "border border-brand-orange text-brand-orange hover:bg-brand-orange/5 py-[7px] px-5 rounded-[4px] font-bold text-[13px]"
@@ -362,13 +362,11 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white text-brand-black border-t border-gray-100 shadow-xl p-6 lg:hidden max-h-[80vh] overflow-y-auto">
           {CONTENT.navLinks.map((link) => {
-            if (link.name === "Apply Online") {
+            if (link.name === "Enquiery Now") {
               return (
                 <Link
                   key={link.name}
                   to={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
                   className="flex items-center justify-center gap-2 bg-brand-orange text-white px-5 py-3 rounded-[4px] font-bold text-center mt-4 text-sm shadow-sm"
                 >

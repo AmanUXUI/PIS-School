@@ -43,7 +43,7 @@ const ITEMS: DistinctionItem[] = [
     icon: <Trophy className="w-5 h-5" />,
     iconBg: "bg-sky-50",
     iconColor: "text-brand-sky",
-    image: "/images/tab-img-3.webp",
+    image: "/images/Hostel-state.webp",
     highlights: [
       "Horse Riding & Swimming",
       "Modern Indoor/Outdoor Courts",
@@ -64,7 +64,7 @@ const ITEMS: DistinctionItem[] = [
     icon: <GraduationCap className="w-5 h-5" />,
     iconBg: "bg-emerald-50",
     iconColor: "text-emerald-600",
-    image: "/images/image_62.webp",
+    image: "/images/WhatsApp_12.webp",
     highlights: [
       "Highly Qualified Experts",
       "Personalized Mentor Support",
@@ -85,7 +85,7 @@ const ITEMS: DistinctionItem[] = [
     icon: <Bus className="w-5 h-5" />,
     iconBg: "bg-amber-50",
     iconColor: "text-amber-600",
-    image: "/images/image_84.webp",
+    image: "/images/WhatsApp_21.webp",
     highlights: [
       "Fully Air-Conditioned Buses",
       "GPS-Enabled Live Tracking",

@@ -37,15 +37,17 @@ const adminImages = [
 const environmentImages = [
   "/images/6lvn92.png",
   "/images/enviroment 11.webp",
-  "/images/image_84.webp",
+  // "/images/image_84.webp",
   "/images/enviroment 3.webp",
   "/images/enviroment 4.webp",
   "/images/enviroment 5.webp",
   "/images/enviroment 6.webp",
-  "/images/enviroment 7.webp",
+  // "/images/enviroment 7.webp",
+  "/images/DSC06069.webp",
   "/images/enviroment 8.webp",
   "/images/enviroment 9.webp",
-  "/images/enviroment-jpg.jpg",
+  "/images/DSC05892.webp",
+  // "/images/enviroment-jpg.jpg",
 ];
 
 const academicImages = [
@@ -53,6 +55,13 @@ const academicImages = [
   "/images/DSC06164.JPG.webp",
   "/images/image_78.webp",
   "/images/DSC08709.JPG.webp",
+  "/images/WhatsApp_16.webp",
+  "images/WhatsApp_18.webp",
+  "images/Collaborative.webp",
+  "images/WhatsApp_20.webp",
+  "images/DSC05187.webp",
+  "/images/DSC08886.JPG.jpeg",
+  "/images/DSC08963.JPG.jpeg",
 ];
 
 const sportsImages = [
@@ -60,7 +69,7 @@ const sportsImages = [
   "/images/Whats-App-Image-2026-06-29-at-16-23-22.jpg",
   "/images/image_2.webp",
   "/images/ChatGPT Image Jun 29_ 2026_ 05_11_29 PM-C1NFuqbR.webp",
-  "/images/ChatGPT Image Jun 29_ 2026_ 04_09_46 PM-Ccq-_uh_.webp",
+  "/images/WhatsApp_15.webp",
 ];
 
 const CampusLife: FC = () => {
@@ -555,7 +564,7 @@ const CampusLife: FC = () => {
               },
               {
                 name: "Performing Arts",
-                image: "/images/05xe1f.jpg",
+                image: "/images/WhatsApp_13.webp",
                 icon: Layers,
                 desc: "Developing poise, theatrical confidence, stage presence, and expressive dramatic skills.",
               },

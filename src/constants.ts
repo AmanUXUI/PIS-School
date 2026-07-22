@@ -94,8 +94,8 @@ export const CONTENT = {
       ],
     },
     {
-      name: "Apply Online",
-      href: "https://pavnaintlschool.campuscare.cloud/",
+      name: "Enquiery Now",
+      href: "/lets-talk",
       hasDropdown: false,
       isRedirection: true,
     },
