@@ -64,7 +64,7 @@ export default function PavnaPromise() {
               to="/lets-talk"
               className="group bg-brand-yellow hover:bg-white text-brand-navy pl-6 pr-2 py-2 rounded-full font-bold text-xs sm:text-sm flex items-center gap-4 transition-all duration-300 w-fit cursor-pointer mx-auto lg:mx-0"
             >
-              Enquiery Now
+              Enquiry Now
               <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-brand-navy group-hover:bg-brand-yellow flex items-center justify-center text-white group-hover:text-brand-navy transition-all duration-300">
                 <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </div>

@@ -94,8 +94,8 @@ export const CONTENT = {
       ],
     },
     {
-      name: "Enquiery Now",
-      href: "/lets-talk",
+      name: "Apply Now",
+      href: "https://Entab.online/PISCHA",
       hasDropdown: false,
       isRedirection: true,
     },

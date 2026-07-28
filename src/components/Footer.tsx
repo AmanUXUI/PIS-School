@@ -342,7 +342,7 @@ const Footer: FC = () => {
                     className="text-gray-400 hover:text-brand-yellow transition-all duration-300 flex items-center group"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-yellow scale-0 group-hover:scale-100 transition-all duration-300 mr-0 group-hover:mr-2" />
-                    Enquiery Now
+                    Enquiry Now
                   </Link>
                 </li>
               </ul>
