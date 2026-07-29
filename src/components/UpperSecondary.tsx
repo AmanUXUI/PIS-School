@@ -25,8 +25,9 @@ import { useSEO } from "../hooks/useSEO";
 
 const UpperSecondary: FC = () => {
   useSEO({
-    title: "Curriculum |Pavna International School ",
-    description: "",
+    title: "Cambridge IGCSE Programme in Sasni | Pavna PIS ",
+    description:
+      "Explore IGCSE subjects at Pavna International School, Sasni a Cambridge Assessment International Education-affiliated international school in UP.",
     keywords: "",
   });
   return (

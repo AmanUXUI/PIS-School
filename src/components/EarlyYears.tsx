@@ -31,8 +31,9 @@ import { useSEO } from "../hooks/useSEO";
 
 const EarlyYears: FC = () => {
   useSEO({
-    title: "Curriculum |Pavna International School ",
-    description: "",
+    title: "Early Childhood Education | Pavna Intl School ",
+    description:
+      "Pavna International School's Early Years programme offers experiential, play-based & inquiry-based Early Childhood Education under the Cambridge Pathway.",
     keywords: "",
   });
   return (

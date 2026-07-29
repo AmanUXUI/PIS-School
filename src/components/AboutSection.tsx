@@ -324,7 +324,7 @@ export default function AboutSection() {
                 {/* Image Section */}
                 <div
                   className={cn(
-                    "lg:col-span-5 relative rounded-[8px] overflow-hidden aspect-[16/11] lg:aspect-auto min-h-[260px] lg:h-[400px]",
+                    "lg:col-span-5 relative rounded-[8px] overflow-hidden aspect-[16/11] lg:aspect-auto min-h-[200px] lg:h-[400px]",
                     i % 2 === 1 ? "lg:order-last" : "",
                   )}
                 >

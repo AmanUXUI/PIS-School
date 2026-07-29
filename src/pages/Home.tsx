@@ -16,8 +16,9 @@ import { useSEO } from "../hooks/useSEO";
 
 const Home = () => {
   useSEO({
-    title: "Pavna International School | Excellence in Education",
-    description: "",
+    title: "Best International School in Uttar Pradesh | Pavna PIS",
+    description:
+      "Pavna International School, Sasni is a top international & boarding school in Uttar Pradesh, offering Cambridge Pathway curriculum from Early Years to A Level.",
     keywords: "",
   });
   return (

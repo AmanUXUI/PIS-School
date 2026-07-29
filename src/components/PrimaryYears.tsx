@@ -19,8 +19,15 @@ import {
   GraduationCap,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 const PrimaryYears: FC = () => {
+  useSEO({
+    title: "Best Cambridge Primary School | Pavna PIS, Sasni ",
+    description:
+      "Discover the Cambridge Primary School programme (Stage 1-6) at Pavna International School building communication, critical thinking & holistic skills.",
+    keywords: "",
+  });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">
       {/* 1. Header Hero Panel with Breadcrumbs */}

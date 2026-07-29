@@ -20,8 +20,9 @@ import { useSEO } from "../hooks/useSEO";
 
 const LowerSecondary: FC = () => {
   useSEO({
-    title: "Curriculum |Pavna International School ",
-    description: "",
+    title: "Best Lower Secondary School in Sasni | Pavna PIS ",
+    description:
+      "Give your child a future-ready foundation with Cambridge Lower Secondary Education (Stage 7-9) at Pavna International School, Sasni.",
     keywords: "",
   });
   return (

@@ -73,7 +73,7 @@ export default function HeroSlider() {
                 transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
                 className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center sm:justify-start w-full"
               >
-                <Link to="/curriculum">
+                <Link to="/curriculum" className="w-full md:w-fit">
                   <motion.button
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
@@ -86,7 +86,7 @@ export default function HeroSlider() {
                     />
                   </motion.button>
                 </Link>
-                <Link to="/campus-life">
+                <Link to="/campus-life" className="w-full md:w-fit">
                   <motion.button
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}

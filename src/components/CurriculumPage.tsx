@@ -56,8 +56,9 @@ const FAQ_DATA: FAQItem[] = [
 
 const CurriculumPage: FC = () => {
   useSEO({
-    title: "Curriculum |Pavna International School ",
-    description: "",
+    title: "Cambridge Curriculum | Best Cambridge School in UP",
+    description:
+      "Explore the Cambridge Curriculum at Pavna International School, Sasni the best Cambridge school in Uttar Pradesh focused on holistic student development.",
     keywords: "",
   });
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
@@ -235,11 +236,11 @@ const CurriculumPage: FC = () => {
             <div className="lg:col-span-6 bg-[#FAF9F6] p-8 md:p-10 rounded-3xl border border-neutral-100 relative overflow-hidden">
               <div className="flex flex-col items-start w-fit max-w-full">
                 <div className="flex items-center gap-3 mb-4 w-full">
-                  <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
+                  <div className="w-8 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                   <span className="shrink-0 text-[11px] leading-none tracking-[2px] uppercase font-bold text-brand-orange">
                     The Educational Journey
                   </span>
-                  <div className="w-12 h-[2px] bg-brand-orange shrink-0"></div>
+                  <div className="w-8 md:w-12 h-[2px] bg-brand-orange shrink-0"></div>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-serif font-bold text-brand-navy mb-4">
                   The Cambridge Pathway

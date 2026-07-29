@@ -103,8 +103,9 @@ const MAX_INDEX = TOTAL_SLIDES - VISIBLE_CARDS;
 
 const BoardingPage: FC = () => {
   useSEO({
-    title: "Boarding |Pavna International School ",
-    description: "",
+    title: "Top Boarding School in Sasni | Pavna Intl School ",
+    description:
+      "Pavna International School is a top boarding & residential school in Sasni, Uttar Pradesh, offering modern facilities and a safe, nurturing environment.",
     keywords: "",
   });
   const [activeTab, setActiveTab] = useState<string>("nestled-nature");
