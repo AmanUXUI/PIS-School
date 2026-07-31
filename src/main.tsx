@@ -7,9 +7,7 @@ import {setupImageDefaults} from './lib/imageDefaults.ts';
 import {initPerformanceVitals} from './lib/performanceVitals.ts';
 
 setupImageDefaults();
-if (import.meta.env.DEV) {
-  initPerformanceVitals();
-}
+initPerformanceVitals();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

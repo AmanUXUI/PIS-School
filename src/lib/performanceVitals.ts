@@ -35,7 +35,11 @@ export function initPerformanceVitals() {
       const lastEntry = entries[entries.length - 1];
       if (!lastEntry) return;
       report("INP", Math.round(lastEntry.duration));
-    }).observe({ type: "event", buffered: true, durationThreshold: 40 });
+    }).observe({
+      type: "event",
+      buffered: true,
+      durationThreshold: 40,
+    } as PerformanceObserverInit);
   } catch (error) {
     console.warn("Web Vitals observer setup failed:", error);
   }
