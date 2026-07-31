@@ -21,6 +21,8 @@ export default function FooterBanner() {
             src="/images/Banner-Desktop.webp"
             alt="Pavna School Banner"
             className="w-full h-auto block"
+            loading="lazy"
+            decoding="async"
           />
         </picture>
       </motion.div>

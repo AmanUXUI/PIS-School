@@ -154,6 +154,12 @@ details>summary::-webkit-details-marker {
   box-shadow: 0 0 10px rgba(244, 129, 32, 0.5);
 }
 
+@media (prefers-reduced-motion: reduce), (max-width: 768px) {
+  .animate-marquee,
+  .animate-marquee-slow {
+    animation: none !important;
+  }
+}
 
 @layer base {
   body {

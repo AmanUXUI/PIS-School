@@ -1,202 +1,128 @@
+import { Suspense, lazy, type ComponentType } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "./layout/layout";
-import Home from "./pages/Home";
-import AboutOverview from "./components/AboutOverview";
-import AcademicTeam from "./components/AcademicTeam";
-import ChairmansMessage from "./components/ChairmansMessage";
-import PrincipalsMessage from "./components/PrincipalsMessage";
-import EarlyYears from "./components/EarlyYears";
-import PrimaryYears from "./components/PrimaryYears";
-import LowerSecondary from "./components/LowerSecondary";
-import UpperSecondary from "./components/UpperSecondary";
-import AdvanceYears from "./components/AdvanceYears";
-import CampusLife from "./components/CampusLife";
-import Admissions from "./components/Admissions";
-import BoardingPage from "./components/BoardingPage";
-import ContactUs from "./components/ContactUs";
-import Careers from "./components/Careers";
-import CurriculumPage from "./components/CurriculumPage";
-import NotFound from "./components/NotFound";
-import GetInTouch from "./components/GetinTounch";
-import Blog from "./components/Blog";
-import ArticlePage from "./components/ArticlePage";
-import Newsletter from "./components/Newsletter";
+
+const Home = lazy(() => import("./pages/Home"));
+const AboutOverview = lazy(() => import("./components/AboutOverview"));
+const AcademicTeam = lazy(() => import("./components/AcademicTeam"));
+const ChairmansMessage = lazy(() => import("./components/ChairmansMessage"));
+const PrincipalsMessage = lazy(() => import("./components/PrincipalsMessage"));
+const EarlyYears = lazy(() => import("./components/EarlyYears"));
+const PrimaryYears = lazy(() => import("./components/PrimaryYears"));
+const LowerSecondary = lazy(() => import("./components/LowerSecondary"));
+const UpperSecondary = lazy(() => import("./components/UpperSecondary"));
+const AdvanceYears = lazy(() => import("./components/AdvanceYears"));
+const CampusLife = lazy(() => import("./components/CampusLife"));
+const Admissions = lazy(() => import("./components/Admissions"));
+const BoardingPage = lazy(() => import("./components/BoardingPage"));
+const ContactUs = lazy(() => import("./components/ContactUs"));
+const Careers = lazy(() => import("./components/Careers"));
+const CurriculumPage = lazy(() => import("./components/CurriculumPage"));
+const NotFound = lazy(() => import("./components/NotFound"));
+const GetInTouch = lazy(() => import("./components/GetinTounch"));
+const Blog = lazy(() => import("./components/Blog"));
+const ArticlePage = lazy(() => import("./components/ArticlePage"));
+const Newsletter = lazy(() => import("./components/Newsletter"));
+
+const RouteLoader = () => (
+  <div className="min-h-[50vh] w-full bg-[#FDFCFB]" aria-hidden="true" />
+);
+
+const withLayout = (Component: ComponentType) => (
+  <Layout>
+    <Suspense fallback={<RouteLoader />}>
+      <Component />
+    </Suspense>
+  </Layout>
+);
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <Layout>
-        <Home />
-      </Layout>
-    ),
+    element: withLayout(Home),
   },
   {
     path: "/about-overview",
-    element: (
-      <Layout>
-        <AboutOverview />
-      </Layout>
-    ),
+    element: withLayout(AboutOverview),
   },
   {
     path: "/academic-team",
-    element: (
-      <Layout>
-        <AcademicTeam />
-      </Layout>
-    ),
+    element: withLayout(AcademicTeam),
   },
   {
     path: "/chairmans-message",
-    element: (
-      <Layout>
-        <ChairmansMessage />
-      </Layout>
-    ),
+    element: withLayout(ChairmansMessage),
   },
   {
     path: "/principals-message",
-    element: (
-      <Layout>
-        <PrincipalsMessage />
-      </Layout>
-    ),
+    element: withLayout(PrincipalsMessage),
   },
   {
     path: "/curriculum",
-    element: (
-      <Layout>
-        <CurriculumPage />
-      </Layout>
-    ),
+    element: withLayout(CurriculumPage),
   },
   {
     path: "/early-years",
-    element: (
-      <Layout>
-        <EarlyYears />
-      </Layout>
-    ),
+    element: withLayout(EarlyYears),
   },
   {
     path: "/primary",
-    element: (
-      <Layout>
-        <PrimaryYears />
-      </Layout>
-    ),
+    element: withLayout(PrimaryYears),
   },
   {
     path: "/lower-secondary",
-    element: (
-      <Layout>
-        <LowerSecondary />
-      </Layout>
-    ),
+    element: withLayout(LowerSecondary),
   },
   {
     path: "/upper-secondary",
-    element: (
-      <Layout>
-        <UpperSecondary />
-      </Layout>
-    ),
+    element: withLayout(UpperSecondary),
   },
   {
     path: "/advance-as-a-level",
-    element: (
-      <Layout>
-        <AdvanceYears />
-      </Layout>
-    ),
+    element: withLayout(AdvanceYears),
   },
   {
     path: "/campus-life",
-    element: (
-      <Layout>
-        <CampusLife />
-      </Layout>
-    ),
+    element: withLayout(CampusLife),
   },
   {
     path: "/admissions",
-    element: (
-      <Layout>
-        <Admissions />
-      </Layout>
-    ),
+    element: withLayout(Admissions),
   },
   {
     path: "/boarding",
-    element: (
-      <Layout>
-        <BoardingPage />
-      </Layout>
-    ),
+    element: withLayout(BoardingPage),
   },
   {
     path: "/careers",
-    element: (
-      <Layout>
-        <Careers />
-      </Layout>
-    ),
+    element: withLayout(Careers),
   },
   {
     path: "/blog",
-    element: (
-      <Layout>
-        <Blog />
-      </Layout>
-    ),
+    element: withLayout(Blog),
   },
   {
     path: "/newsletter",
-    element: (
-      <Layout>
-        <Newsletter />
-      </Layout>
-    ),
+    element: withLayout(Newsletter),
   },
   {
     path: "/get-in-touch",
-    element: (
-      <Layout>
-        <GetInTouch />
-      </Layout>
-    ),
+    element: withLayout(GetInTouch),
   },
   {
     path: "/contact-us",
-    element: (
-      <Layout>
-        <ContactUs />
-      </Layout>
-    ),
+    element: withLayout(ContactUs),
   },
   {
     path: "/lets-talk",
-    element: (
-      <Layout>
-        <ContactUs />
-      </Layout>
-    ),
+    element: withLayout(ContactUs),
   },
   {
     path: "/blog/:id",
-    element: (
-      <Layout>
-        <ArticlePage />
-      </Layout>
-    ),
+    element: withLayout(ArticlePage),
   },
   {
     path: "*",
-    element: (
-      <Layout>
-        <NotFound />
-      </Layout>
-    ),
+    element: withLayout(NotFound),
   },
 ]);

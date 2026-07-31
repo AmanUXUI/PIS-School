@@ -20,7 +20,8 @@ export default function HeroSlider() {
               muted
               loop
               playsInline
-              preload="auto"
+              preload="metadata"
+              poster="/images/Banner-Desktop.webp"
             />
           </div>
 
