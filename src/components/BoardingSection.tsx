@@ -37,10 +37,9 @@ const IMAGES = [
   "/images/2O0A1138.webp",
   "/images/DSC06565.JPG.webp",
   "/images/DSC05147.webp",
-  "/images/DSC06065.JPG.webp",
+  "/images/ChatGPT.webp",
   "/images/Chat-GPT-Image-Jul-4-2026-03-32-21-PM.png",
   "/images/Chat-GPT-Image-Jul-4-2026-03-28-32-PM.png",
-  "/images/i9edig.webp",
 ];
 
 export default function BoardingSection() {
