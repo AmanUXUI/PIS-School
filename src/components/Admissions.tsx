@@ -436,22 +436,10 @@ const Admissions: FC = () => {
                   </tr>
                   <tr className="hover:bg-neutral-50/40 transition-colors">
                     <td
-                      className="py-5 px-6 font-serif font-bold text-brand-navy text-[15px] border-b-0"
+                      className="py-5 px-6 font-serif font-bold text-brand-orange text-[15px] border-b-0"
                       rowSpan={2}
                     >
                       Composite Fee
-                    </td>
-                    <td className="py-5 px-6 text-brand-orange font-bold uppercase text-[11px] tracking-wider">
-                      Quarterly
-                    </td>
-                    <td className="py-5 px-6 text-center font-extrabold text-brand-orange font-mono bg-brand-orange/[0.03] text-[16px]">
-                      ₹87,750
-                    </td>
-                    <td className="py-5 px-6 text-center font-extrabold text-brand-navy font-mono text-[16px]">
-                      ₹93,750
-                    </td>
-                    <td className="py-5 px-6 text-center font-extrabold text-brand-navy font-mono text-[16px]">
-                      ₹1,00,000
                     </td>
                   </tr>
                   <tr className="hover:bg-neutral-50/40 transition-colors">
@@ -461,10 +449,10 @@ const Admissions: FC = () => {
                     <td className="py-5 px-6 text-center font-extrabold text-brand-orange font-mono bg-brand-orange/[0.03] text-[16px]">
                       ₹3,51,000
                     </td>
-                    <td className="py-5 px-6 text-center font-extrabold text-brand-navy font-mono text-[16px]">
+                    <td className="py-5 px-6 text-center font-extrabold text-brand-orange font-mono text-[16px]">
                       ₹3,75,000
                     </td>
-                    <td className="py-5 px-6 text-center font-extrabold text-brand-navy font-mono text-[16px]">
+                    <td className="py-5 px-6 text-center font-extrabold text-brand-orange font-mono text-[16px]">
                       ₹4,00,000
                     </td>
                   </tr>
@@ -529,19 +517,10 @@ const Admissions: FC = () => {
                   </tr>
                   <tr className="hover:bg-neutral-50/40 transition-colors">
                     <td
-                      className="py-5 px-6 font-serif font-bold text-brand-navy text-[15px] border-b-0"
+                      className="py-5 px-6 font-serif font-bold text-brand-orange text-[15px] border-b-0"
                       rowSpan={2}
                     >
                       Composite Fee
-                    </td>
-                    <td className="py-5 px-6 text-brand-orange font-bold uppercase text-[11px] tracking-wider">
-                      Quarterly
-                    </td>
-                    <td className="py-5 px-6 text-center font-extrabold text-brand-orange font-mono bg-brand-orange/[0.03] text-[16px]">
-                      ₹1,62,500
-                    </td>
-                    <td className="py-5 px-6 text-center font-extrabold text-brand-navy font-mono text-[16px]">
-                      ₹1,68,750
                     </td>
                   </tr>
                   <tr className="hover:bg-neutral-50/40 transition-colors">
@@ -551,7 +530,7 @@ const Admissions: FC = () => {
                     <td className="py-5 px-6 text-center font-extrabold text-brand-orange font-mono bg-brand-orange/[0.03] text-[16px]">
                       ₹6,50,000
                     </td>
-                    <td className="py-5 px-6 text-center font-extrabold text-brand-navy font-mono text-[16px]">
+                    <td className="py-5 px-6 text-center font-extrabold text-brand-orange font-mono text-[16px]">
                       ₹6,75,000
                     </td>
                   </tr>

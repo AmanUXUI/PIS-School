@@ -32,12 +32,15 @@ const FEATURES = [
 const IMAGES = [
   "/images/image_60.webp",
   "/images/image_83.webp",
+  "/images/DSC06458.JPG.webp",
   "/images/2O0A1077.webp",
   "/images/2O0A1138.webp",
+  "/images/DSC06565.JPG.webp",
   "/images/DSC05147.webp",
   "/images/DSC06065.JPG.webp",
   "/images/Chat-GPT-Image-Jul-4-2026-03-32-21-PM.png",
   "/images/Chat-GPT-Image-Jul-4-2026-03-28-32-PM.png",
+  "/images/i9edig.webp",
 ];
 
 export default function BoardingSection() {

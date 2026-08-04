@@ -39,7 +39,9 @@ const Footer: FC = () => {
             <div className="w-full lg:w-5/12 flex flex-col space-y-5 relative z-10">
               {/* Apply Now Premium Card Button */}
               <Link
-                to="/admissions"
+                to="https://entab.online/Registration/RegistrationGroupClass"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group/btn relative flex items-center justify-between bg-brand-orange text-white p-5 md:p-6 rounded-[8px] hover:bg-brand-darkOrange transition-all duration-300 shadow-glow transform hover:-translate-y-1 overflow-hidden border border-brand-orange/50 hover:border-white/20"
               >
                 <div className="absolute inset-0 w-0 bg-white/20 transition-all duration-500 ease-out group-hover/btn:w-full"></div>

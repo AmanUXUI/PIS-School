@@ -39,7 +39,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Premium Boarding Facilities Nestled in Nature",
     description:
       "Set in a serene, green campus away from city noise, our boarding facilities provide children with the calm and space they need to focus, reflect, and recharge a true home away from home.",
-    image: ["/images/OverlayShadow-16.webp", "/images/DSC09206.JPG.webp"],
+    image: ["/images/DSC06712.JPG.webp", "/images/DSC09206.JPG.webp"],
     icon: Leaf,
   },
   {
@@ -75,7 +75,7 @@ const FACILITIES: FacilityTab[] = [
     heading: "Entertainment Zone for Recreation",
     description:
       "A dedicated recreation and entertainment zone gives students healthy downtime — table tennis, board games, lounge areas, and more. Balance between study and play is fundamental to wellbeing.",
-    image: ["/images/DSC0_3813.webp", "/images/DSC_03837.webp"],
+    image: ["/images/DSC03455.JPG.webp", "/images/DSC03584.JPG.webp"],
     icon: Smile,
   },
   {
@@ -84,7 +84,8 @@ const FACILITIES: FacilityTab[] = [
     heading: "Pure Vegetarian Dining",
     description:
       "Our in-house kitchen serves freshly prepared, pure vegetarian meals three times a day — nutritionally balanced menus curated to support growing minds and bodies with wholesome, hygienic food.",
-    image: ["/images/DSC06065.JPG.webp", "/images/DSC_05760.webp"],
+    image: ["/images/DSC06065.JPG.webp", "/images/DSC05554.JPG.webp"],
+    //  "/images/DSC_05760.webp",
     icon: Utensils,
   },
   {
@@ -761,6 +762,16 @@ const BoardingPage: FC = () => {
                   <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
                     <img
                       src="/images/image_83.webp"
+                      alt="Structured Study Area"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+
+                  <div className="aspect-[4/5] w-[calc(50%-8px)] rounded-3xl overflow-hidden shadow-md shrink-0 relative group bg-neutral-50 border border-neutral-100">
+                    <img
+                      src="/images/DSC06458.JPG.webp"
                       alt="Structured Study Area"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"

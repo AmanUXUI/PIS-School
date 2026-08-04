@@ -35,11 +35,12 @@ const adminImages = [
 ];
 
 const environmentImages = [
-  "/images/6lvn92.png",
+  "/images/Campus.webp",
+  "/images/enviroment 3.webp",
+  // "/images/6lvn92.png",
   "/images/enviroment 11.webp",
   // "/images/image_84.webp",
-  "/images/enviroment 3.webp",
-  "/images/enviroment 4.webp",
+  "/images/DSC06274.JPG.webp",
   "/images/enviroment 5.webp",
   "/images/enviroment 6.webp",
   // "/images/enviroment 7.webp",
@@ -47,6 +48,9 @@ const environmentImages = [
   "/images/enviroment 8.webp",
   "/images/enviroment 9.webp",
   "/images/DSC05892.webp",
+  "/images/DSC05327.JPG.webp",
+  // "/images/DSC06369.JPG.webp",
+  // "/images/DSC06363.JPG.webp",
   // "/images/enviroment-jpg.jpg",
 ];
 
@@ -61,7 +65,10 @@ const academicImages = [
   "images/WhatsApp_20.webp",
   "images/DSC05187.webp",
   "/images/DSC08886.JPG.jpeg",
-  "/images/DSC08963.JPG.jpeg",
+  // "/images/DSC08963.JPG.jpeg",
+  "/images/DSC08997.JPG.webp",
+  "/images/DSC05758.JPG.webp",
+  // "/images/DSC06278.JPG.webp",
 ];
 
 const sportsImages = [
@@ -540,7 +547,7 @@ const CampusLife: FC = () => {
             {[
               {
                 name: "Textile",
-                image: "/images/i9edig.jpg",
+                image: "/images/i9edig.webp",
                 icon: Scissors,
                 desc: "Exploring standard weaves, patterns, and creative fiber expressions to design unique fabrics.",
               },
