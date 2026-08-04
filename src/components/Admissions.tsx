@@ -374,7 +374,7 @@ const Admissions: FC = () => {
                       To be Paid
                     </th>
                     <th className="py-5 px-6 border-b border-white/10 text-center bg-brand-navy/95">
-                      <div className="font-gill font-bold text-[13px] text-brand-orange">
+                      <div className="font-gill font-bold text-[13px] text-white">
                         EY 1 - Stage 3
                       </div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">
@@ -469,7 +469,7 @@ const Admissions: FC = () => {
                       To be Paid
                     </th>
                     <th className="py-5 px-6 border-b border-white/10 text-center bg-brand-navy/95">
-                      <div className="font-gill font-bold text-[13px] text-brand-orange">
+                      <div className="font-gill font-bold text-[13px] text-white">
                         Stage 7 - Stage 9
                       </div>
                       <div className="text-[10px] text-white/70 font-medium font-gill tracking-normal normal-case mt-0.5">
