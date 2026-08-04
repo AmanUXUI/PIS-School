@@ -68,6 +68,7 @@ const academicImages = [
   // "/images/DSC08963.JPG.jpeg",
   "/images/DSC08997.JPG.webp",
   "/images/DSC05758.JPG.webp",
+  "/images/DSC04980.JPG.webp",
   // "/images/DSC06278.JPG.webp",
 ];
 
