@@ -25,6 +25,29 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "cambridge-early-years-programme-fees",
+    title: "Cambridge Early Years Programme Fees: What Parents Should Expect",
+    excerpt:
+      "One of the most important decisions a parent will make is choosing the right start for their child's schooling. If you're thinking about the Cambridge Curriculum, it's just as crucial to understand the costs as it is to grasp the curriculum's impact on your child's learning. This guide explains what parents can expect to invest in early Cambridge education, and what they invest in is what they get.",
+    category: "Academics",
+    date: "August 5, 2026",
+    readTime: "6 min read",
+    image: "/images/PIS 1.webp",
+    featured: true,
+  },
+  {
+    id: "cambridge-early-years-programme",
+    title:
+      "Cambridge Early Years Programme: Benefits, Subjects, and Approach to Learning",
+    excerpt:
+      "The key to a child's education is the foundation set by the first years of life. The Cambridge Early Years Programme is designed for children aged 3 to 5, helping develop the skills, curiosity, and confidence essential before entering formal school. Discover how this internationally recognised programme shapes young learners at a Cambridge Preschool in Sasni, Uttar Pradesh.",
+    category: "Academics",
+    date: "August 5, 2026",
+    readTime: "6 min read",
+    image: "/images/PIS 2.webp",
+    featured: true,
+  },
+  {
     id: "post-1",
     title:
       "Prestigious investiture ceremony of Pavna International School took place on August 28",
@@ -260,6 +283,75 @@ export const getSlug = (title: string): string => {
 };
 
 export const getPostContent = (post: BlogPost): string => {
+  if (post.id === "cambridge-early-years-programme-fees") {
+    return (
+      "One of the most important decisions a parent will make is choosing the right start for their child's schooling. If you're thinking about the Cambridge Curriculum, it's just as crucial to understand the costs as it is to grasp the curriculum's impact on your child's learning. This guide explains what parents can expect to invest in early Cambridge education, and what they invest in is what they get.\n\n" +
+      "What is the Cambridge Early Years Programme?\n\n" +
+      "The Cambridge Early Years Programme is intended for children in the age range 3-5 and provides the building blocks for later levels of the Cambridge Curriculum – Cambridge Primary and ultimately Cambridge IGCSE. It emphasizes the development of basic literacy, numeracy, and personal skills through a structured and play-based learning experience.\n\n" +
+      "This framework is based on internationally benchmarked learning outcomes, in contrast to generic preschool programmes. Children who achieve it enter a Cambridge Primary School culture where they are aware of the pace, organisation, and expectations of the wider curriculum.\n\n" +
+      "The Types of Fees That Are Usually Covered\n\n" +
+      "The fees charged by Cambridge Early Years are not typically limited to tuition fees. Parents should be prepared for the fee system to have multiple elements:\n" +
+      "• Entry fees and registration fees, typically a one-time payment at registration time.\n" +
+      "• In addition to tuition fees, other expenses may be payable at an annual, termly or quarterly rate.\n" +
+      "• Learning resource fees for Cambridge-approved learning resources and workbooks.\n" +
+      "• Smart classrooms, play areas, and extracurricular session activity and facility charges.\n" +
+      "• The cost of transportation and uniforms, which are typically not included and may be available as an extra.\n\n" +
+      "The fees depend on the location, infrastructure and reputation of the school. It is likely that a Best Cambridge School in Uttar Pradesh will charge a different amount for its Early Years Programme from that of an international school in a metro city, but that both schools will have common core curriculum standards around the world. \n\n" +
+      "The Reasons for the Different Fees for Cambridge Schools \n\n" +
+      "Several factors impact the cost of a school's Early Years Programme:\n" +
+      "• ** Teacher qualifications **: schools with a higher investment in Cambridge-trained teachers tend to charge more for their fees\n" +
+      "• Operating costs are increased by infrastructure (smart classrooms, sensory play areas, safety systems)\n" +
+      "• ** Student/teacher ratio **: lower ratios are typically more expensive per student\n" +
+      "• In developing education hubs, for example in a Cambridge Primary School located in Sasni, location is frequently a more competitive factor compared to metro areas and yet schools still hold Cambridge accreditation \n" +
+      "When checking the comparison of fees, parents need to consider it as part of a bigger picture and not as an independent factor. \n\n" +
+      "Do the Advantages of the Investment Outweigh the Drawbacks? \n\n" +
+      "Early Years is a key foundation stage, and the dividends are reaped years later. Children who start from a Cambridge Curriculum framework will find the transition to Cambridge Primary easier, and the learning progression is continuous and not segmented; this approach will also lead them to the next stage, the Cambridge IGCSE.\n\n" +
+      "When considering schools for your child, you should consider the following:\n" +
+      "• This has been awarded by Cambridge International\n" +
+      "• The ratio of teachers to children in Early Years classrooms\n" +
+      "• The methods for measuring a child's progress\n" +
+      "• A range of feedback from alumni and/or current parents on transition to the primary years\n\n" +
+      "Selecting the Appropriate Cambridge School for the Early Years\n\n" +
+      "Parents should visit schools when making a shortlist, talk to existing parents, and request a breakdown of fees in writing before signing up for a school. A transparent school will make a clear distinction between mandatory fees and optional fees.\n\n" +
+      "For those seeking a Cambridge education in Uttar Pradesh, prioritize schools with strong local facilities and Cambridge accreditation. A good Cambridge Primary School in Sasni can deliver the Cambridge curriculum, which is recognised internationally, with the same curriculum, fees and class sizes as those of larger city-based schools.\n\n"
+    );
+  }
+  if (post.id === "cambridge-early-years-programme") {
+    return (
+      "The key to a child's education is the foundation set by the first years of life. The Cambridge Early Years Programme is for children from the age of 3 to 5, helping to develop the skills, curiosity and confidence that are essential before children enter formal school. Being familiar with this early phase helps parents to understand the rationale behind its implementation by many schools around the world, even by a growing number of schools in Uttar Pradesh, India.\n\n" +
+      "What Is the Cambridge Early Years Programme\n\n" +
+      "The Cambridge Early Years Programme is one of the Cambridge International Education (CAIE) pathway of programmes. It comes before the Cambridge Primary and is based on structured learning that is grounded in play to promote language, mathematics, personal and social development and physical growth in the young learner.\n\n" +
+      "The programme is not a strict one of rote learning but allows children to explore, ask questions, and learn through guided activities. The children's progress is monitored through observation, not through exams, and each child's progress is recorded across seven areas of learning that are in line with the international early years standards.\n\n" +
+      "Why Parents Choose a Cambridge Preschool\n\n" +
+      "Learning to read and count is only part of what is provided at a Cambridge Preschool. It creates a learning pace that will last throughout all the years of schooling. Some of the reasons that parents choose this option are:\n" +
+      "• Global curriculum consistency, that is, the continuity of the academic framework for a child moving from city to city or country to country.\n" +
+      "• A skill-based foundation covering communication, problem-solving and social-emotional development, not just early academics.\n" +
+      "• The use of trained educators, with the correct teaching approach and lesson structures from Cambridge.\n" +
+      "• Smooth transition to Cambridge Primary and Cambridge Lower Secondary and onto Cambridge IGCSE and A Level.\n\n" +
+      "Subjects and Learning Areas Covered\n\n" +
+      "The programme is structured around seven core learning areas and not around subjects:\n" +
+      "• **Communication, language and literacy** - students will grow in their love of books, build vocabulary and improve listening skills\n" +
+      "• **Mathematics** - number sense, shapes, patterns and problem-solving through play\n" +
+      "• **Understanding the world** - science, technology and cultural awareness\n" +
+      "• **Physical development** - fine and gross motor skills, movement and handling\n" +
+      "• **Personal, social and emotional development** - confidence, cooperation and self-regulation\n" +
+      "• **Expressive arts and design** - creativity through art, music and imaginative play\n" +
+      "• **Digital literacy fundamentals** - age-appropriate introduction to technology\n\n" +
+      "This helps to ensure that children are not only academically ready for the next step but also developmentally ready.\n\n" +
+      "The Cambridge Approach to Learning\n\n" +
+      "A key difference between the Cambridge Early Years Programme and traditional preschools is its approach to learning, which is focused on inquiry. Children are asked why and how and teachers design lessons around children's questions rather than around memorisation.\n\n" +
+      "The classroom is usually set up in a blended way, consisting of guided play, group activities and individual attention. Assessment is ongoing and observational, allowing teachers and parents to have a good understanding of a child's development without being subjected to formal testing at this early age.\n\n" +
+      "It also provides a foundation for the analytical thinking skills students will be required to develop later in the Cambridge A Level Curriculum, when independent thinking and subject depth become key components to doing well.\n\n" +
+      "Cambridge Education in Uttar Pradesh\n\n" +
+      "Structured international curriculum is becoming more popular in Tier 2 and Tier 3 cities of UP. A Cambridge international school in Uttar Pradesh provides local families with access to an education that is on par with international standards, without having to move to a metro city.\n\n" +
+      "This academic journey begins at the Early Years level and continues through the Primary and Cambridge Lower Secondary levels, available in and around Hathras district through a Cambridge Primary School in Sasni. This local access is significant, especially for families who are interested in an international curriculum but who would prefer to attend a school within their own community.\n\n" +
+      "How Early Years Prepares Students for What Comes Next\n\n" +
+      "The progression from Early Years to Cambridge Primary is planned to be smooth rather than abrupt. The skills acquired in these early years are closely related to and influence the more formal learning of subject matter that starts in Primary school.\n\n" +
+      "Students have already been introduced to enquiry-based learning, independent thinking and continuous assessment, all of which stem from the Early Years foundation, by the time they are at Cambridge Lower Secondary.\n\n" +
+      "Conclusion\n\n" +
+      "The Cambridge Early Years Programme provides a solid academic and developmental base for young learners using the principles of curiosity, structured play and global learning outcomes. This programme offers parents a clear, well-supported introduction to Cambridge International Education through early education, and continuing through to Cambridge A Level.\n\n"
+    );
+  }
   if (post.id === "post-1") {
     return "The prestigious investiture ceremony of Pavna International School took place on August 28, graced by Chairman Mr. Swapnil Jain, Vice Chairperson Ms. Priya Jain, and esteemed guests, comprising Principals Ms. Aarti Jha from DPS Aligarh and Ms. Rajni Singh from DPS Civil Lines. The event commenced with a captivating performance by the school’s talented student band, setting the tone for the celebration of leadership. The new student council members stepped onto the stage for the oath-taking ceremony, wholeheartedly pledging their dedication to upholding the school’s core values. In his address, Chairman Mr. Swapnil Jain encouraged students to embrace life’s every facet with enthusiasm, while Principal Ms. Aarti Nigam highlighted the responsibilities that come with leadership. The Director of Academics, Mr. Stephen Sibthorpe, extended congratulations, marking the beginning of their journey as school value ambassadors. The event’s atmosphere was filled with a sense of unity and aspiration, as the students Council members pledged to nurture a positive school environment. It reminded students that leadership involves collaborative goal achievement with integrity and dedication, emphasizing the essence of accountability and leadership.";
   }

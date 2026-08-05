@@ -95,7 +95,7 @@ export const CONTENT = {
     },
     {
       name: "Apply Now",
-      href: "https://entab.online/Registration/RegistrationGroupClass",
+      href: "https://Entab.online/r-PISCHA",
       hasDropdown: false,
       isRedirection: true,
     },
