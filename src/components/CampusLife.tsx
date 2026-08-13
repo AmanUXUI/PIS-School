@@ -82,9 +82,10 @@ const sportsImages = [
 
 const CampusLife: FC = () => {
   useSEO({
-    title: "Campus |Pavna International School ",
-    description: "",
-    keywords: "",
+    title: "Modern Campus Facilities | Sports & Academics | Pavna PIS",
+    description:
+      "Discover Pavna International School's vibrant campus driving academic excellence and holistic development through modern facilities and co-curricular activities.",
+    keywords: "Holistic Development, Academic Excellence, Global Perspectives",
   });
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentEnvIdx, setCurrentEnvIdx] = useState(0);

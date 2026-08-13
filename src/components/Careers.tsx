@@ -27,9 +27,10 @@ const SECONDARY_EMAIL = "HEADMARKETING@pavnagroup.com";
 
 const Careers: FC = () => {
   useSEO({
-    title: "Career |Pavna International School ",
-    description: "",
-    keywords: "",
+    title: "Careers in Education | Pavna Intl School, Uttar Pradesh ",
+    description:
+      "Looking for a rewarding career in education? Pavna International School offers opportunities to join our core team of dedicated education experts.",
+    keywords: "Careers in Education, Cambridge International School, Core Team",
   });
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);

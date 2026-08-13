@@ -16,6 +16,7 @@ import {
   ClipboardList,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 const STATES_CITIES_MAP: Record<string, string[]> = {
   "Uttar Pradesh": [
@@ -65,6 +66,12 @@ const COUNTRY_CODES = [
 ];
 
 const EnquireNow: FC = () => {
+  useSEO({
+    title: "Enquire Now | Best International School in Sasni",
+    description:
+      "Get in touch with Pavna International School, Sasni — the best international school in the region. Enquire now for admissions and start your child's journey.",
+    keywords: "",
+  });
   const [captchaCode, setCaptchaCode] = useState("");
   const [captchaBgSeed, setCaptchaBgSeed] = useState<
     { x1: number; y1: number; x2: number; y2: number }[]

@@ -6,9 +6,11 @@ import { useSEO } from "../hooks/useSEO";
 
 export const GetInTouch: FC = () => {
   useSEO({
-    title: "Contact |Pavna International School ",
-    description: "",
-    keywords: "",
+    title: "Get in Touch | Top International School in Uttar Pradesh ",
+    description:
+      "Contact Pavna International School, one of the top international and boarding schools in Uttar Pradesh. We'd love to hear from you — get in touch now.",
+    keywords:
+      "Top Boarding School in Uttar Pradesh, Teaching Jobs in Uttar Pradesh, School Teacher Vacancy Sasni",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

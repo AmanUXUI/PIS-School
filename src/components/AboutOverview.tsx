@@ -18,9 +18,10 @@ import { useSEO } from "../hooks/useSEO";
 
 export default function AboutOverview() {
   useSEO({
-    title: "About Overview |Pavna International School ",
-    description: "",
-    keywords: "",
+    title: "About Pavna International School | Cambridge School in India ",
+    description:
+      "Explore Pavna International School's vision, mission and values — a Cambridge school fostering holistic development, academic excellence and leadership.",
+    keywords: "Cambridge School, Academic Excellence, Global Perspectives",
   });
   // Exact content lists for Vision and Mission (from OCR Page 1)
   const visionParagraphs = [

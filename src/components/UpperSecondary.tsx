@@ -28,7 +28,8 @@ const UpperSecondary: FC = () => {
     title: "Cambridge IGCSE Programme in Sasni | Pavna PIS ",
     description:
       "Explore IGCSE subjects at Pavna International School, Sasni a Cambridge Assessment International Education-affiliated international school in UP.",
-    keywords: "",
+    keywords:
+      "Cambridge IGCSE, Cambridge Assessment International Education, IGCSE Subjects",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

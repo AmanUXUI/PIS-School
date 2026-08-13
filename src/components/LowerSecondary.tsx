@@ -23,7 +23,8 @@ const LowerSecondary: FC = () => {
     title: "Best Lower Secondary School in Sasni | Pavna PIS ",
     description:
       "Give your child a future-ready foundation with Cambridge Lower Secondary Education (Stage 7-9) at Pavna International School, Sasni.",
-    keywords: "",
+    keywords:
+      "Cambridge Lower Secondary, Problem Solving Skills, Inquiry Based Learning",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

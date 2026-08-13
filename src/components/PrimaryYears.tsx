@@ -26,7 +26,8 @@ const PrimaryYears: FC = () => {
     title: "Best Cambridge Primary School | Pavna PIS, Sasni ",
     description:
       "Discover the Cambridge Primary School programme (Stage 1-6) at Pavna International School building communication, critical thinking & holistic skills.",
-    keywords: "",
+    keywords:
+      "Cambridge Primary School, Experiential Learning, Inquiry Based Learning",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

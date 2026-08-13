@@ -14,9 +14,11 @@ import { useSEO } from "../hooks/useSEO";
 
 export const ContactUs: FC = () => {
   useSEO({
-    title: "Contact Us |Pavna International School ",
-    description: "",
-    keywords: "",
+    title: "Enquire Now | Best International School in Sasni ",
+    description:
+      "Get in touch with Pavna International School, Sasni — the best international school in the region. Enquire now for admissions and start your child's journey.",
+    keywords:
+      "International School in Sasni, Best International School in Sasni, Cambridge International School Sasni",
   });
   // Form States
   const [captchaCode, setCaptchaCode] = useState("");

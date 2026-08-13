@@ -9,7 +9,6 @@ interface TeamMember {
   category: string;
   image: string;
 }
-
 const teamMembers: TeamMember[] = [
   {
     name: "Aarti Nigam",
@@ -19,39 +18,11 @@ const teamMembers: TeamMember[] = [
       "https://pavnaintlschool.com/uploads/1.-AARTI-NIGAM-PRINCIPAL-KANPUR.png.webp",
   },
   {
-    name: "Mansi Gurditta",
-    designation: "Teaching Assistant",
-    category: "Academic Support",
-    image:
-      "https://pavnaintlschool.com/uploads/16.-MANSI-GURDITTA-TEACHING-ASSISTANT-ALIGARH.png.webp",
-  },
-  {
-    name: "Rajyasree Ghosh",
-    designation: "Teacher Primary – Dance",
-    category: "Performing Arts",
-    image:
-      "https://pavnaintlschool.com/uploads/25.-RAJYASREE-GHOSH-PRIMARY-TEACHER-DANCE-KOLKATA.png.webp",
-  },
-  {
     name: "Bipul K Mehta",
     designation: "Primary Teacher – P.E.",
     category: "Physical Education",
     image:
       "https://pavnaintlschool.com/uploads/6.-BIPUL-K-MEHTA-PRIMARY-TEACHER-PHYSICAL-EDUCATION-JHARKHAND.png.webp",
-  },
-  {
-    name: "Pavneet Kaur",
-    designation: "Head of Design & Technology",
-    category: "Design & Technology",
-    image:
-      "https://pavnaintlschool.com/uploads/18.-PAVNEET-KAUR-HEAD-OF-DESIGN-TECHNOLOGY-GURUGRAM.png.webp",
-  },
-  {
-    name: "Dr. Runa Shelina Bano",
-    designation: "Teacher Secondary – Art & Design",
-    category: "Art & Design",
-    image:
-      "https://pavnaintlschool.com/uploads/27.-DR.-RUNA-SHELINA-BANO-PRIMARY-TEACHER-ART-DESIGN-MALDA-WEST-BENGAL.png.webp",
   },
   {
     name: "Charu Varshney",
@@ -61,11 +32,11 @@ const teamMembers: TeamMember[] = [
       "https://pavnaintlschool.com/uploads/8.-CHARU-VARSHNEY-TEACHER-MUSIC-ALIGARH.png.webp",
   },
   {
-    name: "Poonam Chaturvedi",
-    designation: "Teacher – HRT – Stage 3",
-    category: "Primary Education",
+    name: "Dr. Runa Shelina Bano",
+    designation: "Teacher Secondary – Art & Design",
+    category: "Art & Design",
     image:
-      "https://pavnaintlschool.com/uploads/19.-POONAM-CHATURVEDI-TEACHER-HOME-ROOM-STAGE-3-ALIGARH.png.webp",
+      "https://pavnaintlschool.com/uploads/27.-DR.-RUNA-SHELINA-BANO-PRIMARY-TEACHER-ART-DESIGN-MALDA-WEST-BENGAL.png.webp",
   },
   {
     name: "Gagan Madan",
@@ -75,53 +46,11 @@ const teamMembers: TeamMember[] = [
       "https://pavnaintlschool.com/uploads/11.-GAGAN-MADAN-SECONDARY-TEACHER-PHYSICAL-EDUCATION-AGRA.png.webp",
   },
   {
-    name: "Poonam Gaur",
-    designation: "Teacher Primary – ICT",
-    category: "ICT & Computing",
-    image:
-      "https://pavnaintlschool.com/uploads/20.-POONAM-GAUR-TEACHER-ICT-ALIGARH.png.webp",
-  },
-  {
-    name: "Shabana Haleem",
-    designation: "Teacher Secondary – Global Perspectives",
-    category: "Global Perspectives",
-    image:
-      "https://pavnaintlschool.com/uploads/30.-SHABANA-HALEEM-SECONDARY-TEACHER-GLOBAL-PERSPECTIVE-ALIGARH.png.webp",
-  },
-  {
-    name: "Poornima S Raghav",
-    designation: "Teaching Assistant",
-    category: "Academic Support",
-    image:
-      "https://pavnaintlschool.com/uploads/21.-POORNIMA-S-RAGHAV-TEACHING-ASSITANT-ALIGARH.png",
-  },
-  {
-    name: "Shilpi Chauhan",
-    designation: "Teacher Secondary – Hindi",
-    category: "Languages",
-    image:
-      "https://pavnaintlschool.com/uploads/31.-SHILPI-CHAUHAN-PRIMARY-HINDI-TEACHER-ALIGARH.png.webp",
-  },
-  {
     name: "Manisha Sharma",
     designation: "Teacher – HRT – Stage 5",
     category: "Primary Education",
     image:
       "https://pavnaintlschool.com/uploads/15.-MANISHA-SHARMA-TEACHER-HOME-ROOM-STAGE-5-ALIGARH.png.webp",
-  },
-  {
-    name: "Prachi Maheshwari",
-    designation: "Teacher – Accountancy & BST",
-    category: "Commerce",
-    image:
-      "https://pavnaintlschool.com/uploads/22.-PRACHI-MAHESHWARI-TEACHER-ACCOUNTANCY-BUSINESS-STUDIES-ALIGARH.png.webp",
-  },
-  {
-    name: "Soumyadip Banerjee",
-    designation: "Teacher Secondary – Dance",
-    category: "Performing Arts",
-    image:
-      "https://pavnaintlschool.com/uploads/33.-SOUMYADIP-BANERJEE-SECONDARY-TEACHER-DANCE-KOLKATA.png.webp",
   },
   {
     name: "Manoj Kumar",
@@ -131,19 +60,90 @@ const teamMembers: TeamMember[] = [
       "https://pavnaintlschool.com/uploads/16.-MANOJ-KUMAR-COORDINATOR-EXAMINATION-HYDERABAD.png.webp",
   },
   {
+    name: "Mansi Gurditta",
+    designation: "Teaching Assistant",
+    category: "Academic Support",
+    image:
+      "https://pavnaintlschool.com/uploads/16.-MANSI-GURDITTA-TEACHING-ASSISTANT-ALIGARH.png.webp",
+  },
+  {
+    name: "Pavneet Kaur",
+    designation: "Head of Design & Technology",
+    category: "Design & Technology",
+    image:
+      "https://pavnaintlschool.com/uploads/18.-PAVNEET-KAUR-HEAD-OF-DESIGN-TECHNOLOGY-GURUGRAM.png.webp",
+  },
+  {
+    name: "Poonam Chaturvedi",
+    designation: "Teacher – HRT – Stage 3",
+    category: "Primary Education",
+    image:
+      "https://pavnaintlschool.com/uploads/19.-POONAM-CHATURVEDI-TEACHER-HOME-ROOM-STAGE-3-ALIGARH.png.webp",
+  },
+  {
+    name: "Poonam Gaur",
+    designation: "Teacher Primary – ICT",
+    category: "ICT & Computing",
+    image:
+      "https://pavnaintlschool.com/uploads/20.-POONAM-GAUR-TEACHER-ICT-ALIGARH.png.webp",
+  },
+  {
+    name: "Poornima S Raghav",
+    designation: "Teaching Assistant",
+    category: "Academic Support",
+    image:
+      "https://pavnaintlschool.com/uploads/21.-POORNIMA-S-RAGHAV-TEACHING-ASSITANT-ALIGARH.png",
+  },
+  {
+    name: "Prachi Maheshwari",
+    designation: "Teacher – Accountancy & BST",
+    category: "Commerce",
+    image:
+      "https://pavnaintlschool.com/uploads/22.-PRACHI-MAHESHWARI-TEACHER-ACCOUNTANCY-BUSINESS-STUDIES-ALIGARH.png.webp",
+  },
+  {
     name: "Prateek Mehta",
     designation: "Teacher Secondary – Economics",
     category: "Social Sciences",
     image:
       "https://pavnaintlschool.com/uploads/23.-PRATEEK-MEHTA-SECONDARY-TEACHER-ECONOMICS-ALIGARH.png.webp",
   },
+  {
+    name: "Rajyasree Ghosh",
+    designation: "Teacher Primary – Dance",
+    category: "Performing Arts",
+    image:
+      "https://pavnaintlschool.com/uploads/25.-RAJYASREE-GHOSH-PRIMARY-TEACHER-DANCE-KOLKATA.png.webp",
+  },
+  {
+    name: "Shabana Haleem",
+    designation: "Teacher Secondary – Global Perspectives",
+    category: "Global Perspectives",
+    image:
+      "https://pavnaintlschool.com/uploads/30.-SHABANA-HALEEM-SECONDARY-TEACHER-GLOBAL-PERSPECTIVE-ALIGARH.png.webp",
+  },
+  {
+    name: "Shilpi Chauhan",
+    designation: "Teacher Secondary – Hindi",
+    category: "Languages",
+    image:
+      "https://pavnaintlschool.com/uploads/31.-SHILPI-CHAUHAN-PRIMARY-HINDI-TEACHER-ALIGARH.png.webp",
+  },
+  {
+    name: "Soumyadip Banerjee",
+    designation: "Teacher Secondary – Dance",
+    category: "Performing Arts",
+    image:
+      "https://pavnaintlschool.com/uploads/33.-SOUMYADIP-BANERJEE-SECONDARY-TEACHER-DANCE-KOLKATA.png.webp",
+  },
 ];
 
 const AcademicTeam: FC = () => {
   useSEO({
-    title: "Academic Team |Pavna International School ",
-    description: "",
-    keywords: "",
+    title: "Educational Leadership & Academic Team | Pavna Intl School ",
+    description:
+      "Meet Pavna International School's academic team — a core team of education experts driving educational leadership and academic excellence for students.",
+    keywords: "Educational Leadership, Core Team, Academic Excellence",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

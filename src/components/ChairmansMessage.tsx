@@ -6,9 +6,10 @@ import { useSEO } from "../hooks/useSEO";
 
 const ChairmansMessage: FC = () => {
   useSEO({
-    title: "Chairman Message |Pavna International School ",
-    description: "",
-    keywords: "",
+    title: "A Message from Our Chairman | Pavna International School ",
+    description:
+      "Pavna International School's Chairman shares a vision of accessible, global education rooted in the Cambridge Curriculum and holistic student development.",
+    keywords: "Cambridge Curriculum, Holistic Development, Global Perspectives",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">
