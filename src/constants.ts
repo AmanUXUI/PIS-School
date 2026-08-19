@@ -87,7 +87,11 @@ export const CONTENT = {
           title: "Get In Touch",
           items: [
             { name: "Let's Talk", href: "/lets-talk" },
-            { name: "Careers", href: "/careers" },
+            {
+              name: "Careers",
+              href: "https://career.pavnaintlschool.com/",
+              newTab: true,
+            },
             { name: "Get in Touch", href: "/get-in-touch" },
           ],
         },
