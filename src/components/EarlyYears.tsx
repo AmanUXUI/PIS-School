@@ -36,6 +36,7 @@ const EarlyYears: FC = () => {
       "Pavna International School's Early Years programme offers experiential, play-based & inquiry-based Early Childhood Education under the Cambridge Pathway.",
     keywords:
       "Early Childhood Education, Play Based Learning, Inquiry Based Learning",
+    canonical: "https://pavnaintlschool.com/early-years",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

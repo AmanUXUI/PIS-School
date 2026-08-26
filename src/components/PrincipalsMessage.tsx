@@ -11,6 +11,7 @@ const PrincipalsMessage: FC = () => {
       "Read the Principal's message at Pavna International School — a vision of experiential learning that helps students grow beyond books, in a safe environment.",
     keywords:
       "Experiential Learning, Holistic Development, Academic Excellence",
+    canonical: "https://pavnaintlschool.com/principals-message",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

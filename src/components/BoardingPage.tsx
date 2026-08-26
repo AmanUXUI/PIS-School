@@ -109,6 +109,7 @@ const BoardingPage: FC = () => {
       "Pavna International School is a top boarding & residential school in Sasni, Uttar Pradesh, offering modern facilities and a safe, nurturing environment.",
     keywords:
       "Top Boarding School in Sasni, Top Boarding School in Uttar Pradesh, Top Residential Schools in Sasni",
+    canonical: "https://pavnaintlschool.com/boarding",
   });
   const [activeTab, setActiveTab] = useState<string>("nestled-nature");
   const [currentImgIdx, setCurrentImgIdx] = useState(0);

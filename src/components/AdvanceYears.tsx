@@ -28,6 +28,7 @@ const AdvanceYears: FC = () => {
       "Explore Cambridge International AS & A Level at Pavna International School a University Preparation Programme recognised by universities across India & abroad.",
     keywords:
       "Academic Achievement, Cambridge International A Level, Cambridge International AS And A Level",
+    canonical: "https://pavnaintlschool.com/advance-as-a-level",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

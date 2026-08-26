@@ -602,6 +602,7 @@ const Blog: FC = () => {
     title: "Blog |Pavna International School ",
     description: "",
     keywords: "",
+    canonical: "https://pavnaintlschool.com/blog",
   });
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");

@@ -10,6 +10,7 @@ const ChairmansMessage: FC = () => {
     description:
       "Pavna International School's Chairman shares a vision of accessible, global education rooted in the Cambridge Curriculum and holistic student development.",
     keywords: "Cambridge Curriculum, Holistic Development, Global Perspectives",
+    canonical: "https://pavnaintlschool.com/chairmans-message",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

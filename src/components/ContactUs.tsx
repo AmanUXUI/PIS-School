@@ -19,6 +19,7 @@ export const ContactUs: FC = () => {
       "Get in touch with Pavna International School, Sasni — the best international school in the region. Enquire now for admissions and start your child's journey.",
     keywords:
       "International School in Sasni, Best International School in Sasni, Cambridge International School Sasni",
+    canonical: "https://pavnaintlschool.com/lets-talk",
   });
   // Form States
   const [captchaCode, setCaptchaCode] = useState("");

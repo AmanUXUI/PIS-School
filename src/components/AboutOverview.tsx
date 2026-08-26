@@ -22,6 +22,7 @@ export default function AboutOverview() {
     description:
       "Explore Pavna International School's vision, mission and values — a Cambridge school fostering holistic development, academic excellence and leadership.",
     keywords: "Cambridge School, Academic Excellence, Global Perspectives",
+    canonical: "https://pavnaintlschool.com/about-overview",
   });
   // Exact content lists for Vision and Mission (from OCR Page 1)
   const visionParagraphs = [

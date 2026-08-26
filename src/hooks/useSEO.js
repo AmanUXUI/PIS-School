@@ -1,7 +1,7 @@
 
 import { useEffect } from 'react';
 
-export function useSEO({ title, description, keywords }) {
+export function useSEO({ title, description, keywords, canonical }) {
     useEffect(() => {
         if (title) document.title = title;
         if (description) {
@@ -11,7 +11,10 @@ export function useSEO({ title, description, keywords }) {
         if (keywords) {
             updateOrCreateMeta('name', 'keywords', keywords);
         }
-    }, [title, description, keywords]);
+        if (canonical) {
+            updateOrCreateLink('canonical', canonical);
+        }
+    }, [title, description, keywords, canonical]);
 }
 
 function updateOrCreateMeta(attribute, value, content) {
@@ -24,6 +27,19 @@ function updateOrCreateMeta(attribute, value, content) {
         element = document.createElement('meta');
         element.setAttribute(attribute, value);
         element.setAttribute('content', content);
+        document.head.appendChild(element);
+    }
+}
+function updateOrCreateLink(rel, href) {
+    const selector = `link[rel="${rel}"]`;
+    let element = document.querySelector(selector);
+
+    if (element) {
+        element.setAttribute('href', href);
+    } else {
+        element = document.createElement('link');
+        element.setAttribute('rel', rel);
+        element.setAttribute('href', href);
         document.head.appendChild(element);
     }
 }

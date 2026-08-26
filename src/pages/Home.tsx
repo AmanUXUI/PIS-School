@@ -21,6 +21,7 @@ const Home = () => {
       "Pavna International School, Sasni is a top international & boarding school in Uttar Pradesh, offering Cambridge Pathway curriculum from Early Years to A Level.",
     keywords:
       "Best International School in Uttar Pradesh, Top International Boarding Schools in Uttar Pradesh, Cambridge Pathway",
+    canonical: "https://pavnaintlschool.com/",
   });
   return (
     <div>

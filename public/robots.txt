@@ -1,0 +1,9 @@
+# Allow all search engine crawlers
+User-agent: *
+Allow: /
+
+# Disallow searching / filtering parameters if applicable
+Disallow: /*?*
+
+# Path to your XML Sitemap
+Sitemap: https://pavnaintlschool.com/sitemap.xml

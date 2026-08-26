@@ -83,6 +83,7 @@ const Newsletter: FC = () => {
       "Stay updated with Pavna International School's newsletter — highlights, achievements and announcements from our Cambridge International School community.",
     keywords:
       "Cambridge International School, Holistic Development, Academic Excellence",
+    canonical: "https://pavnaintlschool.com/newsletter",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

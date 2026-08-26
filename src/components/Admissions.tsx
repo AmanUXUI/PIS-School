@@ -29,6 +29,7 @@ const Admissions: FC = () => {
       "Apply now at Pavna International School, Sasni a leading Cambridge international school & top boarding school in UP. Preschool admission open for 2026-27.",
     keywords:
       "International School in Sasni, Cambridge International School Sasni, Top Boarding School in Uttar Pradesh,",
+    canonical: "https://pavnaintlschool.com/admissions",
   });
 
   const steps = [

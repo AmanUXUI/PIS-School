@@ -86,6 +86,7 @@ const CampusLife: FC = () => {
     description:
       "Discover Pavna International School's vibrant campus driving academic excellence and holistic development through modern facilities and co-curricular activities.",
     keywords: "Holistic Development, Academic Excellence, Global Perspectives",
+    canonical: "https://pavnaintlschool.com/campus-life",
   });
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentEnvIdx, setCurrentEnvIdx] = useState(0);

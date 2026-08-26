@@ -144,6 +144,7 @@ const AcademicTeam: FC = () => {
     description:
       "Meet Pavna International School's academic team — a core team of education experts driving educational leadership and academic excellence for students.",
     keywords: "Educational Leadership, Core Team, Academic Excellence",
+    canonical: "https://pavnaintlschool.com/academic-team",
   });
   return (
     <div className="bg-[#FDFCFB] min-h-screen text-brand-black font-gill selection:bg-brand-orange/20 selection:text-brand-navy">

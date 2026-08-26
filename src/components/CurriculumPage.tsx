@@ -61,6 +61,7 @@ const CurriculumPage: FC = () => {
       "Explore the Cambridge Curriculum at Pavna International School, Sasni the best Cambridge school in Uttar Pradesh focused on holistic student development.",
     keywords:
       "Cambridge Curriculum, Best Cambridge School in Uttar Pradesh, Holistic Development",
+    canonical: "https://pavnaintlschool.com/curriculum",
   });
   const [activeFaqIndex, setActiveFaqIndex] = useState<number | null>(null);
   const [activeStageIdx, setActiveStageIdx] = useState<number>(0);

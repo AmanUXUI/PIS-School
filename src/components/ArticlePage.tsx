@@ -199,7 +199,7 @@ function renderParagraphWithBacklinks(
 }
 const POST_SEO: Record<
   string,
-  { title: string; description: string; keywords: string }
+  { title: string; description: string; keywords: string; canonical: string }
 > = {
   "cambridge-early-years-programme-benefits-subjects-and-approach-to-learning":
     {
@@ -208,6 +208,8 @@ const POST_SEO: Record<
         "Explore the Cambridge Early Years Programme, its subjects, benefits, and learning approach at a Cambridge Preschool in Sasni, Uttar Pradesh",
       keywords:
         "Cambridge international school, Cambridge A Level Curriculum, Cambridge Preschool, Cambridge Primary School in sasni, Cambridge Lower Secondary, Cambridge International Education, Cambridge international school Uttar Pradesh",
+      canonical:
+        "https://pavnaintlschool.com/cambridge-early-years-programme-benefits-subjects-and-approach-to-learning",
     },
   "cambridge-early-years-programme": {
     title: "Cambridge Early Years Programme: Benefits & Approach",
@@ -215,6 +217,7 @@ const POST_SEO: Record<
       "Explore the Cambridge Early Years Programme, its subjects, benefits, and learning approach at a Cambridge Preschool in Sasni, Uttar Pradesh",
     keywords:
       "Cambridge international school, Cambridge A Level Curriculum, Cambridge Preschool, Cambridge Primary School in sasni, Cambridge Lower Secondary, Cambridge International Education, Cambridge international school Uttar Pradesh",
+    canonical: "https://pavnaintlschool.com/cambridge-early-years-programme",
   },
   "cambridge-early-years-programme-fees-what-parents-should-expect": {
     title: "Cambridge Early Years Fees: A Parent's Guide",
@@ -222,6 +225,8 @@ const POST_SEO: Record<
       "Planning your child's early education? Understand Cambridge Early Years Programme fees, what they cover, and how to choose the right Cambridge school.",
     keywords:
       "Cambridge Curriculum , Cambridge Primary School , Cambridge IGCSE , Best Cambridge School in Uttar Pradesh. , Cambridge Primary School in sasni ",
+    canonical:
+      "https://pavnaintlschool.com/cambridge-early-years-programme-fees-what-parents-should-expect",
   },
 };
 const ArticlePage: FC = () => {
@@ -239,6 +244,7 @@ const ArticlePage: FC = () => {
         title: "",
         description: activePost?.excerpt || "",
         keywords: "Pavna International School",
+        canonical: `https://pavnaintlschool.com/${activePost?.id}`,
       };
   useSEO(seoData);
   if (!activePost) {

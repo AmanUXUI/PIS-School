@@ -31,6 +31,7 @@ const Careers: FC = () => {
     description:
       "Looking for a rewarding career in education? Pavna International School offers opportunities to join our core team of dedicated education experts.",
     keywords: "Careers in Education, Cambridge International School, Core Team",
+    canonical: "https://pavnaintlschool.com/careers",
   });
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
